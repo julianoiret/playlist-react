@@ -105,7 +105,7 @@ const playlistData = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     playlistName: 'Soundtrack',
     genre: [],
     description: '',
@@ -120,7 +120,7 @@ const playlistData = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     playlistName: 'Ambient Chillout',
     genre: [],
     description: '',
@@ -135,7 +135,7 @@ const playlistData = [
     ],
   },
   {
-    id: 7,
+    id: 10,
     playlistName: 'Lounge Cafe',
     genre: [],
     description: '',
@@ -150,7 +150,7 @@ const playlistData = [
     ],
   },
   {
-    id: 7,
+    id: 11,
     playlistName: 'Best of Eitan Reiter',
     genre: [],
     description: '',
@@ -165,7 +165,7 @@ const playlistData = [
     ],
   },
   {
-    id: 7,
+    id: 12,
     playlistName: 'Relax',
     genre: [],
     description: '',
@@ -180,7 +180,7 @@ const playlistData = [
     ],
   },
   {
-    id: 7,
+    id: 13,
     playlistName: 'Best of Solar Fields',
     genre: [],
     description: '',
@@ -195,7 +195,7 @@ const playlistData = [
     ],
   },
   {
-    id: 7,
+    id: 14,
     playlistName: 'Best of Ott',
     genre: [],
     description: '',
@@ -210,8 +210,38 @@ const playlistData = [
     ],
   },
   {
-    id: 7,
-    playlistName: 'Best of Eitan Reiter',
+    id: 15,
+    playlistName: 'Best of Rone',
+    genre: [],
+    description: '',
+    totalTime: '',
+    photo: '',
+    musics: [
+      {
+        artist: '',
+        title: '',
+        time: '',
+      },
+    ],
+  },
+  {
+    id: 16,
+    playlistName: 'Best of Koan',
+    genre: [],
+    description: '',
+    totalTime: '',
+    photo: '',
+    musics: [
+      {
+        artist: '',
+        title: '',
+        time: '',
+      },
+    ],
+  },
+  {
+    id: 17,
+    playlistName: 'Best of Eric Hilton',
     genre: [],
     description: '',
     totalTime: '',
