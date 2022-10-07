@@ -1,9 +1,30 @@
 import { PlaylistTitle } from "./playlistCards.style";
 
-const PlaylistCards = () => {
+const PlaylistCards = ({data}) => {
+//    const music = data.map((playlist) => {
+//     const { playlistName } = playlist;
+//     console.log(playlist)}
+//     )
+
+
+
+
+
+
     return (
     <>
-    <PlaylistTitle>This is my card</PlaylistTitle>
+    {data.map((playlist) => {
+        const { id, playlistName, description, genre } = playlist;
+        return (
+        <div>
+        <PlaylistTitle>{id}</PlaylistTitle>
+        <div>{playlistName}</div>
+        <div>{description}</div>
+        <div>{genre}</div>
+        </div>
+        )
+    })}
+
     </>
     )
 }
