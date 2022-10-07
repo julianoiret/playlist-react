@@ -1,6 +1,6 @@
-import Header from './Header';
-import PlaylistCards from './PlaylistCards';
-import Footer from './Footer';
+import Header from './header/Header';
+import PlaylistCards from './playlist-cards/PlaylistCards';
+import Footer from './footer/Footer';
 
 
 function App() {
