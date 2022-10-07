@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 
-export const PlaylistCards = styled.div`
-background-color: red;
+export const PlaylistTitle = styled.div`
+background-color: grey;
+color: blue;
+width: 95%;
 `;
