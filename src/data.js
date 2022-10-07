@@ -225,6 +225,12 @@ const playlistData = [
         title: 'Oirectine',
         time: '5.11',
       },
+      {
+        track: 12,
+        artist: 'Boards Of Canada',
+        title: 'In A Beautiful Place Out In The Country',
+        time: '5.30',
+      },
     ],
   },
   {
@@ -301,12 +307,18 @@ const playlistData = [
         title: 'Lost',
         time: '5.21',
       },
+      {
+        track: 12,
+        artist: 'Leven Canyon',
+        title: 'The Good Night Chorale',
+        time: '7.23',
+      },
     ],
   },
   {
     id: 5,
     playlistName: 'Best Of Moby',
-    genre: [],
+    genre: ["electronic", "downtempo", "ambient", "techno"],
     description: '',
     totalTime: '',
     photo: '',
@@ -526,6 +538,12 @@ const playlistData = [
       {
         track: 11,
         artist: 'Aphex twin',
+        title: '34.5 P.e',
+        time: '7.20',
+      },
+      {
+        track: 12,
+        artist: 'Aphex twin',
         title: 'Larcheard',
         time: '2.17',
       },
@@ -579,7 +597,7 @@ const playlistData = [
         track: 7,
         artist: 'Massive Attack',
         title: 'Paradise Circus',
-        time: '',
+        time: '5.15',
       },
       {
         track: 8,
@@ -603,7 +621,7 @@ const playlistData = [
         track: 11,
         artist: 'Massive Attack',
         title: 'Unfinished Sympathy',
-        time: '',
+        time: '5.16',
       },
     ],
   },
@@ -677,6 +695,12 @@ const playlistData = [
       },
       {
         track: 11,
+        artist: 'Carbon Based Lifeform',
+        title: 'Endospore (Remastered)',
+        time: '5.04',
+      },
+      {
+        track: 12,
         artist: 'Logical Element',
         title: 'Falling',
         time: '11.13',
@@ -753,9 +777,15 @@ const playlistData = [
       },
       {
         track: 11,
-        artist: 'Phaeleh',
-        title: 'Empty Jar',
-        time: '6.20',
+        artist: 'Shapeshifter',
+        title: 'Summer Haze',
+        time: '6.43',
+      },
+      {
+        track: 12,
+        artist: 'Nightmares On Wax',
+        title: 'Les Nuits',
+        time: '6.14',
       },
     ],
   },
@@ -1320,8 +1350,8 @@ const playlistData = [
 //       {
 //         track: 3,
 //         artist: 'Air',
-//         title: 'Playground Love (Virgin Suicide Soundtrack)',
-//         time: '3.32',
+//         title: 'Highschool Lover (Virgin Suicide Soundtrack)',
+//         time: '2.42',
 //       },
 //       {
 //         track: 4,
