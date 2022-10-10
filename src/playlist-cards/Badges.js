@@ -3,9 +3,9 @@ import { GenreBadge, PlaylistGenre } from "./playlistCards.style"
 export const Badges = ({genre}) => {
     return (
         <PlaylistGenre>
-            {genre.map((genreBadge) => {
+            {genre.map((genreBadge, index) => {
                 return (
-                    <GenreBadge>{genreBadge}</GenreBadge>
+                    <GenreBadge key={index}>{genreBadge}</GenreBadge>
                 )
             })}
         </PlaylistGenre>
