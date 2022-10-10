@@ -1,30 +1,32 @@
-import { PlaylistTitle } from "./playlistCards.style";
+import { Badges } from "./Badges";
+import { PlaylistCard, PlaylistTitle, PlaylistDescription, PlaylistTotalTime, PlaylistCardBack } from "./playlistCards.style";
+// import { playlistMap } from "../functions";
 
 const PlaylistCards = ({data}) => {
-//    const music = data.map((playlist) => {
-//     const { playlistName } = playlist;
-//     console.log(playlist)}
-//     )
-
-
-
-
-
 
     return (
     <>
     {data.map((playlist) => {
-        const { id, playlistName, description, genre } = playlist;
+        const { id, playlistName, description, genre, totalTime, photo, musics } = playlist;
         return (
-        <div>
-        <PlaylistTitle>{id}</PlaylistTitle>
-        <div>{playlistName}</div>
-        <div>{description}</div>
-        <div>{genre}</div>
-        </div>
-        )
-    })}
-
+            <PlaylistCard key={id}>
+                <PlaylistTitle>{playlistName}</PlaylistTitle>
+                <Badges genre={genre}></Badges>
+                <PlaylistDescription>{description}</PlaylistDescription>
+                <PlaylistTotalTime>{description}</PlaylistTotalTime>
+                </PlaylistCard>
+                
+            )
+        })}
+        {data.map((detail) => {
+            console.log(detail.musics);
+            return (
+                <PlaylistCardBack>
+                <div></div>
+                <div></div>
+                </PlaylistCardBack>
+            )
+        })}
     </>
     )
 }

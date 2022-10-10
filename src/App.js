@@ -3,12 +3,12 @@ import Header from './header/Header';
 import PlaylistCards from './playlist-cards/PlaylistCards';
 import Footer from './footer/Footer';
 import playlistData from './data';
-
+import './index.css';
 
 
 function App() {
 
-  const [data, setData] = useState(playlistData);
+const [data, setData] = useState(playlistData);
 
   return (
     <div>
