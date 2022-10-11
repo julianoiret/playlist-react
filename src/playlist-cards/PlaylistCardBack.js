@@ -1,13 +1,13 @@
-import { Link, PlaylistDetail, PlaylistDetailText, SectionDetail, PlayIcon, SectionWrapper } from "./playlistCards.style";
+import { Link, PlaylistCardBackDetail, PlaylistDetailText, SectionDetail, PlayIcon, SectionWrapper } from "./playlistCards.style";
 import { BiCaretRightCircle } from 'react-icons/bi';
 
 
-export const PlaylistCardBack = ({musics}) => {
+export const PlaylistCardBack = ({musics, flip, setFlip}) => {
     return (
         musics.map((music) => {
             const { track, artist, title, time, link } = music;
             return (
-                <PlaylistDetail key={track}>
+                <PlaylistCardBackDetail key={track}>
                         <PlayIcon>
                             <Link href={link} target='_blank' rel="noreferrer"><BiCaretRightCircle /></Link>
                         </PlayIcon>
@@ -21,7 +21,7 @@ export const PlaylistCardBack = ({musics}) => {
                             <PlaylistDetailText>{time}</PlaylistDetailText>
                         </SectionDetail>
                         </SectionWrapper>
-                </PlaylistDetail>
+                </PlaylistCardBackDetail>
             )
         })
     )

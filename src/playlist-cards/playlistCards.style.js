@@ -1,26 +1,37 @@
 import styled from 'styled-components';
 
-export const Card = styled.div`
-`;
 
-// PLAYLISTCARD FRONT
+
+
 
 export const PlaylistCard = styled.div`
+width: 75%;
+margin: 20px auto;
+
+// border: 2px solid red;
+// // color: #B1B1B1;
+`;
+
+
+// PLAYLISTCARD FRONT
+export const PlaylistCardFronts = styled.div`
+width:100%;
+height:100%;
 border: 2px solid red;
 // color: #B1B1B1;
 display: flex;
-justify-content: space-between;
-width: 75%;
-margin: 20px auto;
+justify-content: space-evenly;
 `;
 
 export const PlaylistCardImg = styled.img`
 width: 500px;
 height: 500px;
+border: 1px solid pink;
 `;
 
 export const PlaylistCardInfo = styled.div`
 width: 500px;
+border: 1px solid pink;
 `;
 
 export const PlaylistTitle = styled.h1`
@@ -64,12 +75,14 @@ export const PlaylistButton = styled.button`
 
 // PLAYLISTCARD BACK
 
-export const PlaylistDetail = styled.div`
+export const PlaylistCardBackDetail = styled.div`
+width:100%;
+height:100%;
 border: 1px solid yellow;
 display: flex;
 align-items: center;
 color: #B1B1B1;
-padding: 7px;
+// padding: 7px;
 `;
 
 export const PlayIcon = styled.div`

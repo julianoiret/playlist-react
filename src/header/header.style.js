@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
-background-color: red;
+// background-color: red;
 height: 200px;
 display: flex;
 flex-direction: column;
@@ -13,8 +13,9 @@ export const HeaderTitle = styled.div`
 text-transform: uppercase;
 font-weight: 500;
 color: #F7F7F7;
+font-size: 30px;
 letter-spacing: 4px;
-border: 1px solid black;
+// border: 1px solid black;
 margin-bottom: 10px;
 `;
 
@@ -24,7 +25,7 @@ font-size: 35px;
 `;
 
 export const iconsStyle = {
-    backgroundColor: "#F7F7F7",
+    backgroundColor: "#FFFFFF",
     padding: "5px 17px",
     borderRadius: "5px",
     marginRight: "9px",
