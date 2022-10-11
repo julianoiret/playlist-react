@@ -5,7 +5,7 @@ const playlistData = [
     genre: ['ambient', 'lounge', 'chillout'],
     description: '',
     totalTime: '',
-    photo: require('./asset/pexels-img.jpg'),
+    photo: require('./asset/test-img.png'),
     musics: [
       {
         track: 1,
@@ -92,7 +92,7 @@ const playlistData = [
     genre: ['ambient', 'lounge', 'chillout'],
     description: '',
     totalTime: '',
-    photo: require('./asset/pexels-img.jpg'),
+    photo: require('./asset/test-img.png'),
     musics: [
       {
         track: 1,
@@ -179,7 +179,7 @@ const playlistData = [
     genre: ['IDM', 'downtempo', 'ambient', 'psychedelica', 'electronic'],
     description: '',
     totalTime: '',
-    photo: require('./asset/pexels-img.jpg'),
+    photo: require('./asset/test-img.png'),
     musics: [
       {
         track: 1,
@@ -273,7 +273,7 @@ const playlistData = [
     genre: ['ambient'],
     description: '',
     totalTime: '',
-    photo: require('./asset/pexels-img.jpg'),
+    photo: require('./asset/test-img.png'),
     musics: [
       {
         track: 1,
@@ -355,7 +355,7 @@ const playlistData = [
     genre: ["electronic", "downtempo", "ambient", "techno"],
     description: '',
     totalTime: '',
-    photo: require('./asset/pexels-img.jpg'),
+    photo: require('./asset/test-img.png'),
     musics: [
       {
         track: 1,
@@ -431,7 +431,7 @@ const playlistData = [
     genre: ['IDM'],
     description: 'One of the best idm tracks',
     totalTime: '',
-    photo: require('./asset/pexels-img.jpg'),
+    photo: require('./asset/idm-img.jpg'),
     musics: [
       {
         track: 1,
@@ -747,7 +747,7 @@ const playlistData = [
     genre: ['lounge', 'ambient', 'chillout'],
     description: '',
     totalTime: '',
-    photo: require('./asset/pexels-img.jpg'),
+    photo: require('./asset/cafe-img.jpg'),
     musics: [
       {
         track: 1,
@@ -847,7 +847,7 @@ const playlistData = [
         track: 3,
         artist: 'Eitan Reiter',
         title: 'Choices',
-        time: '8.11',
+        time: 8.11,
       },
       {
         track: 4,
@@ -886,19 +886,19 @@ const playlistData = [
         time: 4.09,
       },
       {
-        track: 9,
+        track: 10,
         artist: 'A Batler',
         title: 'You re A Fish - Boom Festival 2016 (Eitan Reiter Remix)',
         time: 10.00,
       },
       {
-        track: 10,
+        track: 11,
         artist: 'Eitan Reiter',
         title: 'Midnight Glide',
         time: 7.36,
       },
       {
-        track: 11,
+        track: 12,
         artist: 'Eitan Reiter & Audio Junkies',
         title: 'How Low - Boom Festival Edition',
         time: 6.00,
@@ -1514,16 +1514,5 @@ const playlistData = [
     ],
   },
 ];
-
-// let sumTime = () => {
-//   .reduce((acc, curr) => {
-//        acc += curr.time;
-//    return acc
-// }, 0);
-// };
-
-
-
-
 
 export default playlistData;

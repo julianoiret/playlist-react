@@ -13,7 +13,7 @@ export const PlaylistCardBack = ({musics}) => {
                         </PlayIcon>
                         <SectionWrapper>
                             <SectionDetail>
-                                <PlaylistDetailText>{track}</PlaylistDetailText>
+                                <PlaylistDetailText>{track}.</PlaylistDetailText>
                                 <PlaylistDetailText>{artist}</PlaylistDetailText>
                         </SectionDetail>
                         <SectionDetail>

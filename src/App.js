@@ -4,6 +4,7 @@ import PlaylistCards from './playlist-cards/PlaylistCards';
 import Footer from './footer/Footer';
 import playlistData from './data';
 import './index.css';
+import { iconsStyle } from './header/header.style';
 
 
 function App() {
