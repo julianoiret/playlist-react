@@ -5,7 +5,7 @@ const playlistData = [
     genre: ['ambient', 'lounge', 'chillout'],
     description: '',
     totalTime: '',
-    photo: require('./asset/test-img.png'),
+    photo: require('./asset/lounge-1-img.png'),
     musics: [
       {
         track: 1,
@@ -92,7 +92,7 @@ const playlistData = [
   //   genre: ['ambient', 'lounge', 'chillout'],
   //   description: '',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/lounge-2-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -179,7 +179,7 @@ const playlistData = [
   //   genre: ['IDM', 'downtempo', 'ambient', 'psychedelica', 'electronic'],
   //   description: '',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/boards-of-canada-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -273,7 +273,7 @@ const playlistData = [
   //   genre: ['ambient'],
   //   description: '',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/good-night-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -431,7 +431,7 @@ const playlistData = [
   //   genre: ['IDM'],
   //   description: 'One of the best idm tracks',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/idm-1-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -507,7 +507,7 @@ const playlistData = [
   //   genre: ['IDM', 'experimental', 'electronic', 'acid techno'],
   //   description: '',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/aphex-twin-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -665,7 +665,7 @@ const playlistData = [
   //   genre: ['ambient', 'psybient', 'etchno-chillout'],
   //   description: '',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/chillout-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -747,7 +747,7 @@ const playlistData = [
   //   genre: ['lounge', 'ambient', 'chillout'],
   //   description: '',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/lounge-cafe-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -911,7 +911,7 @@ const playlistData = [
   //   genre: ['ambient'],
   //   description: '',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/relax-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -987,7 +987,7 @@ const playlistData = [
   //   genre: ['electronic', 'ambient', 'psybient', 'progressive trance'],
   //   description: '',
   //   totalTime: '',
-  //   photo: 'https://f4.bcbits.com/img/0003471719_21.jpg',
+  //   photo: require('./asset/solar-fields-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -1063,7 +1063,7 @@ const playlistData = [
   //   genre: ['dub', 'electronic', 'trip hop', 'ethnic electronic', 'ambient'],
   //   description: '',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/ott-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -1139,7 +1139,7 @@ const playlistData = [
   //   genre: ['electronic', 'EDM', 'IDM', 'minimal techno'],
   //   description: 'Rone (born Erwan Castex) is a French electronic music producer and artist',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/rone-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -1215,7 +1215,7 @@ const playlistData = [
   //   genre: ['minimal techno', 'breakbeat', 'progressive house', 'etchno-chillout', 'downtempo', 'electro house'],
   //   description: 'A Russian duo consisting of Danial Roeth and William Grey',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/koan-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -1291,7 +1291,7 @@ const playlistData = [
   //   genre: ['ambient', 'lounge', 'chillout'],
   //   description: '',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/eric-hilton-img.png'),
   //   musics: [
   //     {
   //       track: 1,
@@ -1367,7 +1367,7 @@ const playlistData = [
 //     genre: [],
 //     description: '',
 //     totalTime: '',
-//     photo: require('./asset/test-img.png'),
+//     photo: require('./asset/soundtrack-img.png'),
 //     musics: [
 //       {
     //     track: 1,
@@ -1443,7 +1443,7 @@ const playlistData = [
   //   genre: ['IDM'],
   //   description: '',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/idm-2-img.png'),
   //   musics: [
   //     {
   //       track: 1,
