@@ -829,7 +829,7 @@ const playlistData = [
   //   genre: ['electronic', 'psybient', 'progressive house', 'deep house', 'techno'],
   //   description: 'Israeli musician and producer',
   //   totalTime: '',
-  //   photo: require('./asset/test-img.png'),
+  //   photo: require('./asset/eitan-reiter-img.png'),
   //   musics: [
   //     {
   //       track: 1,
