@@ -1,34 +1,53 @@
-import { Badges} from "./Badges";
-import { PlaylistCardImg, PlaylistCardInfo, PlaylistTitle, PlaylistDescription, PlaylistTotalTime, PlaylistButton, PlaylistCardFronts } from "./playlistCards.style";
+import { Badges } from './Badges';
+import {
+  PlaylistCardImg,
+  PlaylistCardInfo,
+  PlaylistTitle,
+  PlaylistDescription,
+  PlaylistTotalTime,
+  PlaylistButton,
+  PlaylistCardFronts,
+  PlaylistCardFrontsFlip,
+} from './playlistCards.style';
 import { RiTimerLine } from 'react-icons/ri';
-import { useState } from "react";
+import { useState } from 'react';
 
-
-
-export const PlaylistCardFront = ({playlistName, description, genre, photo, musics, flip, setFlip}) => {
-
-
-    // function to sum the total time for each playlist
-       let sumTime = (array) => {
-        const total = array.reduce((acc, curr) => {
-        acc += curr.time;
-        return acc;  // always return the acc
+export const PlaylistCardFront = ({
+  playlistName,
+  description,
+  genre,
+  photo,
+  musics,
+  flip,
+  setFlip,
+}) => {
+  // function to sum the total time for each playlist
+  let sumTime = (array) => {
+    const total = array.reduce((acc, curr) => {
+      acc += curr.time;
+      return acc; // always return the acc
     }, 0);
     // round up to 2 decimal
     return Math.round(total * 100) / 100;
-};
+  };
 
-    return (
-        <PlaylistCardFronts>
+  return (
+    <PlaylistCardFrontsFlip className={flip ? 'hidden' : ''}>
+      <PlaylistCardFronts>
         <PlaylistCardImg src={photo} alt={playlistName}></PlaylistCardImg>
-       <PlaylistCardInfo>
-        <PlaylistTitle>{playlistName.toUpperCase()}</PlaylistTitle>
-        <PlaylistDescription>{description}</PlaylistDescription>
-        <PlaylistTotalTime><RiTimerLine style={{fontSize: "1.25rem", paddingRight: "0.6rem"}} />{sumTime(musics)} minutes</PlaylistTotalTime>
-        <Badges genre={genre}></Badges>
-        <PlaylistButton onClick={()=> setFlip(!flip)}>Detail</PlaylistButton>
+        <PlaylistCardInfo>
+          <PlaylistTitle>{playlistName.toUpperCase()}</PlaylistTitle>
+          <PlaylistDescription>{description}</PlaylistDescription>
+          <PlaylistTotalTime>
+            <RiTimerLine
+              style={{ fontSize: '1.25rem', paddingRight: '0.6rem' }}
+            />
+            {sumTime(musics)} minutes
+          </PlaylistTotalTime>
+          <Badges genre={genre}></Badges>
+          <PlaylistButton onClick={() => setFlip(!flip)}>Detail</PlaylistButton>
         </PlaylistCardInfo>
-        </PlaylistCardFronts>
-    )
-}
-
+      </PlaylistCardFronts>
+    </PlaylistCardFrontsFlip>
+  );
+};
