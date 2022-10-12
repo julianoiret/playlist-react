@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import Header from './header/Header';
 import PlaylistCards from './playlist-cards/PlaylistCards';
-import Caroussel from './carou/carou';
+import Carousel from './carou/carou';
 import Footer from './footer/Footer';
 import playlistData from './data';
+import Caroussel from './carousel-test/carousel';
 import './index.css';
 import { iconsStyle } from './header/header.style';
 
@@ -13,8 +14,10 @@ function App() {
   return (
     <div>
       <Header />
+      <Caroussel data={data} />
       <PlaylistCards data={data} />
-      <Caroussel />
+      <Carousel data={data} />
+
       <Footer />
     </div>
   );

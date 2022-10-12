@@ -13,7 +13,7 @@ export const PageContainer = styled.div`
 export const SliderWrapper = styled.div`
   overflow: hidden;
   position: relative;
-  width: 1000px;
+  width: 800px;
   height: 500px;
   background: white;
   /* background-color: blue; */
@@ -22,10 +22,17 @@ export const SliderWrapper = styled.div`
 export const Image = styled.div`
   width: 500px;
   height: 500px;
+  border: 1px solid pink;
   background: url(${(p) => p.image});
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+`;
+
+export const CarouselImg = styled.img`
+  width: 500px;
+  height: 500px;
+  border: 1px solid pink;
 `;
 
 export const Nav = styled.nav`
