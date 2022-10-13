@@ -14,8 +14,8 @@ function App() {
   return (
     <div>
       <Header />
-      <Caroussel data={data} />
       <PlaylistCards data={data} />
+      <Caroussel data={data} />
       <Carousel data={data} />
 
       <Footer />

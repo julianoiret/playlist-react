@@ -27,9 +27,9 @@ const PlaylistCards = ({ data }) => {
               flip={flip}
               setFlip={setFlip}
             ></PlaylistCardBack>
-            <PlaylistButton onClick={() => setFlip(!flip)}>
+            {/* <PlaylistButton onClick={() => setFlip(!flip)}>
               BAck to front
-            </PlaylistButton>
+            </PlaylistButton> */}
           </PlaylistCard>
         );
       })}

@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import {
-  PlaylistCardImg,
+  PlaylistCardImgCarou,
   CarousselContainer,
   CarousselSection,
+  PlaylistDescriptionCarou,
+  PlaylistGenreCarou,
+  PlaylistTitleCarou,
+  PlaylistCardInfoCarou,
+  GenreBadgeCarou,
 } from './carousel.style';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
+import { Badges } from '../playlist-cards/Badges';
+import { PlaylistButton } from '../playlist-cards/playlistCards.style';
+// import { PlaylistDescriptionCarou, PlaylistGenreCarou, PlaylistTitleCarou } from '../playlist-cards/playlistCards.style';
 
 const Caroussel = ({ data }) => {
   const [index, setIndex] = useState(0);
@@ -45,15 +53,17 @@ const Caroussel = ({ data }) => {
             playIndex === index - 1 ||
             (index === 0 && playIndex === data.length - 1)
           ) {
-            position = 'lastSLide';
+            position = 'lastSlide';
           }
           return (
             <article className={position} key={id}>
-              <div>
-                <img className='article-photo' src={photo} alt={playlistName} />
-              </div>
-              <div className='name'>{playlistName}</div>
-              <div className='name'>{playlistName}</div>
+              <PlaylistCardImgCarou className='article-photo' src={photo} alt={playlistName}></PlaylistCardImgCarou>
+              <PlaylistCardInfoCarou>
+                <PlaylistTitleCarou className='name'>{playlistName}</PlaylistTitleCarou>
+                <PlaylistDescriptionCarou>{description}</PlaylistDescriptionCarou>
+                <Badges genre={genre}></Badges>
+                <PlaylistButton>Detail</PlaylistButton>
+              </PlaylistCardInfoCarou>
             </article>
           );
         })}
@@ -71,3 +81,6 @@ const Caroussel = ({ data }) => {
 };
 
 export default Caroussel;
+
+
+{/* <img className='article-photo' src={photo} alt={playlistName} /> */}

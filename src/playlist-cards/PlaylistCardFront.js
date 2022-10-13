@@ -6,8 +6,8 @@ import {
   PlaylistDescription,
   PlaylistTotalTime,
   PlaylistButton,
-  PlaylistCardFronts,
-  PlaylistCardFrontsFlip,
+  PlaylistCardFrontDetail,
+  PlaylistCardFrontFlip,
 } from './playlistCards.style';
 import { RiTimerLine } from 'react-icons/ri';
 import { useState } from 'react';
@@ -32,8 +32,8 @@ export const PlaylistCardFront = ({
   };
 
   return (
-    <PlaylistCardFrontsFlip className={flip ? 'hidden' : ''}>
-      <PlaylistCardFronts>
+    <PlaylistCardFrontFlip className={flip ? 'hidden' : ''}>
+      <PlaylistCardFrontDetail>
         <PlaylistCardImg src={photo} alt={playlistName}></PlaylistCardImg>
         <PlaylistCardInfo>
           <PlaylistTitle>{playlistName.toUpperCase()}</PlaylistTitle>
@@ -47,7 +47,7 @@ export const PlaylistCardFront = ({
           <Badges genre={genre}></Badges>
           <PlaylistButton onClick={() => setFlip(!flip)}>Detail</PlaylistButton>
         </PlaylistCardInfo>
-      </PlaylistCardFronts>
-    </PlaylistCardFrontsFlip>
+      </PlaylistCardFrontDetail>
+    </PlaylistCardFrontFlip>
   );
 };

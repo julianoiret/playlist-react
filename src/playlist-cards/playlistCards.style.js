@@ -1,44 +1,52 @@
 import styled, { css } from 'styled-components';
 
 export const PlaylistCard = styled.div`
-  width: 75%;
-  height: 65%;
-  margin: 20px auto;
+  display: inline-flex;
   /* background-color: transparent; */
   /* perspective: 1000px; */
 `;
 
 //div to add the flip element
-export const PlaylistCardFrontsFlip = styled.div`
+export const PlaylistCardFrontFlip = styled.div`
   width: 100%;
   height: 100%;
 `;
 
-export const PlaylistCardFronts = styled.div`
+export const PlaylistCardFrontDetail = styled.div`
   position: relative;
-  /* width: 100%;
-  height: 100%; */
+  width: 700px;
+  height: 400px;
+  padding: 7px;
   border: 2px solid red;
-  // color: #B1B1B1;
   display: flex;
   justify-content: space-evenly;
 `;
 
 export const PlaylistCardImg = styled.img`
-  width: 500px;
-  height: 500px;
+  width: 412px;
+  height: 400px;
+  display: block;
   border: 1px solid pink;
 `;
 
+// export const PlaylistCardImgCarou = styled.img`
+//   width: 412px;
+//   height: 400px;
+//   display: block;
+//   border: 1px solid pink;
+// `;
+
 export const PlaylistCardInfo = styled.div`
-  width: 500px;
+  // width: 500px;
+  width: 412px;
+  height: 400px;
   border: 1px solid pink;
 `;
 
 export const PlaylistTitle = styled.h1`
-  // font-family: 'Bungee Shade', cursive;
-  font-family: 'Libre Barcode 39 Text', cursive;
-  font-size: 50px;
+  font-family: 'Bungee Shade', cursive;
+  // font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 30px;
 `;
 
 export const PlaylistDescription = styled.p``;
@@ -72,17 +80,21 @@ export const PlaylistButton = styled.button`
 `;
 
 // PLAYLISTCARD BACK
+
 export const PlaylistCardBackDetailFlip = styled.div`
   width: 100%;
   height: 100%;
 `;
 
 export const PlaylistCardBackDetail = styled.div`
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
+  // position: relative;
+  width: 700px;
+  height: 400px;
   border: 1px solid yellow;
-  display: flex;
-  align-items: center;
+//  display: flex;
+  // align-items: center;
   color: #b1b1b1;
   // padding: 7px;
 `;
@@ -92,11 +104,11 @@ export const PlayIcon = styled.div``;
 export const SectionWrapper = styled.div``;
 
 export const SectionDetail = styled.div`
-  display: flex;
-  width: 400px;
-  :nth-child(2) {
-    justify-content: space-between;
-  }
+  // display: flex;
+  // width: 400px;
+  // :nth-child(2) {
+  //   justify-content: space-between;
+  // }
 `;
 
 export const Link = styled.a`
@@ -106,7 +118,13 @@ export const Link = styled.a`
 
 export const PlaylistDetailText = styled.p`
   border: 1px solid green;
-  margin: 0 10px;
+  // margin: 0 10px;
+`;
+
+export const TestBack = styled.div`
+width: 100%;
+border: 1px solid orange;
+display: inline-flex;
 `;
 
 // created it to test flip card animation, have to fix it.
