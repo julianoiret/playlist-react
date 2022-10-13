@@ -12,7 +12,8 @@ export const CarousselSection = styled.div`
   margin-top: 20px;
   width: 80vw;
   /* must have to have a height for the container */
-  height: 450px;
+  height: 500px;
+  // height: 100%;
   max-width: 800px;
   border: 2px solid green;
   position: relative;
@@ -26,8 +27,8 @@ export const CarousselCard = styled.div`
   // width: 80vw;
   width: 100%;
   /* must have to have a height for the container */
-  // height: 450px;
-  height: 100%;
+  height: 500px;
+  // height: 100%;
   max-width: 800px;
   border: 2px solid red;
   position: relative;
