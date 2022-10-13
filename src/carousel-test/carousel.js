@@ -9,8 +9,10 @@ import {
   PlaylistTitleCarou,
   PlaylistCardInfoCarou,
   GenreBadgeCarou,
+  PlaylistTotalTimeCarou,
   ArticleCarou,
   FlipCarou,
+  BackButton,
   Front,
   Back,
   PlaylistCardBackDetailCarou,
@@ -20,10 +22,21 @@ import { FaQuoteRight } from 'react-icons/fa';
 import { Badges } from '../playlist-cards/Badges';
 import { PlaylistButton } from '../playlist-cards/playlistCards.style';
 // import { PlaylistDescriptionCarou, PlaylistGenreCarou, PlaylistTitleCarou } from '../playlist-cards/playlistCards.style';
+import { RiTimerLine } from 'react-icons/ri';
 
 const Caroussel = ({ data }) => {
   const [index, setIndex] = useState(0);
   const [flipCarou, setFlipCarou] = useState(false);
+
+      // function to sum the total time for each playlist
+      let sumTime = (array) => {
+        const total = array.reduce((acc, curr) => {
+          acc += curr.time;
+          return acc; // always return the acc
+        }, 0);
+        // round up to 2 decimal
+        return Math.round(total * 100) / 100;
+      };
 
   const nextSlide = () => {
     setIndex((oldIndex) => {
@@ -51,7 +64,7 @@ const Caroussel = ({ data }) => {
     <CarousselContainer>
       <CarousselSection>
         {data.map((ind, playIndex) => {
-          const { id, musics, playlistName, description, genre, photo } = ind;
+          const { id, playlistName, description, genre, photo, musics } = ind;
           let position = 'nextSlide';
           if (playIndex === index) {
             position = 'activeSlide';
@@ -70,8 +83,14 @@ const Caroussel = ({ data }) => {
               <PlaylistCardInfoCarou>
                 <PlaylistTitleCarou>{playlistName}</PlaylistTitleCarou>
                 <PlaylistDescriptionCarou>{description}</PlaylistDescriptionCarou>
+                <PlaylistTotalTimeCarou>
+                <RiTimerLine
+              style={{ fontSize: '1.25rem', paddingRight: '0.6rem' }}
+            />
+            {sumTime(musics)} minutes
+                </PlaylistTotalTimeCarou>
                 <Badges genre={genre}></Badges>
-                <PlaylistButton>Detail</PlaylistButton>
+                <PlaylistButton onClick={() => setFlipCarou(true)}>Detail</PlaylistButton>
               </PlaylistCardInfoCarou>
               </Front>
               </FlipCarou>
@@ -83,6 +102,7 @@ const Caroussel = ({ data }) => {
                   <p>title</p>
                   <p>minutes</p>
                   </PlaylistCardBackDetailCarou>
+                  <PlaylistButton onClick={() => setFlipCarou(false)}>Back</PlaylistButton>
               </Back>
               </FlipCarou>
             </article>
@@ -102,6 +122,3 @@ const Caroussel = ({ data }) => {
 };
 
 export default Caroussel;
-
-
-{/* <img className='article-photo' src={photo} alt={playlistName} /> */}

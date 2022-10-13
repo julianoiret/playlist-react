@@ -91,3 +91,8 @@ export const PlaylistCardBackDetailCarou = styled.div`
 display: flex;
 justify-content: space-evenly;
 `;
+
+export const BackButton = styled.div`
+text-transform: uppercase;
+`;
+
