@@ -10,6 +10,7 @@ import {
   PlaylistCardInfoCarou,
   GenreBadgeCarou,
   ArticleCarou,
+  FlipCarou,
   Front,
   Back,
   PlaylistCardBackDetailCarou,
@@ -22,6 +23,7 @@ import { PlaylistButton } from '../playlist-cards/playlistCards.style';
 
 const Caroussel = ({ data }) => {
   const [index, setIndex] = useState(0);
+  const [flipCarou, setFlipCarou] = useState(false);
 
   const nextSlide = () => {
     setIndex((oldIndex) => {
@@ -62,6 +64,7 @@ const Caroussel = ({ data }) => {
           }
           return (
             <article className={position} key={id}>
+              <FlipCarou className={flipCarou ? 'hidden' : ''}>
               <Front>
               <PlaylistCardImgCarou src={photo} alt={playlistName}></PlaylistCardImgCarou>
               <PlaylistCardInfoCarou>
@@ -71,6 +74,8 @@ const Caroussel = ({ data }) => {
                 <PlaylistButton>Detail</PlaylistButton>
               </PlaylistCardInfoCarou>
               </Front>
+              </FlipCarou>
+              <FlipCarou className={!flipCarou ? 'hidden' : ''}>
               <Back>
                 <PlaylistCardBackDetailCarou>
                   <p>play</p>
@@ -79,6 +84,7 @@ const Caroussel = ({ data }) => {
                   <p>minutes</p>
                   </PlaylistCardBackDetailCarou>
               </Back>
+              </FlipCarou>
             </article>
           );
         })}

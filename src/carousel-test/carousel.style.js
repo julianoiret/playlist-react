@@ -22,10 +22,12 @@ export const CarousselSection = styled.div`
 export const PlaylistCardCarousel = styled.div`
 `;
 
+export const FlipCarou = styled.div``;
+
 export const Front = styled.div`
   display: flex;
   justify-content: space-evenly;
-  display: none;
+  // display: none;
 `;
 
 export const PlaylistCardImgCarou = styled.img`
@@ -87,5 +89,5 @@ export const Back = styled.div`
 
 export const PlaylistCardBackDetailCarou = styled.div`
 display: flex;
-justify-content: space-evenly
+justify-content: space-evenly;
 `;
