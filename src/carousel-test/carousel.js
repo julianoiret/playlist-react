@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   PlaylistCardImgCarou,
+  PlaylistCardCarousel,
   CarousselContainer,
   CarousselSection,
   PlaylistDescriptionCarou,
@@ -8,6 +9,10 @@ import {
   PlaylistTitleCarou,
   PlaylistCardInfoCarou,
   GenreBadgeCarou,
+  ArticleCarou,
+  Front,
+  Back,
+  PlaylistCardBackDetailCarou,
 } from './carousel.style';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
@@ -57,13 +62,23 @@ const Caroussel = ({ data }) => {
           }
           return (
             <article className={position} key={id}>
-              <PlaylistCardImgCarou className='article-photo' src={photo} alt={playlistName}></PlaylistCardImgCarou>
+              <Front>
+              <PlaylistCardImgCarou src={photo} alt={playlistName}></PlaylistCardImgCarou>
               <PlaylistCardInfoCarou>
-                <PlaylistTitleCarou className='name'>{playlistName}</PlaylistTitleCarou>
+                <PlaylistTitleCarou>{playlistName}</PlaylistTitleCarou>
                 <PlaylistDescriptionCarou>{description}</PlaylistDescriptionCarou>
                 <Badges genre={genre}></Badges>
                 <PlaylistButton>Detail</PlaylistButton>
               </PlaylistCardInfoCarou>
+              </Front>
+              <Back>
+                <PlaylistCardBackDetailCarou>
+                  <p>play</p>
+                  <p>artist</p>
+                  <p>title</p>
+                  <p>minutes</p>
+                  </PlaylistCardBackDetailCarou>
+              </Back>
             </article>
           );
         })}

@@ -26,22 +26,8 @@ article {
   height: 100%;
   /* opacity: 0; */
   transition: var(--transition);
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.article-photo {
-  width: 300px;
-  height: 300px;
-  border: 1px solid pink;
-
-  object-fit: cover;
-}
-
-.name {
-  width: 150px;
-  /* margin-top: 5rem; */
-  font-size: 1.5rem;
+  /* display: flex;
+  justify-content: space-evenly; */
 }
 
 .prev,
