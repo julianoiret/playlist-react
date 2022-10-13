@@ -13,7 +13,7 @@ export const CarousselSection = styled.div`
   width: 80vw;
   max-width: 1000px;
   /* must have to have a height for the container */
-  height: 500px;
+  height: 550px;
   border: 2px solid green;
   position: relative;
   overflow: hidden;
@@ -22,7 +22,8 @@ export const CarousselSection = styled.div`
 export const PlaylistCardCarousel = styled.div`
 `;
 
-export const FlipCarou = styled.div``;
+export const FlipCarou = styled.div`
+`;
 
 export const Front = styled.div`
   display: flex;
@@ -32,7 +33,7 @@ export const Front = styled.div`
 
 export const PlaylistCardImgCarou = styled.img`
   width: 500px;
-  height: 500px;
+  height: 550px;
   border: 1px solid pink;
   object-fit: cover;
 `;
@@ -84,15 +85,27 @@ export const PlaylistButtonCarou = styled.button`
 `;
 
 export const Back = styled.div`
-
+border: solid 1px orange;
+margin-top: 30px;
 `;
 
 export const PlaylistCardBackDetailCarou = styled.div`
 display: flex;
-justify-content: space-evenly;
+justify-content: start;
+align-items: center;
+border: 1px solid purple;
+height: 35px; 
 `;
 
 export const BackButton = styled.div`
 text-transform: uppercase;
+`;
+
+export const LinkCarou = styled.a`
+  color: #b1b1b1;
+  font-size: 30px;
+  padding-right: 30px;
+  min-width: 10px;
+  border: 1px solid grey;
 `;
 

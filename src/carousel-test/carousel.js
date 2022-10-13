@@ -15,6 +15,7 @@ import {
   BackButton,
   Front,
   Back,
+  LinkCarou,
   PlaylistCardBackDetailCarou,
 } from './carousel.style';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
@@ -23,6 +24,7 @@ import { Badges } from '../playlist-cards/Badges';
 import { PlaylistButton } from '../playlist-cards/playlistCards.style';
 // import { PlaylistDescriptionCarou, PlaylistGenreCarou, PlaylistTitleCarou } from '../playlist-cards/playlistCards.style';
 import { RiTimerLine } from 'react-icons/ri';
+import { BiCaretRightCircle } from 'react-icons/bi';
 
 const Caroussel = ({ data }) => {
   const [index, setIndex] = useState(0);
@@ -95,13 +97,22 @@ const Caroussel = ({ data }) => {
               </Front>
               </FlipCarou>
               <FlipCarou className={!flipCarou ? 'hidden' : ''}>
+              <PlaylistTitleCarou>{playlistName}</PlaylistTitleCarou>
               <Back>
-                <PlaylistCardBackDetailCarou>
-                  <p>play</p>
-                  <p>artist</p>
-                  <p>title</p>
-                  <p>minutes</p>
-                  </PlaylistCardBackDetailCarou>
+                {musics.map((music) => {
+                  const {track, artist, title, time, link} = music;
+                  return (
+                    <PlaylistCardBackDetailCarou key={track}>
+                       <LinkCarou href={link} target='_blank' rel='noreferrer'>
+              <BiCaretRightCircle />
+            </LinkCarou>
+                      <p style={{minWidth: "50px", border: "1px solid grey"}}>{track}</p>
+                      <p style={{minWidth: "300px", border: "1px solid grey"}}>{artist}</p>
+                      <p style={{minWidth: "400px", border: "1px solid grey"}}>{title}</p>
+                      <p style={{minWidth: "50px", border: "1px solid grey"}}>{time}</p>
+                      </PlaylistCardBackDetailCarou>
+                  )
+                    })}
                   <PlaylistButton onClick={() => setFlipCarou(false)}>Back</PlaylistButton>
               </Back>
               </FlipCarou>
