@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const CarousselContainer = styled.div`
+export const CarouselContainer = styled.div`
   // width: 100%;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
-export const CarousselSection = styled.div`
+export const PlaylistSection = styled.div`
   // margin: 0 auto;
   // TODO: reset width for responsive design
   width: 80vw;
@@ -22,7 +22,7 @@ export const CarousselSection = styled.div`
 
 export const PlaylistCardCarousel = styled.div``;
 
-export const FlipCarou = styled.div``;
+export const FlipCard = styled.div``;
 
 export const PlaylistCardFront = styled.div`
   display: flex;
@@ -70,7 +70,7 @@ export const PlaylistTotalTime = styled.p`
   align-items: center;
 `;
 
-export const PlaylistButtonCarou = styled.button`
+export const PlaylistButton = styled.button`
   font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
   font-size: 16px;
@@ -104,7 +104,7 @@ export const BackButton = styled.div`
   right: 0;
 `;
 
-export const Back = styled.div`
+export const PlaylistCardBack = styled.div`
   border: solid 1px orange;
   margin-top: 15px;
 `;

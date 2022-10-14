@@ -7,10 +7,10 @@ export const PlaylistCard = styled.div`
 `;
 
 //div to add the flip element
-export const PlaylistCardFrontFlip = styled.div`
-  width: 100%;
-  height: 100%;
-`;
+// export const PlaylistCardFrontFlip = styled.div`
+//   width: 100%;
+//   height: 100%;
+// `;
 
 // export const PlaylistCardFrontDetail = styled.div`
 //   position: relative;
@@ -66,18 +66,18 @@ export const GenreBadge = styled.p`
 //   align-items: center;
 // `;
 
-export const PlaylistButton = styled.button`
-  font-family: 'Dosis', sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  border: 3px solid #626262;
-  margin: 20px 0;
-  padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px #626262, 2px 2px 0px 0px #626262,
-    3px 3px 0px 0px #626262, 4px 4px 0px 0px #626262, 5px 5px 0px 0px #626262;
-`;
+// export const PlaylistButton = styled.button`
+//   font-family: 'Dosis', sans-serif;
+//   text-transform: uppercase;
+//   font-size: 16px;
+//   letter-spacing: 2px;
+//   cursor: pointer;
+//   border: 3px solid #626262;
+//   margin: 20px 0;
+//   padding: 0.25em 0.5em;
+//   box-shadow: 1px 1px 0px 0px #626262, 2px 2px 0px 0px #626262,
+//     3px 3px 0px 0px #626262, 4px 4px 0px 0px #626262, 5px 5px 0px 0px #626262;
+// `;
 
 // PLAYLISTCARD BACK
 

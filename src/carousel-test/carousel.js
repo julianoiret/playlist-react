@@ -1,33 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import {
+  CarouselContainer,
+  PlaylistSection,
+  FlipCard,
   PlaylistCardFront,
   PlaylistCardImg,
   PlaylistCardInfo,
   PlaylistTitle,
   PlaylistDescription,
   PlaylistTotalTime,
+  PlaylistButton,
   PlaylistCardCarousel,
-  CarousselContainer,
-  CarousselSection,
   PlaylistGenre,
   GenreBadgeCarou,
   ArticleCarou,
-  FlipCarou,
   BackButton,
-  Back,
+  PlaylistCardBack,
   LinkCarou,
   PlaylistCardBackDetailCarou,
   PlaylistBackBanner,
 } from './carousel.style';
-import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { TbArrowBack } from 'react-icons/tb';
 import { Badges } from '../playlist-cards/Badges';
-import { PlaylistButton } from '../playlist-cards/playlistCards.style';
 // import { PlaylistDescriptionCarou, PlaylistGenreCarou, PlaylistTitleCarou } from '../playlist-cards/playlistCards.style';
 import { RiTimerLine } from 'react-icons/ri';
 import { BiCaretRightCircle } from 'react-icons/bi';
 
-const Caroussel = ({ data, index, setIndex }) => {
+const Carousel = ({ data, index, setIndex }) => {
   // const [index, setIndex] = useState(0);
   const [flipCarou, setFlipCarou] = useState(false);
 
@@ -53,8 +52,8 @@ const Caroussel = ({ data, index, setIndex }) => {
   // };
 
   return (
-    <CarousselContainer>
-      <CarousselSection>
+    <CarouselContainer>
+      <PlaylistSection>
         {data.map((ind, playIndex) => {
           const { id, playlistName, description, genre, photo, musics } = ind;
           let position = 'nextSlide';
@@ -69,7 +68,7 @@ const Caroussel = ({ data, index, setIndex }) => {
           }
           return (
             <article className={position} key={id}>
-              <FlipCarou className={flipCarou ? 'hidden' : ''}>
+              <FlipCard className={flipCarou ? 'hidden' : ''}>
                 <PlaylistCardFront>
                   <PlaylistCardImg
                     src={photo}
@@ -92,15 +91,15 @@ const Caroussel = ({ data, index, setIndex }) => {
                     </PlaylistButton>
                   </PlaylistCardInfo>
                 </PlaylistCardFront>
-              </FlipCarou>
-              <FlipCarou className={!flipCarou ? 'hidden' : ''}>
+              </FlipCard>
+              <FlipCard className={!flipCarou ? 'hidden' : ''}>
                 <PlaylistBackBanner>
                   <PlaylistTitle>{playlistName}</PlaylistTitle>
                   <BackButton onClick={() => setFlipCarou(false)}>
                     <TbArrowBack /> Back
                   </BackButton>
                 </PlaylistBackBanner>
-                <Back>
+                <PlaylistCardBack>
                   {musics.map((music) => {
                     const { track, artist, title, time, link } = music;
                     return (
@@ -137,8 +136,8 @@ const Caroussel = ({ data, index, setIndex }) => {
                       </PlaylistCardBackDetailCarou>
                     );
                   })}
-                </Back>
-              </FlipCarou>
+                </PlaylistCardBack>
+              </FlipCard>
             </article>
           );
         })}
@@ -150,9 +149,9 @@ const Caroussel = ({ data, index, setIndex }) => {
         {/* <button className='next' onClick={nextSlide}>
           <FiChevronRight />
         </button> */}
-      </CarousselSection>
-    </CarousselContainer>
+      </PlaylistSection>
+    </CarouselContainer>
   );
 };
 
-export default Caroussel;
+export default Carousel;
