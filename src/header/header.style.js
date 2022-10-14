@@ -1,35 +1,36 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
-// background-color: red;
-height: 200px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  // background-color: red;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const HeaderTitle = styled.div`
-text-transform: uppercase;
-font-weight: 500;
-color: #F7F7F7;
-font-size: 30px;
-letter-spacing: 4px;
-// border: 1px solid black;
-margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f7f7f7;
+  font-size: 30px;
+  letter-spacing: 4px;
+  // border: 1px solid black;
+  margin-bottom: 10px;
 `;
 
 export const IconWrapper = styled.div`
-color: #000000;
-font-size: 35px;
+  color: #000000;
+  font-size: 35px;
 `;
 
 export const iconsStyle = {
-    backgroundColor: "#FFFFFF",
-    padding: "5px 17px",
-    borderRadius: "5px",
-    marginRight: "9px",
-}
+  backgroundColor: '#FFFFFF',
+  padding: '5px 17px',
+  borderRadius: '5px',
+  marginRight: '9px',
+  cursor: 'pointer',
+};
 
 // export const IconStyle = styled.p`
 // background-color: "#F7F7F7",
@@ -37,7 +38,3 @@ export const iconsStyle = {
 //     border-radius: "5px",
 //     margin-right: "9px",
 // `
-    
-
-
-

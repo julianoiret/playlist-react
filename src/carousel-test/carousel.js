@@ -27,8 +27,8 @@ import { PlaylistButton } from '../playlist-cards/playlistCards.style';
 import { RiTimerLine } from 'react-icons/ri';
 import { BiCaretRightCircle } from 'react-icons/bi';
 
-const Caroussel = ({ data }) => {
-  const [index, setIndex] = useState(0);
+const Caroussel = ({ data, index, setIndex }) => {
+  // const [index, setIndex] = useState(0);
   const [flipCarou, setFlipCarou] = useState(false);
 
   // function to sum the total time for each playlist
@@ -41,27 +41,16 @@ const Caroussel = ({ data }) => {
     return Math.round(total * 100) / 100;
   };
 
-  const nextSlide = () => {
-    setIndex((oldIndex) => {
-      //we use a fct to set the index, oldIndex = parameter
-      let index = oldIndex + 1;
-      if (index > data.length - 1) {
-        index = 0;
-      }
-      return index;
-    });
-  };
-
-  const prevSlide = () => {
-    setIndex((oldIndex) => {
-      //we use a fct to set the index, oldIndex = parameter
-      let index = oldIndex - 1;
-      if (index < 0) {
-        index = data.length - 1;
-      }
-      return index;
-    });
-  };
+  // const prevSlide = () => {
+  //   setIndex((oldIndex) => {
+  //     //we use a fct to set the index, oldIndex = parameter
+  //     let index = oldIndex - 1;
+  //     if (index < 0) {
+  //       index = data.length - 1;
+  //     }
+  //     return index;
+  //   });
+  // };
 
   return (
     <CarousselContainer>
@@ -154,13 +143,13 @@ const Caroussel = ({ data }) => {
           );
         })}
 
-        <button className='prev' onClick={prevSlide}>
-          {/* means that we use the usestate set index to update our reviews */}
-          <FiChevronLeft />
-        </button>
-        <button className='next' onClick={nextSlide}>
+        {/* <button className='prev' onClick={prevSlide}> */}
+        {/* means that we use the usestate set index to update our reviews */}
+        {/* <FiChevronLeft /> */}
+        {/* </button> */}
+        {/* <button className='next' onClick={nextSlide}>
           <FiChevronRight />
-        </button>
+        </button> */}
       </CarousselSection>
     </CarousselContainer>
   );
