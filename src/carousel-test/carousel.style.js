@@ -30,14 +30,14 @@ export const Front = styled.div`
   // display: none;
 `;
 
-export const PlaylistCardImgCarou = styled.img`
+export const PlaylistCardImg = styled.img`
   width: 500px;
   height: 550px;
   border: 1px solid pink;
   object-fit: cover;
 `;
 
-export const PlaylistCardInfoCarou = styled.div`
+export const PlaylistCardInfo = styled.div`
   width: 400px;
   height: 350px;
   border: 1px solid pink;
@@ -45,7 +45,7 @@ export const PlaylistCardInfoCarou = styled.div`
   align-self: center;
 `;
 
-export const PlaylistTitleCarou = styled.h1`
+export const PlaylistTitle = styled.h1`
   font-family: 'Bungee Shade', cursive;
   // font-family: 'Libre Barcode 39 Text', cursive;
   font-size: 30px;
@@ -53,9 +53,9 @@ export const PlaylistTitleCarou = styled.h1`
   // display: inline;
 `;
 
-export const PlaylistDescriptionCarou = styled.p``;
+export const PlaylistDescription = styled.p``;
 
-export const PlaylistGenreCarou = styled.div``;
+export const PlaylistGenre = styled.div``;
 
 export const GenreBadgeCarou = styled.p`
   border: 1px solid #515151;
@@ -65,7 +65,7 @@ export const GenreBadgeCarou = styled.p`
   display: inline-flex;
 `;
 
-export const PlaylistTotalTimeCarou = styled.p`
+export const PlaylistTotalTime = styled.p`
   display: flex;
   align-items: center;
 `;
@@ -106,7 +106,7 @@ export const BackButton = styled.div`
 
 export const Back = styled.div`
   border: solid 1px orange;
-  margin-top: 30px;
+  margin-top: 15px;
 `;
 
 export const PlaylistCardBackDetailCarou = styled.div`

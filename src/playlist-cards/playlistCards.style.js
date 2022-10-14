@@ -22,12 +22,12 @@ export const PlaylistCardFrontDetail = styled.div`
   justify-content: space-evenly;
 `;
 
-export const PlaylistCardImg = styled.img`
-  width: 412px;
-  height: 400px;
-  display: block;
-  border: 1px solid pink;
-`;
+// export const PlaylistCardImg = styled.img`
+//   width: 412px;
+//   height: 400px;
+//   display: block;
+//   border: 1px solid pink;
+// `;
 
 // export const PlaylistCardImgCarou = styled.img`
 //   width: 412px;
@@ -36,20 +36,20 @@ export const PlaylistCardImg = styled.img`
 //   border: 1px solid pink;
 // `;
 
-export const PlaylistCardInfo = styled.div`
-  // width: 500px;
-  width: 412px;
-  height: 400px;
-  border: 1px solid pink;
-`;
+// export const PlaylistCardInfo = styled.div`
+//   // width: 500px;
+//   width: 412px;
+//   height: 400px;
+//   border: 1px solid pink;
+// `;
 
-export const PlaylistTitle = styled.h1`
-  font-family: 'Bungee Shade', cursive;
-  // font-family: 'Libre Barcode 39 Text', cursive;
-  font-size: 30px;
-`;
+// export const PlaylistTitle = styled.h1`
+//   font-family: 'Bungee Shade', cursive;
+//   // font-family: 'Libre Barcode 39 Text', cursive;
+//   font-size: 30px;
+// `;
 
-export const PlaylistDescription = styled.p``;
+// export const PlaylistDescription = styled.p``;
 
 export const PlaylistGenre = styled.div``;
 
@@ -61,10 +61,10 @@ export const GenreBadge = styled.p`
   display: inline-flex;
 `;
 
-export const PlaylistTotalTime = styled.p`
-  display: flex;
-  align-items: center;
-`;
+// export const PlaylistTotalTime = styled.p`
+//   display: flex;
+//   align-items: center;
+// `;
 
 export const PlaylistButton = styled.button`
   font-family: 'Dosis', sans-serif;
