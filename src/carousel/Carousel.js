@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   CarouselContainer,
   PlaylistSection,
-  PlaylistCardsss,
   FlipCard,
   PlaylistCardFront,
   PlaylistCardImg,
@@ -11,17 +10,16 @@ import {
   PlaylistDescription,
   PlaylistTotalTime,
   PlaylistButton,
-  ArticleCarou,
+  PlaylistBackBanner,
   BackButton,
   PlaylistCardBack,
   PlaylistCardDetail,
   PlaylistLink,
-  PlaylistBackBanner,
   TrackNumber,
   TrackArtist,
   TrackTitle,
   TrackTime,
-} from './carousel.style';
+} from './Carousel.style';
 import { TbArrowBack } from 'react-icons/tb';
 import { Badges } from './Badges';
 // import { PlaylistDescriptionCarou, PlaylistGenreCarou, PlaylistTitleCarou } from '../playlist-cards/playlistCards.style';
@@ -30,7 +28,7 @@ import { BiCaretRightCircle } from 'react-icons/bi';
 
 const Carousel = ({ data, index, setIndex }) => {
   // const [index, setIndex] = useState(0);
-  const [flipCarou, setFlipCarou] = useState(false);
+  const [flip, setFlip] = useState(false);
 
   // function to sum the total time for each playlist
   let sumTime = (array) => {
@@ -61,7 +59,7 @@ const Carousel = ({ data, index, setIndex }) => {
         
           return (
             <article className={position} key={id}>
-              <FlipCard className={flipCarou ? 'hidden' : ''}>
+              <FlipCard className={flip ? 'hidden' : ''}>
                 <PlaylistCardFront>
                   <PlaylistCardImg
                     src={photo}
@@ -79,16 +77,16 @@ const Carousel = ({ data, index, setIndex }) => {
                       {sumTime(musics)} minutes
                     </PlaylistTotalTime>
                     <Badges genre={genre}></Badges>
-                    <PlaylistButton onClick={() => setFlipCarou(true)}>
+                    <PlaylistButton onClick={() => setFlip(true)}>
                       Detail
                     </PlaylistButton>
                   </PlaylistCardInfo>
                 </PlaylistCardFront>
               </FlipCard>
-              <FlipCard className={!flipCarou ? 'hidden' : ''}>
+              <FlipCard className={!flip ? 'hidden' : ''}>
                 <PlaylistBackBanner>
                   <PlaylistTitle>{playlistName}</PlaylistTitle>
-                  <BackButton onClick={() => setFlipCarou(false)}>
+                  <BackButton onClick={() => setFlip(false)}>
                     <TbArrowBack /> Back
                   </BackButton>
                 </PlaylistBackBanner>

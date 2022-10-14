@@ -11,30 +11,30 @@ export const HeaderWrapper = styled.div`
 
 export const HeaderTitle = styled.div`
   text-transform: uppercase;
-  font-weight: 500;
-  color: #f7f7f7;
   font-size: 30px;
+  font-weight: 500;
+  color: #F7F7F7;
   letter-spacing: 4px;
   // border: 1px solid black;
-  margin-bottom: 10px;
+  margin-top: 40px;
 `;
 
 export const IconWrapper = styled.div`
   color: #000000;
   font-size: 35px;
+  display: flex;
+
 `;
 
-export const iconsStyle = {
-  backgroundColor: '#FFFFFF',
-  padding: '5px 17px',
-  borderRadius: '5px',
-  marginRight: '9px',
-  cursor: 'pointer',
-};
-
-// export const IconStyle = styled.p`
-// background-color: "#F7F7F7",
-//     padding: "5px 17px",
-//     border-radius: "5px",
-//     margin-right: "9px",
-// `
+export const Icons = styled.p`
+background-color: #FFFFFF;
+  padding: 5px 17px 0 17px;
+  border-radius: 5px;
+  margin-right: 9px;
+  cursor: pointer;
+&:hover {
+  color: #F7F7F7 !important;
+  background-color: #242526;
+  border: 1px solid #F7F7F7;
+}
+`;

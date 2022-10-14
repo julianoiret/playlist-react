@@ -36,7 +36,6 @@ function App() {
       <Header
         prevSlide={prevSlide}
         nextSlide={nextSlide}
-        index={index}
         setIndex={setIndex}
       />
       <Carousel data={data} index={index} setIndex={setIndex} />
