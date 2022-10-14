@@ -16,14 +16,13 @@ export const CarousselSection = styled.div`
   height: 550px;
   border: 2px solid green;
   position: relative;
+  /* delete overflow and add more translate to move our arrow next prev button */
   overflow: hidden;
 `;
 
-export const PlaylistCardCarousel = styled.div`
-`;
+export const PlaylistCardCarousel = styled.div``;
 
-export const FlipCarou = styled.div`
-`;
+export const FlipCarou = styled.div``;
 
 export const Front = styled.div`
   display: flex;
@@ -84,21 +83,38 @@ export const PlaylistButtonCarou = styled.button`
     3px 3px 0px 0px #626262, 4px 4px 0px 0px #626262, 5px 5px 0px 0px #626262;
 `;
 
-export const Back = styled.div`
-border: solid 1px orange;
-margin-top: 30px;
-`;
-
-export const PlaylistCardBackDetailCarou = styled.div`
-display: flex;
-justify-content: start;
-align-items: center;
-border: 1px solid purple;
-height: 35px; 
+export const PlaylistBackBanner = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const BackButton = styled.div`
-text-transform: uppercase;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: 3px solid #626262;
+  margin: 0;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px #626262, 2px 2px 0px 0px #626262,
+    3px 3px 0px 0px #626262, 4px 4px 0px 0px #626262, 5px 5px 0px 0px #626262;
+  position: absolute;
+  top: 0;
+  right: 0;
+`;
+
+export const Back = styled.div`
+  border: solid 1px orange;
+  margin-top: 30px;
+`;
+
+export const PlaylistCardBackDetailCarou = styled.div`
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid purple;
+  height: 35px;
 `;
 
 export const LinkCarou = styled.a`
@@ -108,4 +124,3 @@ export const LinkCarou = styled.a`
   min-width: 10px;
   border: 1px solid grey;
 `;
-

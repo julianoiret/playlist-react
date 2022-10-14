@@ -17,9 +17,10 @@ import {
   Back,
   LinkCarou,
   PlaylistCardBackDetailCarou,
+  PlaylistBackBanner,
 } from './carousel.style';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
-import { FaQuoteRight } from 'react-icons/fa';
+import { TbArrowBack } from 'react-icons/tb';
 import { Badges } from '../playlist-cards/Badges';
 import { PlaylistButton } from '../playlist-cards/playlistCards.style';
 // import { PlaylistDescriptionCarou, PlaylistGenreCarou, PlaylistTitleCarou } from '../playlist-cards/playlistCards.style';
@@ -30,15 +31,15 @@ const Caroussel = ({ data }) => {
   const [index, setIndex] = useState(0);
   const [flipCarou, setFlipCarou] = useState(false);
 
-      // function to sum the total time for each playlist
-      let sumTime = (array) => {
-        const total = array.reduce((acc, curr) => {
-          acc += curr.time;
-          return acc; // always return the acc
-        }, 0);
-        // round up to 2 decimal
-        return Math.round(total * 100) / 100;
-      };
+  // function to sum the total time for each playlist
+  let sumTime = (array) => {
+    const total = array.reduce((acc, curr) => {
+      acc += curr.time;
+      return acc; // always return the acc
+    }, 0);
+    // round up to 2 decimal
+    return Math.round(total * 100) / 100;
+  };
 
   const nextSlide = () => {
     setIndex((oldIndex) => {
@@ -80,41 +81,74 @@ const Caroussel = ({ data }) => {
           return (
             <article className={position} key={id}>
               <FlipCarou className={flipCarou ? 'hidden' : ''}>
-              <Front>
-              <PlaylistCardImgCarou src={photo} alt={playlistName}></PlaylistCardImgCarou>
-              <PlaylistCardInfoCarou>
-                <PlaylistTitleCarou>{playlistName}</PlaylistTitleCarou>
-                <PlaylistDescriptionCarou>{description}</PlaylistDescriptionCarou>
-                <PlaylistTotalTimeCarou>
-                <RiTimerLine
-              style={{ fontSize: '1.25rem', paddingRight: '0.6rem' }}
-            />
-            {sumTime(musics)} minutes
-                </PlaylistTotalTimeCarou>
-                <Badges genre={genre}></Badges>
-                <PlaylistButton onClick={() => setFlipCarou(true)}>Detail</PlaylistButton>
-              </PlaylistCardInfoCarou>
-              </Front>
+                <Front>
+                  <PlaylistCardImgCarou
+                    src={photo}
+                    alt={playlistName}
+                  ></PlaylistCardImgCarou>
+                  <PlaylistCardInfoCarou>
+                    <PlaylistTitleCarou>{playlistName}</PlaylistTitleCarou>
+                    <PlaylistDescriptionCarou>
+                      {description}
+                    </PlaylistDescriptionCarou>
+                    <PlaylistTotalTimeCarou>
+                      <RiTimerLine
+                        style={{ fontSize: '1.25rem', paddingRight: '0.6rem' }}
+                      />
+                      {sumTime(musics)} minutes
+                    </PlaylistTotalTimeCarou>
+                    <Badges genre={genre}></Badges>
+                    <PlaylistButton onClick={() => setFlipCarou(true)}>
+                      Detail
+                    </PlaylistButton>
+                  </PlaylistCardInfoCarou>
+                </Front>
               </FlipCarou>
               <FlipCarou className={!flipCarou ? 'hidden' : ''}>
-              <PlaylistTitleCarou>{playlistName}</PlaylistTitleCarou>
-              <Back>
-                {musics.map((music) => {
-                  const {track, artist, title, time, link} = music;
-                  return (
-                    <PlaylistCardBackDetailCarou key={track}>
-                       <LinkCarou href={link} target='_blank' rel='noreferrer'>
-              <BiCaretRightCircle />
-            </LinkCarou>
-                      <p style={{minWidth: "50px", border: "1px solid grey"}}>{track}</p>
-                      <p style={{minWidth: "300px", border: "1px solid grey"}}>{artist}</p>
-                      <p style={{minWidth: "400px", border: "1px solid grey"}}>{title}</p>
-                      <p style={{minWidth: "50px", border: "1px solid grey"}}>{time}</p>
+                <PlaylistBackBanner>
+                  <PlaylistTitleCarou>{playlistName}</PlaylistTitleCarou>
+                  <BackButton onClick={() => setFlipCarou(false)}>
+                    <TbArrowBack /> Back
+                  </BackButton>
+                </PlaylistBackBanner>
+                <Back>
+                  {musics.map((music) => {
+                    const { track, artist, title, time, link } = music;
+                    return (
+                      <PlaylistCardBackDetailCarou key={track}>
+                        <LinkCarou href={link} target='_blank' rel='noreferrer'>
+                          <BiCaretRightCircle />
+                        </LinkCarou>
+                        <p
+                          style={{ minWidth: '50px', border: '1px solid grey' }}
+                        >
+                          {track}
+                        </p>
+                        <p
+                          style={{
+                            minWidth: '300px',
+                            border: '1px solid grey',
+                          }}
+                        >
+                          {artist}
+                        </p>
+                        <p
+                          style={{
+                            minWidth: '400px',
+                            border: '1px solid grey',
+                          }}
+                        >
+                          {title}
+                        </p>
+                        <p
+                          style={{ minWidth: '50px', border: '1px solid grey' }}
+                        >
+                          {time}
+                        </p>
                       </PlaylistCardBackDetailCarou>
-                  )
-                    })}
-                  <PlaylistButton onClick={() => setFlipCarou(false)}>Back</PlaylistButton>
-              </Back>
+                    );
+                  })}
+                </Back>
               </FlipCarou>
             </article>
           );
