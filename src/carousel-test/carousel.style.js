@@ -24,7 +24,7 @@ export const PlaylistCardCarousel = styled.div``;
 
 export const FlipCarou = styled.div``;
 
-export const Front = styled.div`
+export const PlaylistCardFront = styled.div`
   display: flex;
   justify-content: space-evenly;
   // display: none;

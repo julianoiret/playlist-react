@@ -12,15 +12,15 @@ export const PlaylistCardFrontFlip = styled.div`
   height: 100%;
 `;
 
-export const PlaylistCardFrontDetail = styled.div`
-  position: relative;
-  width: 700px;
-  height: 400px;
-  padding: 7px;
-  border: 2px solid red;
-  display: flex;
-  justify-content: space-evenly;
-`;
+// export const PlaylistCardFrontDetail = styled.div`
+//   position: relative;
+//   width: 700px;
+//   height: 400px;
+//   padding: 7px;
+//   border: 2px solid red;
+//   display: flex;
+//   justify-content: space-evenly;
+// `;
 
 // export const PlaylistCardImg = styled.img`
 //   width: 412px;

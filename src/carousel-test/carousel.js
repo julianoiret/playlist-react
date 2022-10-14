@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
+  PlaylistCardFront,
   PlaylistCardImg,
   PlaylistCardInfo,
   PlaylistTitle,
@@ -13,7 +14,6 @@ import {
   ArticleCarou,
   FlipCarou,
   BackButton,
-  Front,
   Back,
   LinkCarou,
   PlaylistCardBackDetailCarou,
@@ -70,7 +70,7 @@ const Caroussel = ({ data, index, setIndex }) => {
           return (
             <article className={position} key={id}>
               <FlipCarou className={flipCarou ? 'hidden' : ''}>
-                <Front>
+                <PlaylistCardFront>
                   <PlaylistCardImg
                     src={photo}
                     alt={playlistName}
@@ -91,7 +91,7 @@ const Caroussel = ({ data, index, setIndex }) => {
                       Detail
                     </PlaylistButton>
                   </PlaylistCardInfo>
-                </Front>
+                </PlaylistCardFront>
               </FlipCarou>
               <FlipCarou className={!flipCarou ? 'hidden' : ''}>
                 <PlaylistBackBanner>
