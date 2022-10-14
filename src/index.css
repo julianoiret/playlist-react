@@ -7,15 +7,8 @@ body {
   margin: 0;
 }
 
-/* .flip-me {
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-} */
-
 .hidden {
-  /* visibility: hidden; */
   display: none;
-  /* position: absolute; */
 }
 
 article {
@@ -28,37 +21,6 @@ article {
   opacity: 0;
   /* TODO set a correct transition  */
   transition: all 0.5s linear;
-  /* display: flex;
-  justify-content: space-evenly; */
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 275px;
-  transform: translateY(-50%);
-  background: var(--clr-grey-5);
-  color: var(--clr-white);
-  width: 2rem;
-  height: 2rem;
-  display: grid;
-  place-items: center;
-  border-color: transparent;
-  font-size: 2rem;
-  border-radius: var(--radius);
-  cursor: pointer;
-  /* TODO set a correct transition  */
-  transition: all 0.5s linear;
-}
-.prev:hover,
-.next:hover {
-  background: var(--clr-primary-5);
-}
-.prev {
-  left: 0;
-}
-.next {
-  right: 0;
 }
 
 article.activeSlide {

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Header from './header/Header';
 import Footer from './footer/Footer';
 import playlistData from './data';
-import Carousel from './carousel-test/carousel';
+import Carousel from './carousel/Carousel';
 import './index.css';
 
 function App() {

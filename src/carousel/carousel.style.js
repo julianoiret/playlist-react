@@ -20,7 +20,7 @@ export const PlaylistSection = styled.div`
   overflow: hidden;
 `;
 
-export const PlaylistCardCarousel = styled.div``;
+// export const PlaylistCardCarousel = styled.div``;
 
 export const FlipCard = styled.div``;
 
@@ -57,7 +57,7 @@ export const PlaylistDescription = styled.p``;
 
 export const PlaylistGenre = styled.div``;
 
-export const GenreBadgeCarou = styled.p`
+export const GenreBadge = styled.p`
   border: 1px solid #515151;
   margin: 5px;
   padding: 5px;
@@ -109,7 +109,7 @@ export const PlaylistCardBack = styled.div`
   margin-top: 15px;
 `;
 
-export const PlaylistCardBackDetailCarou = styled.div`
+export const PlaylistCardDetail = styled.div`
   display: flex;
   justify-content: start;
   align-items: center;
@@ -117,10 +117,30 @@ export const PlaylistCardBackDetailCarou = styled.div`
   height: 35px;
 `;
 
-export const LinkCarou = styled.a`
+export const PlaylistLink = styled.a`
   color: #b1b1b1;
   font-size: 30px;
   padding-right: 30px;
   min-width: 10px;
   border: 1px solid grey;
+`;
+
+export const TrackNumber = styled.p`
+min-width: 50px;
+border: 1px solid grey;
+`;
+
+export const TrackArtist = styled.p`
+min-width: 300px;
+border: 1px solid grey;
+`;
+
+export const TrackTitle = styled.p`
+min-width: 400px;
+border: 1px solid grey;
+`;
+
+export const TrackTime = styled.p`
+min-width: 50px;
+border: 1px solid grey;
 `;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
   CarouselContainer,
   PlaylistSection,
+  PlaylistCardsss,
   FlipCard,
   PlaylistCardFront,
   PlaylistCardImg,
@@ -10,18 +11,19 @@ import {
   PlaylistDescription,
   PlaylistTotalTime,
   PlaylistButton,
-  PlaylistCardCarousel,
-  PlaylistGenre,
-  GenreBadgeCarou,
   ArticleCarou,
   BackButton,
   PlaylistCardBack,
-  LinkCarou,
-  PlaylistCardBackDetailCarou,
+  PlaylistCardDetail,
+  PlaylistLink,
   PlaylistBackBanner,
+  TrackNumber,
+  TrackArtist,
+  TrackTitle,
+  TrackTime,
 } from './carousel.style';
 import { TbArrowBack } from 'react-icons/tb';
-import { Badges } from '../playlist-cards/Badges';
+import { Badges } from './Badges';
 // import { PlaylistDescriptionCarou, PlaylistGenreCarou, PlaylistTitleCarou } from '../playlist-cards/playlistCards.style';
 import { RiTimerLine } from 'react-icons/ri';
 import { BiCaretRightCircle } from 'react-icons/bi';
@@ -40,22 +42,12 @@ const Carousel = ({ data, index, setIndex }) => {
     return Math.round(total * 100) / 100;
   };
 
-  // const prevSlide = () => {
-  //   setIndex((oldIndex) => {
-  //     //we use a fct to set the index, oldIndex = parameter
-  //     let index = oldIndex - 1;
-  //     if (index < 0) {
-  //       index = data.length - 1;
-  //     }
-  //     return index;
-  //   });
-  // };
-
   return (
     <CarouselContainer>
       <PlaylistSection>
         {data.map((ind, playIndex) => {
           const { id, playlistName, description, genre, photo, musics } = ind;
+
           let position = 'nextSlide';
           if (playIndex === index) {
             position = 'activeSlide';
@@ -66,6 +58,7 @@ const Carousel = ({ data, index, setIndex }) => {
           ) {
             position = 'lastSlide';
           }
+        
           return (
             <article className={position} key={id}>
               <FlipCard className={flipCarou ? 'hidden' : ''}>
@@ -103,37 +96,15 @@ const Carousel = ({ data, index, setIndex }) => {
                   {musics.map((music) => {
                     const { track, artist, title, time, link } = music;
                     return (
-                      <PlaylistCardBackDetailCarou key={track}>
-                        <LinkCarou href={link} target='_blank' rel='noreferrer'>
+                      <PlaylistCardDetail key={track}>
+                        <PlaylistLink href={link} target='_blank' rel='noreferrer'>
                           <BiCaretRightCircle />
-                        </LinkCarou>
-                        <p
-                          style={{ minWidth: '50px', border: '1px solid grey' }}
-                        >
-                          {track}
-                        </p>
-                        <p
-                          style={{
-                            minWidth: '300px',
-                            border: '1px solid grey',
-                          }}
-                        >
-                          {artist}
-                        </p>
-                        <p
-                          style={{
-                            minWidth: '400px',
-                            border: '1px solid grey',
-                          }}
-                        >
-                          {title}
-                        </p>
-                        <p
-                          style={{ minWidth: '50px', border: '1px solid grey' }}
-                        >
-                          {time}
-                        </p>
-                      </PlaylistCardBackDetailCarou>
+                        </PlaylistLink>
+                        <TrackNumber>{track}</TrackNumber>
+                        <TrackArtist>{artist}</TrackArtist>
+                        <TrackTitle>{title}</TrackTitle>
+                        <TrackTime>{time}</TrackTime>
+                      </PlaylistCardDetail>
                     );
                   })}
                 </PlaylistCardBack>
@@ -141,14 +112,6 @@ const Carousel = ({ data, index, setIndex }) => {
             </article>
           );
         })}
-
-        {/* <button className='prev' onClick={prevSlide}> */}
-        {/* means that we use the usestate set index to update our reviews */}
-        {/* <FiChevronLeft /> */}
-        {/* </button> */}
-        {/* <button className='next' onClick={nextSlide}>
-          <FiChevronRight />
-        </button> */}
       </PlaylistSection>
     </CarouselContainer>
   );

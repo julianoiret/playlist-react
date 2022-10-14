@@ -51,15 +51,15 @@ export const PlaylistCard = styled.div`
 
 // export const PlaylistDescription = styled.p``;
 
-export const PlaylistGenre = styled.div``;
+// export const PlaylistGenre = styled.div``;
 
-export const GenreBadge = styled.p`
-  border: 1px solid #515151;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 2px;
-  display: inline-flex;
-`;
+// export const GenreBadge = styled.p`
+//   border: 1px solid #515151;
+//   margin: 5px;
+//   padding: 5px;
+//   border-radius: 2px;
+//   display: inline-flex;
+// `;
 
 // export const PlaylistTotalTime = styled.p`
 //   display: flex;
