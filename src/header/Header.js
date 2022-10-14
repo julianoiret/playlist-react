@@ -8,7 +8,7 @@ import { GrPlayFill, GrPauseFill, GrStopFill } from 'react-icons/gr';
 import { FaFastForward, FaFastBackward } from 'react-icons/fa';
 import { FiRepeat } from 'react-icons/fi';
 
-const Header = ({ prevSlide, nextSlide }) => {
+const Header = ({ prevSlide, nextSlide, index, setIndex }) => {
   return (
     <HeaderWrapper>
       <HeaderTitle>Music is life</HeaderTitle>
@@ -17,7 +17,7 @@ const Header = ({ prevSlide, nextSlide }) => {
         <GrPauseFill style={iconsStyle} />
         <FaFastBackward style={iconsStyle} onClick={() => prevSlide()} />
         <FaFastForward style={iconsStyle} onClick={() => nextSlide()} />
-        <FiRepeat style={iconsStyle} />
+        <FiRepeat style={iconsStyle} onClick={() => setIndex(0)} />
         <GrStopFill style={iconsStyle} />
       </IconWrapper>
     </HeaderWrapper>

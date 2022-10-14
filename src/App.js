@@ -36,7 +36,12 @@ function App() {
 
   return (
     <div>
-      <Header prevSlide={prevSlide} nextSlide={nextSlide} />
+      <Header
+        prevSlide={prevSlide}
+        nextSlide={nextSlide}
+        index={index}
+        setIndex={setIndex}
+      />
       {/* <PlaylistCards data={data} /> */}
       <Caroussel data={data} index={index} setIndex={setIndex} />
       {/* <Carousel data={data} /> */}
