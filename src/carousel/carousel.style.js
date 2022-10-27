@@ -31,9 +31,9 @@ export const PlaylistCardFront = styled.div`
 `;
 
 export const PlaylistCardImg = styled.img`
-  width: 500px;
+  width: 515px;
   height: 550px;
-  border: 1px solid pink;
+  // border: 1px solid pink;
   object-fit: cover;
 `;
 
