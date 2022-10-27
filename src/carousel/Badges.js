@@ -1,4 +1,4 @@
-import { GenreBadge, PlaylistGenre } from "./Carousel.style"
+import { GenreBadge, PlaylistGenre } from "./carousel.style"
 
 
 export const Badges = ({genre}) => {

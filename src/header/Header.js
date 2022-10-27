@@ -3,7 +3,7 @@ import {
   HeaderTitle,
   IconWrapper,
   Icons,
-} from './Header.style';
+} from './header.style';
 import { FaPlay, FaPause, FaFastForward, FaFastBackward, FaStop } from 'react-icons/fa';
 import { FiRepeat } from 'react-icons/fi';
 

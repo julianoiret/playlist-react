@@ -19,7 +19,7 @@ import {
   TrackArtist,
   TrackTitle,
   TrackTime,
-} from './Carousel.style';
+} from './carousel.style';
 import { TbArrowBack } from 'react-icons/tb';
 import { Badges } from './Badges';
 // import { PlaylistDescriptionCarou, PlaylistGenreCarou, PlaylistTitleCarou } from '../playlist-cards/playlistCards.style';
