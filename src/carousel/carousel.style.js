@@ -33,7 +33,7 @@ export const PlaylistCardFront = styled.div`
 export const PlaylistCardImg = styled.img`
   width: 500px;
   height: 550px;
-  border: 1px solid pink;
+  border: 1px solid orange;
   object-fit: cover;
 `;
 
