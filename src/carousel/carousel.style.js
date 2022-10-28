@@ -1,23 +1,50 @@
 import styled from 'styled-components';
+import { device } from '../devices';
 
 export const CarouselContainer = styled.div`
   // width: 100%;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media ${device.tablet} {
+    height: 90vh;
+  }
 `;
 export const PlaylistSection = styled.div`
   // margin: 0 auto;
   // TODO: reset width for responsive design
-  width: 80vw;
-  max-width: 1000px;
+  width: 90vw;
+  max-width: 310px;
   /* must have to have a height for the container */
-  height: 550px;
+  height: 700px;
   border: 2px solid green;
   position: relative;
   /* delete overflow and add more translate to move our arrow next prev button */
   overflow: hidden;
+
+  @media ${device.mobileM} {
+    width: 90vw;
+    max-width: 370px;
+  }
+  @media ${device.mobileL} {
+    width: 85vw;
+    max-width: 420px;
+  }
+  @media ${device.tablet} {
+    width: 90vw;
+    max-width: 750px;
+    height: 450px;
+  }
+  @media ${device.laptop} {
+    width: 80vw;
+    max-width: 1000px;
+    height: 550px;
+  }
+  @media ${device.laptopL} {
+    width: 80vw;
+    max-width: 1000px;
+  }
 `;
 
 // export const PlaylistCardCarousel = styled.div``;
@@ -26,31 +53,76 @@ export const FlipCard = styled.div``;
 
 export const PlaylistCardFront = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   // display: none;
+
+  @media ${device.tablet} {
+    flex-direction: row;
+  }
 `;
 
 export const PlaylistCardImg = styled.img`
-  width: 515px;
-  height: 550px;
+  width: 290px;
+  height: 300px;
   // border: 1px solid pink;
   object-fit: cover;
+
+  @media ${device.mobileM} {
+    width: 350px;
+    height: 370px;
+  }
+  @media ${device.mobileL} {
+    width: 370px;
+    height: 390px;
+  }
+  @media ${device.tablet} {
+    width: 390px;
+    height: 425px;
+  }
+  @media ${device.laptop} {
+    width: 515px;
+    height: 550px;
+  }
 `;
 
 export const PlaylistCardInfo = styled.div`
-  width: 400px;
-  height: 350px;
+  width: 280px;
+  height: 300px;
   border: 1px solid orange;
   // if we want to align this div vertically
   align-self: center;
+
+  @media ${device.mobileM} {
+    width: 340px;
+    height: 350px;
+  }
+  @media ${device.mobileL} {
+    width: 360px;
+    height: 350px;
+  }
+  @media ${device.tablet} {
+    width: 340px;
+    height: 350px;
+  }
+  @media ${device.laptop} {
+    width: 400px;
+    height: 350px;
+  }
 `;
 
 export const PlaylistTitle = styled.h1`
   font-family: 'Bungee Shade', cursive;
   // font-family: 'Libre Barcode 39 Text', cursive;
-  font-size: 30px;
+  font-size: 22px;
   // if trouble with title set display inline
   // display: inline;
+  @media ${device.mobileL} {
+    font-size: 25px;
+  }
+  @media ${device.laptop} {
+    font-size: 30px;
+  }
 `;
 
 export const PlaylistDescription = styled.p``;
@@ -59,10 +131,19 @@ export const PlaylistGenre = styled.div``;
 
 export const GenreBadge = styled.p`
   border: 1px solid #515151;
-  margin: 5px;
-  padding: 5px;
+  margin: 4px;
+  padding: 4px;
   border-radius: 2px;
   display: inline-flex;
+
+  @media ${device.mobileL} {
+    margin: 4px;
+    padding: 5px;
+  }
+  @media ${device.laptop} {
+    margin: 5px;
+    padding: 5px;
+  }
 `;
 
 export const PlaylistTotalTime = styled.p`
@@ -73,19 +154,36 @@ export const PlaylistTotalTime = styled.p`
 export const PlaylistButton = styled.button`
   font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   cursor: pointer;
   border: 3px solid #626262;
-  margin: 20px 0;
+  margin: 20px 0 20px 20px;
   padding: 0.25em 0.5em;
   box-shadow: 1px 1px 0px 0px #626262, 2px 2px 0px 0px #626262,
     3px 3px 0px 0px #626262, 4px 4px 0px 0px #626262, 5px 5px 0px 0px #626262;
+
+  @media ${device.mobileL} {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+  @media ${device.mobileL} {
+    font-size: 15px;
+    margin: 20px 0 20px 20px;
+  }
+  @media ${device.laptop} {
+    font-size: 16px;
+    margin: 20px 0;
+  }
 `;
 
 export const PlaylistBackBanner = styled.div`
   display: flex;
   justify-content: space-between;
+
+  /* @media ${device.tablet} {
+    justify-content: space-between;
+  } */
 `;
 
 export const BackButton = styled.div`
@@ -111,36 +209,80 @@ export const PlaylistCardBack = styled.div`
 
 export const PlaylistCardDetail = styled.div`
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: start;
   align-items: center;
   border: 1px solid purple;
   height: 35px;
+
+  @media ${device.tablet} {
+    /* flex-wrap: nowrap; */
+  }
+  @media ${device.laptop} {
+  }
 `;
 
 export const PlaylistLink = styled.a`
   color: #b1b1b1;
   font-size: 30px;
-  padding-right: 30px;
+  padding-right: 24px;
   min-width: 10px;
   border: 1px solid grey;
+
+  @media ${device.tablet} {
+    font-size: 30px;
+    padding-right: 30px;
+    min-width: 10px;
+  }
+  /* @media ${device.laptop} {
+    padding-right: 30px;
+    min-width: 10px;
+  } */
 `;
 
 export const TrackNumber = styled.p`
-min-width: 50px;
-border: 1px solid grey;
+  min-width: 15px;
+  border: 1px solid grey;
+
+  @media ${device.tablet} {
+    min-width: 30px;
+  }
+  @media ${device.laptop} {
+    min-width: 50px;
+  }
 `;
 
 export const TrackArtist = styled.p`
-min-width: 300px;
-border: 1px solid grey;
+  min-width: 100px;
+  border: 1px solid grey;
+  @media ${device.tablet} {
+    min-width: 250px;
+  }
+  @media ${device.laptop} {
+    min-width: 300px;
+  }
 `;
 
 export const TrackTitle = styled.p`
-min-width: 400px;
-border: 1px solid grey;
+  min-width: 100px;
+  border: 1px solid grey;
+
+  @media ${device.tablet} {
+    min-width: 300px;
+  }
+  @media ${device.laptop} {
+    min-width: 400px;
+  }
 `;
 
 export const TrackTime = styled.p`
-min-width: 50px;
-border: 1px solid grey;
+  min-width: 30px;
+  border: 1px solid grey;
+
+  @media ${device.tablet} {
+    min-width: 35px;
+  }
+  @media ${device.laptop} {
+    min-width: 50px;
+  }
 `;
