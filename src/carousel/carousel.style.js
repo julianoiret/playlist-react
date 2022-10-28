@@ -208,26 +208,43 @@ export const PlaylistCardBack = styled.div`
 `;
 
 export const PlaylistCardDetail = styled.div`
-  display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: start;
+  display: grid;
   align-items: center;
+  grid-template-columns: 30px 25px 250px;
+  grid-template-rows: 15px 15px;
+  column-gap: 10px;
+  row-gap: 5px;
+  font-size: 13px;
+  /* flex-wrap: wrap; */
+  /* justify-content: start;
+  align-items: center; */
   border: 1px solid purple;
-  height: 35px;
+  height: 45px;
 
   @media ${device.tablet} {
-    /* flex-wrap: nowrap; */
+    height: 35px;
+
+    display: flex;
+
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
   }
-  @media ${device.laptop} {
-  }
+  /* @media ${device.laptop} {
+  } */
 `;
 
 export const PlaylistLink = styled.a`
   color: #b1b1b1;
   font-size: 30px;
-  padding-right: 24px;
-  min-width: 10px;
+  height: 30px;
+  /* padding-right: 24px; */
+  /* min-width: 10px; */
   border: 1px solid grey;
+  align-self: stretch;
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
 
   @media ${device.tablet} {
     font-size: 30px;
@@ -241,11 +258,15 @@ export const PlaylistLink = styled.a`
 `;
 
 export const TrackNumber = styled.p`
-  min-width: 15px;
+  grid-column: 2;
+  grid-row: 1;
+  /* font-size: 14px; */
+  /* min-width: 15px; */
   border: 1px solid grey;
 
   @media ${device.tablet} {
     min-width: 30px;
+    font-size: 16px;
   }
   @media ${device.laptop} {
     min-width: 50px;
@@ -253,7 +274,9 @@ export const TrackNumber = styled.p`
 `;
 
 export const TrackArtist = styled.p`
-  min-width: 100px;
+  grid-column: 3;
+  grid-row: 1;
+  /* min-width: 100px; */
   border: 1px solid grey;
   @media ${device.tablet} {
     min-width: 250px;
@@ -264,7 +287,9 @@ export const TrackArtist = styled.p`
 `;
 
 export const TrackTitle = styled.p`
-  min-width: 100px;
+  grid-column: 3;
+  grid-row: 2;
+  /* min-width: 100px; */
   border: 1px solid grey;
 
   @media ${device.tablet} {
@@ -276,7 +301,9 @@ export const TrackTitle = styled.p`
 `;
 
 export const TrackTime = styled.p`
-  min-width: 30px;
+  grid-column: 2;
+  grid-row: 2;
+  /* min-width: 30px; */
   border: 1px solid grey;
 
   @media ${device.tablet} {

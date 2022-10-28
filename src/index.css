@@ -28,8 +28,8 @@ article.activeSlide {
   transform: translateX(0);
 }
 article.lastSlide {
-  transform: translateX(-100%);
+  transform: translateX(-150%);
 }
 article.nextSlide {
-  transform: translateX(100%);
+  transform: translateX(150%);
 }

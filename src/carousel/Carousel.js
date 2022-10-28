@@ -56,7 +56,7 @@ const Carousel = ({ data, index, setIndex }) => {
           ) {
             position = 'lastSlide';
           }
-        
+
           return (
             <article className={position} key={id}>
               <FlipCard className={flip ? 'hidden' : ''}>
@@ -67,9 +67,7 @@ const Carousel = ({ data, index, setIndex }) => {
                   ></PlaylistCardImg>
                   <PlaylistCardInfo>
                     <PlaylistTitle>{playlistName}</PlaylistTitle>
-                    <PlaylistDescription>
-                      {description}
-                    </PlaylistDescription>
+                    <PlaylistDescription>{description}</PlaylistDescription>
                     <PlaylistTotalTime>
                       <RiTimerLine
                         style={{ fontSize: '1.25rem', paddingRight: '0.6rem' }}
@@ -95,7 +93,11 @@ const Carousel = ({ data, index, setIndex }) => {
                     const { track, artist, title, time, link } = music;
                     return (
                       <PlaylistCardDetail key={track}>
-                        <PlaylistLink href={link} target='_blank' rel='noreferrer'>
+                        <PlaylistLink
+                          href={link}
+                          target='_blank'
+                          rel='noreferrer'
+                        >
                           <BiCaretRightCircle />
                         </PlaylistLink>
                         <TrackNumber>{track}</TrackNumber>
