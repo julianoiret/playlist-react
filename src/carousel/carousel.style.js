@@ -64,25 +64,25 @@ export const PlaylistCardFront = styled.div`
 
 export const PlaylistCardImg = styled.img`
   width: 290px;
-  height: 300px;
+  height: 295px;
   // border: 1px solid pink;
-  object-fit: cover;
+  // object-fit: cover;
 
   @media ${device.mobileM} {
     width: 350px;
-    height: 370px;
+    height: 355px;
   }
   @media ${device.mobileL} {
     width: 370px;
-    height: 390px;
+    height: 375px;
   }
   @media ${device.tablet} {
     width: 390px;
-    height: 425px;
+    height: 395px;
   }
   @media ${device.laptop} {
     width: 515px;
-    height: 550px;
+    height: 520px;
   }
 `;
 
