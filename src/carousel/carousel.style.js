@@ -18,7 +18,7 @@ export const PlaylistSection = styled.div`
   max-width: 310px;
   /* must have to have a height for the container */
   height: 700px;
-  border: 2px solid green;
+  // border: 2px solid green;
   position: relative;
   /* delete overflow and add more translate to move our arrow next prev button */
   overflow: hidden;
@@ -89,7 +89,7 @@ export const PlaylistCardImg = styled.img`
 export const PlaylistCardInfo = styled.div`
   width: 280px;
   height: 300px;
-  border: 1px solid orange;
+  // border: 1px solid orange;
   // if we want to align this div vertically
   align-self: center;
 
