@@ -3,15 +3,18 @@ import { device } from '../devices';
 
 export const HeaderWrapper = styled.div`
   // background-color: red;
-  height: 150px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-  @media ${device.tablet} {
+  margin-bottom: 15px;
+  @media ${device.mobileL} {
     height: 200px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+  }
+  @media ${device.tablet} {
+    height: 210px;
   }
   @media ${device.laptop} {
     height: 240px;
@@ -73,7 +76,7 @@ export const Icons = styled.p`
   padding: 4px 15px 0 15px;
   border-radius: 5px;
   margin-right: 7px;
-  width: 35px;
+
   cursor: pointer;
   &:hover {
     color: #f7f7f7 !important;
@@ -87,6 +90,7 @@ export const Icons = styled.p`
   }
   @media ${device.laptop} {
     margin: 15px 9px 15px 0;
+    width: 35px;
   }
   @media ${device.laptopL} {
     margin-right: 20px;

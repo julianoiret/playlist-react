@@ -61,8 +61,10 @@ const Carousel = ({ data, index, setIndex }) => {
           return (
             <article className={position} key={id}>
               <FlipCard className={flip ? 'hidden' : ''}>
-                <PlaylistCardFront className="vector">
-              <ImgVector src={require('../asset/white-design.png')}></ImgVector>
+                <PlaylistCardFront className='vector'>
+                  <ImgVector
+                    src={require('../asset/white-design.png')}
+                  ></ImgVector>
                   <PlaylistCardImg
                     src={photo}
                     alt={playlistName}
@@ -101,7 +103,7 @@ const Carousel = ({ data, index, setIndex }) => {
                           rel='noreferrer'
                         >
                           <BiCaretRightCircle />
-                          </PlaylistLink>
+                        </PlaylistLink>
                         <TrackNumber>{track}</TrackNumber>
                         <TrackArtist>{artist}</TrackArtist>
                         <TrackTitle>{title}</TrackTitle>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Header from './header/Header';
 import Footer from './footer/Footer';
 import playlistData from './data';
@@ -30,17 +30,47 @@ function App() {
       return index;
     });
   };
+  useEffect(
+    () => {
+      let slider = setInterval(() => {
+        setIndex((oldIndex) => {
+          let index = oldIndex + 1;
+          if (index > data.length - 1) {
+            index = 0;
+          }
+          return index;
+        });
+      }, 7000);
+      return () => clearInterval(slider);
+    },
+    { index }
+  );
+  // function SliderTimer() {
+  //   const sliderRef = useRef(null);
+  //   useEffect(
+  //     () => {
+  //       let slider = setInterval(() => {
+  //         setIndex((oldIndex) => {
+  //           let index = oldIndex + 1;
+  //           if (index > data.length - 1) {
+  //             index = 0;
+  //           }
+  //           return index;
+  //         });
+  //       }, 7000);
+  //       sliderRef.current = index;
+  //       return () => clearInterval(slider);
+  //     },
+  //     { index }
+  //   );
+  // }
 
   return (
-    <div>
-      <Header
-        prevSlide={prevSlide}
-        nextSlide={nextSlide}
-        setIndex={setIndex}
-      />
+    <main>
+      <Header prevSlide={prevSlide} nextSlide={nextSlide} setIndex={setIndex} />
       <Carousel data={data} index={index} setIndex={setIndex} />
       <Footer />
-    </div>
+    </main>
   );
 }
 

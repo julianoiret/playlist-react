@@ -52,42 +52,42 @@ export const PlaylistSection = styled.div`
 export const FlipCard = styled.div``;
 
 export const ImgVector = styled.img`
-position: absolute;
-bottom: 0;
-right: 5px;
-width: 150px;
-
-@media ${device.laptop} {
-  width: auto;
-  bottom: -120px;
+  position: absolute;
+  bottom: 0;
   right: 5px;
-  transition: .5s ease;
-  transform: translate(0);
+  width: 150px;
+
+  @media ${device.laptop} {
+    width: auto;
+    bottom: -120px;
+    right: 5px;
+    transition: 0.5s ease;
+    transform: translate(0);
+  }
 `;
 
 export const PlaylistCardFront = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-// border: 1px solid pink;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  // border: 1px solid pink;
 
-@media ${device.tablet} {
-  flex-direction: row;
-}
-
-@media ${device.laptop} {
-  height: 547px;
-  ${ImgVector} {
-    visibility: hidden;
+  @media ${device.tablet} {
+    flex-direction: row;
   }
-  &:hover  {
+
+  @media ${device.laptop} {
+    height: 547px;
     ${ImgVector} {
-      visibility: visible;
-      transform: translate(-10%, -120px);
+      visibility: hidden;
+    }
+    &:hover {
+      ${ImgVector} {
+        visibility: visible;
+        transform: translate(-10%, -120px);
+      }
     }
   }
-}
 `;
 
 export const PlaylistCardImg = styled.img`
@@ -189,11 +189,11 @@ export const PlaylistButton = styled.button`
   padding: 0.25em 0.5em;
   box-shadow: 1px 1px 0px 0px #626262, 2px 2px 0px 0px #626262,
     3px 3px 0px 0px #626262, 4px 4px 0px 0px #626262, 5px 5px 0px 0px #626262;
-    &:hover {
-      font-weight: 500;
-      color: #FFFFFF;
-      background-color: #000000;
-    }
+  &:hover {
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #000000;
+  }
 
   @media ${device.mobileL} {
     font-size: 15px;
@@ -236,7 +236,7 @@ export const BackButton = styled.div`
   &:hover {
     font-weight: 600;
     color: #000000;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 `;
 
@@ -248,7 +248,7 @@ export const PlaylistCardBack = styled.div`
 export const PlaylistCardDetail = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns: 30px 25px 250px;
+  grid-template-columns: 40px 25px 250px;
   grid-template-rows: 15px 15px;
   column-gap: 10px;
   row-gap: 5px;
@@ -259,8 +259,8 @@ export const PlaylistCardDetail = styled.div`
   // border: 1px solid purple;
   height: 45px;
   &:hover {
-    color: #3F3E3E;
-    background-color: #E2DDDC;
+    color: #3f3e3e;
+    background-color: #e2dddc;
   }
 
   @media ${device.tablet} {
@@ -275,9 +275,10 @@ export const PlaylistCardDetail = styled.div`
 `;
 
 export const PlaylistLink = styled.a`
-  color: #B1B1B1;
+  color: #b1b1b1;
   font-size: 30px;
   height: 30px;
+  padding-right: 20px;
   padding-left: 10px;
   // border: 1px solid grey;
   align-self: stretch;
@@ -293,7 +294,7 @@ export const PlaylistLink = styled.a`
   @media ${device.laptop} {
     min-width: 10px;
     padding-left: 15px;
-  } 
+  }
 `;
 
 export const TrackNumber = styled.p`
