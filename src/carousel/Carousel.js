@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {
   CarouselContainer,
   PlaylistSection,
+  ImgVector,
   FlipCard,
   PlaylistCardFront,
   PlaylistCardImg,
@@ -60,7 +61,8 @@ const Carousel = ({ data, index, setIndex }) => {
           return (
             <article className={position} key={id}>
               <FlipCard className={flip ? 'hidden' : ''}>
-                <PlaylistCardFront>
+                <PlaylistCardFront className="vector">
+              <ImgVector src={require('../asset/white-design.png')}></ImgVector>
                   <PlaylistCardImg
                     src={photo}
                     alt={playlistName}

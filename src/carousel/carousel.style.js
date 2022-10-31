@@ -19,6 +19,8 @@ export const PlaylistSection = styled.div`
   /* must have to have a height for the container */
   height: 700px;
   // border: 2px solid green;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 8px #5E5C5C;
   position: relative;
   /* delete overflow and add more translate to move our arrow next prev button */
   overflow: hidden;
@@ -47,19 +49,39 @@ export const PlaylistSection = styled.div`
   }
 `;
 
-// export const PlaylistCardCarousel = styled.div``;
-
 export const FlipCard = styled.div``;
 
-export const PlaylistCardFront = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  // display: none;
+export const ImgVector = styled.img`
+position: absolute;
+bottom: -120px;
+right: 5px;
+transition: .5s ease;
+transform: translate(0);
+`;
 
-  @media ${device.tablet} {
-    flex-direction: row;
+export const PlaylistCardFront = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+// border: 1px solid pink;
+${ImgVector} {
+  visibility: hidden;
+}
+&:hover  {
+  ${ImgVector} {
+    visibility: visible;
+    transform: translate(-10%, -120px);
   }
+}
+}
+
+@media ${device.tablet} {
+  flex-direction: row;
+}
+
+@media ${device.laptop} {
+  height: 547px;
+}
 `;
 
 export const PlaylistCardImg = styled.img`
