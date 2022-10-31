@@ -53,10 +53,16 @@ export const FlipCard = styled.div``;
 
 export const ImgVector = styled.img`
 position: absolute;
-bottom: -120px;
+bottom: 0;
 right: 5px;
-transition: .5s ease;
-transform: translate(0);
+width: 150px;
+
+@media ${device.laptop} {
+  width: auto;
+  bottom: -120px;
+  right: 5px;
+  transition: .5s ease;
+  transform: translate(0);
 `;
 
 export const PlaylistCardFront = styled.div`
@@ -64,15 +70,6 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 // border: 1px solid pink;
-${ImgVector} {
-  visibility: hidden;
-}
-&:hover  {
-  ${ImgVector} {
-    visibility: visible;
-    transform: translate(-10%, -120px);
-  }
-}
 }
 
 @media ${device.tablet} {
@@ -81,6 +78,15 @@ ${ImgVector} {
 
 @media ${device.laptop} {
   height: 547px;
+  ${ImgVector} {
+    visibility: hidden;
+  }
+  &:hover  {
+    ${ImgVector} {
+      visibility: visible;
+      transform: translate(-10%, -120px);
+    }
+  }
 }
 `;
 
@@ -259,9 +265,7 @@ export const PlaylistCardDetail = styled.div`
 
   @media ${device.tablet} {
     height: 35px;
-
     display: flex;
-
     justify-content: start;
     align-items: center;
     font-size: 16px;
@@ -271,11 +275,10 @@ export const PlaylistCardDetail = styled.div`
 `;
 
 export const PlaylistLink = styled.a`
-  color: #b1b1b1;
+  color: #B1B1B1;
   font-size: 30px;
   height: 30px;
   padding-left: 10px;
-  /* min-width: 10px; */
   // border: 1px solid grey;
   align-self: stretch;
   grid-column: 1;
@@ -296,8 +299,6 @@ export const PlaylistLink = styled.a`
 export const TrackNumber = styled.p`
   grid-column: 2;
   grid-row: 1;
-  /* font-size: 14px; */
-  /* min-width: 15px; */
   // border: 1px solid grey;
 
   @media ${device.tablet} {

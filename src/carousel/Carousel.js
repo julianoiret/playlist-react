@@ -101,7 +101,7 @@ const Carousel = ({ data, index, setIndex }) => {
                           rel='noreferrer'
                         >
                           <BiCaretRightCircle />
-                        </PlaylistLink>
+                          </PlaylistLink>
                         <TrackNumber>{track}</TrackNumber>
                         <TrackArtist>{artist}</TrackArtist>
                         <TrackTitle>{title}</TrackTitle>
