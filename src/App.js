@@ -5,7 +5,6 @@ import Footer from './footer/Footer';
 import playlistData from './data';
 import Carousel from './carousel/Carousel';
 import './index.css';
-import { lightMode, darkMode } from './Themes';
 
 function App() {
   const [data, setData] = useState(playlistData);
@@ -49,7 +48,7 @@ function App() {
           }
           return index;
         });
-      }, 3000);
+      }, 10000);
       return () => clearInterval(sliderRef.current);
     } else {
       clearInterval(sliderRef.current);
