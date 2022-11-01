@@ -48,10 +48,25 @@ export const HeaderTitle = styled.div`
   }
 `;
 
+export const Tooltip = styled.p`
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  margin: 0;
+  text-align: center;
+
+  @media ${device.tablet} {
+    font-size: 15px;
+  }
+`;
+
 export const IconWrapper = styled.div`
   color: #000000;
   font-size: 14px;
   display: flex;
+  ${Tooltip} {
+    visibility: hidden;
+  }
 
   @media ${device.mobileM} {
     font-size: 18px;
@@ -75,26 +90,34 @@ export const TooltipWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 5px;
+
+  @media ${device.tablet} {
+    &:hover {
+      ${Tooltip} {
+        visibility: visible;
+      }
+  }
 `;
 
 export const Icons = styled.p`
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   /* padding: 4px 15px 0 15px; */
   padding: 5px 12px;
   border-radius: 5px;
   cursor: pointer;
   &:hover {
-    color: #f7f7f7 !important;
+    color: #F7F7F7 !important;
     background-color: #242526;
-    border: 1px solid #f7f7f7;
+    border: 1px solid #F7F7F7;
   }
+}
 
   @media ${device.mobileL} {
     padding: 5px 17px 0 17px;
   }
   @media ${device.tablet} {
     margin: 15px 0 5px 0;
-  }
+
   @media ${device.laptop} {
     margin: 15px 0 5px 0;
     width: 35px;
@@ -104,22 +127,3 @@ export const Icons = styled.p`
     width: 40px;
   }
 `;
-
-export const Tooltip = styled.p`
-  font-size: 11px;
-  text-transform: uppercase;
-  color: #f7f7f7;
-  margin: 0;
-  text-align: center;
-
-  @media ${device.tablet} {
-    font-size: 15px;
-  }
-`;
-
-// export const TooltipWrapper = styled.div`
-//   position: relative;
-//   display: flex;
-//   align-items: flex-start;
-//   margin-top: 0;
-// `;

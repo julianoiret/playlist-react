@@ -19,7 +19,7 @@ export const PlaylistSection = styled.div`
   width: 90vw;
   max-width: 310px;
   /* must have to have a height for the container */
-  height: 750px;
+  height: 800px;
   // border: 2px solid green;
   border-radius: 20px;
   // box-shadow: 0 0 20px 8px #5E5C5C;
@@ -241,12 +241,18 @@ export const BackButton = styled.div`
   box-shadow: 1px 1px 0px 0px #626262, 2px 2px 0px 0px #626262,
     3px 3px 0px 0px #626262, 4px 4px 0px 0px #626262, 5px 5px 0px 0px #626262;
   position: absolute;
-  top: 20px;
+  bottom: 15px;
   right: 20px;
   &:hover {
     font-weight: 600;
     color: #000000;
     background-color: #ffffff;
+  }
+  @media ${device.laptop} {
+    position: absolute;
+    top: 20px;
+    bottom: inherit;
+    right: 20px;
   }
 `;
 
