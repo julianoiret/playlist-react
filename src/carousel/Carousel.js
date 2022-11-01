@@ -10,6 +10,7 @@ import {
   PlaylistTitle,
   PlaylistDescription,
   PlaylistTotalTime,
+  YoutubeLink,
   PlaylistButton,
   PlaylistBackBanner,
   BackButton,
@@ -26,6 +27,7 @@ import { Badges } from './Badges';
 // import { PlaylistDescriptionCarou, PlaylistGenreCarou, PlaylistTitleCarou } from '../playlist-cards/playlistCards.style';
 import { RiTimerLine } from 'react-icons/ri';
 import { BiCaretRightCircle } from 'react-icons/bi';
+import { ImYoutube2 } from 'react-icons/im';
 
 const Carousel = ({ data, index, setIndex }) => {
   // const [index, setIndex] = useState(0);
@@ -45,7 +47,7 @@ const Carousel = ({ data, index, setIndex }) => {
     <CarouselContainer>
       <PlaylistSection>
         {data.map((ind, playIndex) => {
-          const { id, playlistName, description, genre, photo, musics } = ind;
+          const { id, playlistName, description, genre, photo, youtube, musics } = ind;
 
           let position = 'nextSlide';
           if (playIndex === index) {
@@ -61,7 +63,7 @@ const Carousel = ({ data, index, setIndex }) => {
           return (
             <article className={position} key={id}>
               <FlipCard className={flip ? 'hidden' : ''}>
-                <PlaylistCardFront className='vector'>
+                <PlaylistCardFront>
                   <ImgVector
                     src={require('../asset/white-design.png')}
                   ></ImgVector>
@@ -78,6 +80,9 @@ const Carousel = ({ data, index, setIndex }) => {
                       />
                       {sumTime(musics)} minutes
                     </PlaylistTotalTime>
+                    <YoutubeLink href={youtube} target='_blank' rel='noreferrer'>
+                    <ImYoutube2 style={{ fontSize: '50px' }} />
+                    </YoutubeLink>
                     <Badges genre={genre}></Badges>
                     <PlaylistButton onClick={() => setFlip(true)}>
                       Detail

@@ -6,6 +6,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/lounge-1-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -93,6 +94,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/lounge-2-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -180,6 +182,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/boards-of-canada-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -274,6 +277,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/good-night-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -368,6 +372,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/moby-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -462,6 +467,7 @@ const playlistData = [
     description: 'One of the best idm tracks',
     totalTime: '',
     photo: require('./asset/idm-1-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -549,6 +555,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/aphex-twin-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -643,6 +650,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/massive-attack-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -730,6 +738,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/chillout-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -824,6 +833,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/lounge-cafe-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -924,6 +934,7 @@ const playlistData = [
     description: 'Israeli musician and producer',
     totalTime: '',
     photo: require('./asset/eitan-reiter-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -1014,76 +1025,88 @@ const playlistData = [
   {
     id: 12,
     playlistName: 'Relax',
-    genre: ['ambient'],
+    genre: ['ambient', 'chillout', 'space ambient'],
     description: '',
     totalTime: '',
     photo: require('./asset/relax-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
         artist: 'Feel',
         title: 'Der Waldlaufer',
-        time: 5.08,
+        time: 5.09,
+        link: 'https://www.youtube.com/watch?v=nhph3dNNGgU',
       },
       {
         track: 2,
         artist: 'Moby',
         title: 'Memory Gospel',
-        time: 6.42,
+        time: 6.44,
+        link: 'https://www.youtube.com/watch?v=sSY5HaXxTgI',
       },
       {
         track: 3,
         artist: 'Boards Of Canada',
         title: 'Amo Bishop Roden',
-        time: 6.19,
+        time: 6.17,
+        link: 'https://www.youtube.com/watch?v=KZbFpcEl-8o',
       },
       {
         track: 4,
         artist: 'Hiatus',
         title: 'Becoming',
         time: 3.16,
+        link: 'https://www.youtube.com/watch?v=F8Y2PFFCfJk',
       },
       {
         track: 5,
         artist: 'Stellardrone',
         title: 'Eternity',
-        time: 6.21,
+        time: 6.22,
+        link: 'https://www.youtube.com/watch?v=m-0H4HOATOM',
       },
       {
         track: 6,
         artist: 'Global Communication',
         title: 'Epsilon Phase',
-        time: 11.0,
+        time: 11.00,
+        link: 'https://www.youtube.com/watch?v=M5tm3Oe4pYg',
       },
       {
         track: 7,
         artist: 'EL LCD',
         title: 'Snö på Hisingen (Carbon Based Lifeform Remix)',
-        time: 6.24,
+        time: 6.25,
+        link: 'https://www.youtube.com/watch?v=-QlrNzBcNyY',
       },
       {
         track: 8,
         artist: 'Der Waldlaufer & Lauge',
         title: 'Morgenfrisk',
-        time: 3.11,
+        time: 3.12,
+        link: 'https://www.youtube.com/watch?v=5PM8sXA-ryE',
       },
       {
         track: 9,
         artist: 'Der Waldlaufer',
         title: 'En Route',
         time: 5.22,
+        link: 'https://www.youtube.com/watch?v=h53vbbI-bWA',
       },
       {
         track: 10,
         artist: 'Moby',
-        title: 'JLTF',
-        time: 4.4,
+        title: 'JLTF 1',
+        time: 4.41,
+        link: 'https://www.youtube.com/watch?v=W1RKbt-gacY',
       },
       {
         track: 11,
         artist: 'Roger Neill',
         title: 'Santa Barbara, 1979',
-        time: 2.36,
+        time: 2.37,
+        link: 'https://www.youtube.com/watch?v=lblJCPycN4A',
       },
     ],
   },
@@ -1094,72 +1117,84 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/solar-fields-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
         artist: 'Solar Fields',
         title: 'Sol',
-        time: 8.31,
+        time: 8.24,
+        link: 'https://www.youtube.com/watch?v=9KKN5ZJlubQ',
       },
       {
         track: 2,
         artist: 'Solar Fields',
         title: 'Times Are Good (Sometimes Remix)',
-        time: 8.1,
+        time: 8.10,
+        link: 'https://www.youtube.com/watch?v=ptgQqC8m4xE',
       },
       {
         track: 3,
         artist: 'Solar Fields',
         title: 'Unite',
-        time: 9.26,
+        time: 9.24,
+        link: 'https://www.youtube.com/watch?v=JDqjkIVgcr8',
       },
       {
         track: 4,
         artist: 'Solar Fields',
-        title: 'Insum',
-        time: 8.59,
+        title: 'Insum (2019 Remaster)',
+        time: 8.24,
+        link: 'https://www.youtube.com/watch?v=njYw6U8SfFo',
       },
       {
         track: 5,
         artist: 'Solar Fields',
-        title: 'The Stones Are Not Too Busy (Remastered)',
+        title: 'The Stones Are Not Too Busy (2018 Remaster)',
         time: 10.31,
+        link: 'https://www.youtube.com/watch?v=bvaL_ohykUg',
       },
       {
         track: 6,
         artist: 'Solar Fields',
         title: 'Kick Back',
         time: 8.52,
+        link: 'https://www.youtube.com/watch?v=FGz2WnhEh-8',
       },
       {
         track: 7,
         artist: 'Solar Fields',
         title: 'Swoosh',
         time: 8.35,
+        link: 'https://www.youtube.com/watch?v=wLmrm8O5CLU',
       },
       {
         track: 8,
         artist: 'Solar Fields',
         title: 'Video 2007',
         time: 8.22,
+        link: 'https://www.youtube.com/watch?v=4HFikRXdt8I',
       },
       {
         track: 9,
         artist: 'Solar Fields',
         title: 'We Are The Dream',
-        time: 8.11,
+        time: 8.12,
+        link: 'https://www.youtube.com/watch?v=LkUr-YFmfL8',
       },
       {
         track: 10,
         artist: 'Solar Fields',
         title: 'Confusion Illusion (Remix)',
-        time: 7.2,
+        time: 7.20,
+        link: 'https://www.youtube.com/watch?v=mPb3OKHfCdI',
       },
       {
         track: 11,
         artist: 'Solar Fields',
         title: 'Cocoon moon (Glastonbury Festival 2005 Mix)',
-        time: 5.15,
+        time: 10.37,
+        link: 'https://www.youtube.com/watch?v=BndzTjviflE',
       },
     ],
   },
@@ -1167,9 +1202,10 @@ const playlistData = [
     id: 14,
     playlistName: 'Best Of Ott',
     genre: ['dub', 'electronic', 'trip hop', 'ethnic electronic', 'ambient'],
-    description: '',
+    description: 'Ott is a British record producer and musician who has worked with Sinéad O Connor, Embrace, the Orb, and Brian Eno, and has achieved recognition since 2002 for his own psychedelic dub tracks and his collaborations',
     totalTime: '',
     photo: require('./asset/ott-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -1247,6 +1283,7 @@ const playlistData = [
       'Rone (born Erwan Castex) is a French electronic music producer and artist',
     totalTime: '',
     photo: require('./asset/rone-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -1330,6 +1367,7 @@ const playlistData = [
     description: 'A Russian duo consisting of Danial Roeth and William Grey',
     totalTime: '',
     photo: require('./asset/koan-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -1406,6 +1444,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/eric-hilton-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,
@@ -1482,6 +1521,7 @@ const playlistData = [
   //   description: '',
   //   totalTime: '',
   //   photo: require('./asset/soundtrack-img.png'),
+  //   youtube: '',
   //   musics: [
   //     {
   //       track: 1,
@@ -1558,6 +1598,7 @@ const playlistData = [
     description: '',
     totalTime: '',
     photo: require('./asset/idm-2-img.png'),
+    youtube: '',
     musics: [
       {
         track: 1,

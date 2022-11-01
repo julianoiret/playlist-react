@@ -40,7 +40,7 @@ function App() {
           }
           return index;
         });
-      }, 7000);
+      }, 12000);
       return () => clearInterval(slider);
     },
     { index }

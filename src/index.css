@@ -1,7 +1,7 @@
 body {
   font-family: 'Dosis', sans-serif;
   /* font-family: 'Cairo Play', cursive; */
-  color: #b1b1b1;
+  color: #B1B1B1;
   background-color: #242526;
   padding: 0;
   margin: 0;
@@ -24,7 +24,7 @@ article {
   /* to hide the slide rolling behind the scene */
   opacity: 0;
   /* TODO set a correct transition  */
-  transition: all 0.5s linear;
+  transition: all 0.8s linear;
 }
 
 article.activeSlide {

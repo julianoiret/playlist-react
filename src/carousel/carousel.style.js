@@ -134,7 +134,8 @@ export const PlaylistCardInfo = styled.div`
   }
   @media ${device.laptop} {
     width: 400px;
-    height: 350px;
+    height: 370px;
+    padding-bottom: 50px;
   }
 `;
 
@@ -176,6 +177,11 @@ export const GenreBadge = styled.p`
 export const PlaylistTotalTime = styled.p`
   display: flex;
   align-items: center;
+`;
+
+export const YoutubeLink = styled.a`
+  color: #B1B1B1;
+  padding-left: 5px;
 `;
 
 export const PlaylistButton = styled.button`
