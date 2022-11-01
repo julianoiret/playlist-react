@@ -1025,8 +1025,8 @@ const playlistData = [
   {
     id: 12,
     playlistName: 'Relax',
-    genre: ['ambient', 'chillout', 'space ambient'],
-    description: '',
+    genre: ['ambient', 'atmospheric', 'space ambient'],
+    description: 'Take a deep breath - This playlist can work well for sleep, meditation, focus, relaxation, work, reading, spa, studying and more',
     totalTime: '',
     photo: require('./asset/relax-img.png'),
     youtube: '',

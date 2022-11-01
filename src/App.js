@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import styled from 'styled-components';
 import Header from './header/Header';
 import Footer from './footer/Footer';
 import playlistData from './data';
@@ -8,6 +9,8 @@ import './index.css';
 function App() {
   const [data, setData] = useState(playlistData);
   const [index, setIndex] = useState(0);
+
+  const PlaylistPage = styled.div``;
 
   const prevSlide = () => {
     setIndex((oldIndex) => {
@@ -66,11 +69,11 @@ function App() {
   // }
 
   return (
-    <main>
+    <PlaylistPage>
       <Header prevSlide={prevSlide} nextSlide={nextSlide} setIndex={setIndex} />
       <Carousel data={data} index={index} setIndex={setIndex} />
       <Footer />
-    </main>
+    </PlaylistPage>
   );
 }
 

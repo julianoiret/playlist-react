@@ -15,7 +15,7 @@ export const PlaylistSection = styled.div`
   width: 90vw;
   max-width: 310px;
   /* must have to have a height for the container */
-  height: 700px;
+  height: 750px;
   // border: 2px solid green;
   border-radius: 20px;
   // box-shadow: 0 0 20px 8px #5E5C5C;
@@ -259,9 +259,7 @@ export const PlaylistCardDetail = styled.div`
   column-gap: 10px;
   row-gap: 5px;
   font-size: 13px;
-  /* flex-wrap: wrap; */
-  /* justify-content: start;
-  align-items: center; */
+  padding-bottom: 10px;
   // border: 1px solid purple;
   height: 45px;
   &:hover {
@@ -275,6 +273,7 @@ export const PlaylistCardDetail = styled.div`
     justify-content: start;
     align-items: center;
     font-size: 16px;
+    padding-bottom: 0;
   }
   /* @media ${device.laptop} {
   } */

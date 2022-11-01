@@ -29,8 +29,8 @@ export const HeaderWrapper = styled.div`
 export const HeaderTitle = styled.div`
   text-transform: uppercase;
   font-size: 25px;
-  font-weight: 500;
-  color: #f7f7f7;
+  font-weight: 200;
+  color: #F7F7F7;
   letter-spacing: 4px;
   // border: 1px solid black;
   margin-top: 10px;
@@ -45,6 +45,7 @@ export const HeaderTitle = styled.div`
   @media ${device.laptopL} {
     font-size: 40px;
     font-weight: 600;
+    margin-top: 30px;
   }
 `;
 
@@ -70,13 +71,18 @@ export const IconWrapper = styled.div`
   }
 `;
 
-export const Icons = styled.p`
-  background-color: #ffffff;
+export const TooltipWrapper = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0 5px;
+`;
 
+export const Icons = styled.p`
+  background-color: #FFFFFF;
   padding: 4px 15px 0 15px;
   border-radius: 5px;
   margin-right: 7px;
-
   cursor: pointer;
   &:hover {
     color: #f7f7f7 !important;
@@ -89,51 +95,27 @@ export const Icons = styled.p`
     margin-right: 9px;
   }
   @media ${device.laptop} {
-    margin: 15px 9px 15px 0;
+    margin: 15px 0;
     width: 35px;
   }
   @media ${device.laptopL} {
-    margin-right: 20px;
+    // margin-right: 20px;
     width: 40px;
   }
 `;
 
-export const TooltipWrapper = styled.div`
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  margin-top: 0;
+export const Tooltip = styled.p`
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #F7F7F7;
+  margin: 0;
 `;
 
-export const Tooltip = styled.div`
-  visibility: hidden;
-  /* display: none; */
-  /* top: 0;
-  left: 0; */
-  background-color: #ffffff;
-  width: 68px;
-  height: 20px;
-  color: #000000;
-  padding: 2px 1px;
-  font-weight: 600;
-  z-index: 15;
-  /* padding: 5px 17px 0 17px; */
-  border-radius: 5px;
-  margin-right: 8px;
-  /* position: absolute; */
-  text-align: center;
-  transition: all 3s;
 
-  ${Icons}:hover & {
-    visibility: visible;
-    /* display: block; */
-    /* position: absolute; */
-    background-color: blue;
-  }
+// export const TooltipWrapper = styled.div`
+//   position: relative;
+//   display: flex;
+//   align-items: flex-start;
+//   margin-top: 0;
+// `;
 
-  @media ${device.laptopL} {
-    /* margin: 15px 9px 15px 0; */
-    width: 72px;
-    margin-right: 20px;
-  }
-`;
