@@ -9,7 +9,7 @@ import './index.css';
 function App() {
   const [data, setData] = useState(playlistData);
   const [index, setIndex] = useState(0);
-  const [startTimer, setStartTimer] = useState(false);
+  const [startSlider, setStartSlider] = useState(false);
   // const [mode, setMode] = useState('dark');
   const sliderRef = useRef(null);
 
@@ -36,7 +36,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (startTimer) {
+    if (startSlider) {
       if (index === 0) {
         clearInterval(sliderRef.current);
       }
@@ -53,7 +53,7 @@ function App() {
     } else {
       clearInterval(sliderRef.current);
     }
-  }, [startTimer]);
+  }, [startSlider]);
 
   function handleCancelClick() {
     clearInterval(sliderRef.current);
@@ -65,8 +65,8 @@ function App() {
         prevSlide={prevSlide}
         nextSlide={nextSlide}
         setIndex={setIndex}
-        startTimer={startTimer}
-        setStartTimer={setStartTimer}
+        startSlider={startSlider}
+        setStartSlider={setStartSlider}
         handleCancelClick={handleCancelClick}
       />
       <Carousel data={data} index={index} setIndex={setIndex} />

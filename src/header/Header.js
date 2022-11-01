@@ -19,8 +19,8 @@ const Header = ({
   prevSlide,
   nextSlide,
   setIndex,
-  startTimer,
-  setStartTimer,
+  startSlider,
+  setStartSlider,
   handleCancelClick,
 }) => {
   return (
@@ -29,7 +29,7 @@ const Header = ({
       <IconWrapper>
         <TooltipWrapper>
           <Icons>
-            <FaPlay onClick={() => setStartTimer(!startTimer)} />
+            <FaPlay onClick={() => setStartSlider(!startSlider)} />
           </Icons>
           <Tooltip>Play</Tooltip>
         </TooltipWrapper>
