@@ -15,46 +15,53 @@ import {
 } from 'react-icons/fa';
 import { FiRepeat } from 'react-icons/fi';
 
-const Header = ({ prevSlide, nextSlide, setIndex }) => {
+const Header = ({
+  prevSlide,
+  nextSlide,
+  setIndex,
+  startTimer,
+  setStartTimer,
+  handleCancelClick,
+}) => {
   return (
     <HeaderWrapper>
       <HeaderTitle>Music is life</HeaderTitle>
       <IconWrapper>
         <TooltipWrapper>
-        <Icons>
-          <FaPlay />
-        </Icons>
-        <Tooltip>Play</Tooltip>
+          <Icons>
+            <FaPlay onClick={() => setStartTimer(!startTimer)} />
+          </Icons>
+          <Tooltip>Play</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
-        <Icons>
-          <FaPause />
-        </Icons>
-        <Tooltip>Pause</Tooltip>
+          <Icons>
+            <FaPause onClick={() => handleCancelClick()} />
+          </Icons>
+          <Tooltip>Pause</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
-        <Icons>
-          <FaFastBackward onClick={() => prevSlide()} />
-        </Icons>
-        <Tooltip>Previous</Tooltip>
+          <Icons>
+            <FaFastBackward onClick={() => prevSlide()} />
+          </Icons>
+          <Tooltip>Previous</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
-        <Icons>
-          <FaFastForward onClick={() => nextSlide()} />
-        </Icons>
-        <Tooltip>Next</Tooltip>
+          <Icons>
+            <FaFastForward onClick={() => nextSlide()} />
+          </Icons>
+          <Tooltip>Next</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
-        <Icons>
-          <FiRepeat />
-        </Icons>
-        <Tooltip>Light mode</Tooltip>
+          <Icons>
+            <FiRepeat />
+          </Icons>
+          <Tooltip>Light mode</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
-        <Icons>
-          <FaStop onClick={() => setIndex(0)} />
-        </Icons>
-        <Tooltip>Stop</Tooltip>
+          <Icons>
+            <FaStop onClick={() => setIndex(0)} />
+          </Icons>
+          <Tooltip>Stop</Tooltip>
         </TooltipWrapper>
       </IconWrapper>
       {/* <TooltipWrapper> */}

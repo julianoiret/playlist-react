@@ -9,8 +9,8 @@ import './index.css';
 function App() {
   const [data, setData] = useState(playlistData);
   const [index, setIndex] = useState(0);
-
-  const PlaylistPage = styled.div``;
+  const [startTimer, setStartTimer] = useState(false);
+  const sliderRef = useRef(null);
 
   const prevSlide = () => {
     setIndex((oldIndex) => {
@@ -33,9 +33,13 @@ function App() {
       return index;
     });
   };
-  useEffect(
-    () => {
-      let slider = setInterval(() => {
+
+  useEffect(() => {
+    if (startTimer) {
+      if (index === 0) {
+        clearInterval(sliderRef.current);
+      }
+      sliderRef.current = setInterval(() => {
         setIndex((oldIndex) => {
           let index = oldIndex + 1;
           if (index > data.length - 1) {
@@ -43,37 +47,30 @@ function App() {
           }
           return index;
         });
-      }, 12000);
-      return () => clearInterval(slider);
-    },
-    { index }
-  );
-  // function SliderTimer() {
-  //   const sliderRef = useRef(null);
-  //   useEffect(
-  //     () => {
-  //       let slider = setInterval(() => {
-  //         setIndex((oldIndex) => {
-  //           let index = oldIndex + 1;
-  //           if (index > data.length - 1) {
-  //             index = 0;
-  //           }
-  //           return index;
-  //         });
-  //       }, 7000);
-  //       sliderRef.current = index;
-  //       return () => clearInterval(slider);
-  //     },
-  //     { index }
-  //   );
-  // }
+      }, 3000);
+      return () => clearInterval(sliderRef.current);
+    } else {
+      clearInterval(sliderRef.current);
+    }
+  }, [startTimer]);
+
+  function handleCancelClick() {
+    clearInterval(sliderRef.current);
+  }
 
   return (
-    <PlaylistPage>
-      <Header prevSlide={prevSlide} nextSlide={nextSlide} setIndex={setIndex} />
+    <div>
+      <Header
+        prevSlide={prevSlide}
+        nextSlide={nextSlide}
+        setIndex={setIndex}
+        startTimer={startTimer}
+        setStartTimer={setStartTimer}
+        handleCancelClick={handleCancelClick}
+      />
       <Carousel data={data} index={index} setIndex={setIndex} />
       <Footer />
-    </PlaylistPage>
+    </div>
   );
 }
 

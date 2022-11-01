@@ -3,34 +3,33 @@ import { device } from '../devices';
 
 export const HeaderWrapper = styled.div`
   // background-color: red;
-  height: 180px;
+  height: 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   @media ${device.mobileL} {
     height: 200px;
     margin-bottom: 20px;
   }
   @media ${device.tablet} {
-    height: 210px;
+    height: 220px;
   }
   @media ${device.laptop} {
-    height: 240px;
-    margin-bottom: 20px;
+    height: 250px;
+    margin-bottom: 50px;
   }
   @media ${device.laptopL} {
-    height: 200px;
-    margin-bottom: 0;
+    height: 220px;
   }
 `;
 
 export const HeaderTitle = styled.div`
   text-transform: uppercase;
   font-size: 25px;
-  font-weight: 200;
-  color: #F7F7F7;
+  font-weight: 300;
+  color: #f7f7f7;
   letter-spacing: 4px;
   // border: 1px solid black;
   margin-top: 10px;
@@ -44,7 +43,7 @@ export const HeaderTitle = styled.div`
   }
   @media ${device.laptopL} {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 30px;
   }
 `;
@@ -72,17 +71,17 @@ export const IconWrapper = styled.div`
 `;
 
 export const TooltipWrapper = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
 `;
 
 export const Icons = styled.p`
-  background-color: #FFFFFF;
-  padding: 4px 15px 0 15px;
+  background-color: #ffffff;
+  /* padding: 4px 15px 0 15px; */
+  padding: 5px 12px;
   border-radius: 5px;
-  margin-right: 7px;
   cursor: pointer;
   &:hover {
     color: #f7f7f7 !important;
@@ -92,10 +91,12 @@ export const Icons = styled.p`
 
   @media ${device.mobileL} {
     padding: 5px 17px 0 17px;
-    margin-right: 9px;
+  }
+  @media ${device.tablet} {
+    margin: 15px 0 5px 0;
   }
   @media ${device.laptop} {
-    margin: 15px 0;
+    margin: 15px 0 5px 0;
     width: 35px;
   }
   @media ${device.laptopL} {
@@ -105,12 +106,16 @@ export const Icons = styled.p`
 `;
 
 export const Tooltip = styled.p`
-  font-size: 15px;
+  font-size: 11px;
   text-transform: uppercase;
-  color: #F7F7F7;
+  color: #f7f7f7;
   margin: 0;
-`;
+  text-align: center;
 
+  @media ${device.tablet} {
+    font-size: 15px;
+  }
+`;
 
 // export const TooltipWrapper = styled.div`
 //   position: relative;
@@ -118,4 +123,3 @@ export const Tooltip = styled.p`
 //   align-items: flex-start;
 //   margin-top: 0;
 // `;
-

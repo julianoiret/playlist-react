@@ -2,12 +2,16 @@ import styled from 'styled-components';
 import { device } from '../devices';
 
 export const CarouselContainer = styled.div`
-  height: 80vh;
+  height: 115vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  @media ${device.mobileL} {
+    height: 110vh;
+  }
   @media ${device.tablet} {
     height: 90vh;
+    /* align-items: center; */
   }
 `;
 export const PlaylistSection = styled.div`
@@ -36,7 +40,7 @@ export const PlaylistSection = styled.div`
   @media ${device.tablet} {
     width: 90vw;
     max-width: 750px;
-    height: 450px;
+    height: 520px;
   }
   @media ${device.laptop} {
     width: 80vw;
@@ -180,7 +184,7 @@ export const PlaylistTotalTime = styled.p`
 `;
 
 export const YoutubeLink = styled.a`
-  color: #B1B1B1;
+  color: #b1b1b1;
   padding-left: 5px;
 `;
 

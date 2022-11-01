@@ -1,16 +1,14 @@
 body {
   font-family: 'Dosis', sans-serif;
   /* font-family: 'Cairo Play', cursive; */
-  color: #B1B1B1;
+  color: #b1b1b1;
   background-color: #242526;
   padding: 0;
   margin: 0;
 }
-
-main {
+/* main {
   overflow: hidden;
-}
-
+} */
 .hidden {
   display: none;
 }
