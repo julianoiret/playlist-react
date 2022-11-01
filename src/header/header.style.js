@@ -96,28 +96,28 @@ export const TooltipWrapper = styled.div`
       ${Tooltip} {
         visibility: visible;
       }
+    }
   }
 `;
 
 export const Icons = styled.p`
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   /* padding: 4px 15px 0 15px; */
   padding: 5px 12px;
   border-radius: 5px;
   cursor: pointer;
   &:hover {
-    color: #F7F7F7 !important;
+    color: #f7f7f7 !important;
     background-color: #242526;
-    border: 1px solid #F7F7F7;
+    border: 1px solid #f7f7f7;
   }
-}
 
   @media ${device.mobileL} {
     padding: 5px 17px 0 17px;
   }
   @media ${device.tablet} {
     margin: 15px 0 5px 0;
-
+  }
   @media ${device.laptop} {
     margin: 15px 0 5px 0;
     width: 35px;
