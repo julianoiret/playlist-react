@@ -107,7 +107,7 @@ export const Icons = styled.p`
   border-radius: 5px;
   cursor: pointer;
   &:hover {
-    color: #f7f7f7 !important;
+    color: #F7F7F7 !important;
     background-color: #242526;
     border: 1px solid #F7F7F7;
   }
