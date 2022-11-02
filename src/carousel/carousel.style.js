@@ -20,7 +20,6 @@ export const PlaylistSection = styled.div`
   max-width: 310px;
   /* must have to have a height for the container */
   height: 800px;
-  // border: 2px solid green;
   border-radius: 20px;
   // box-shadow: 0 0 20px 8px #5E5C5C;
   box-sizing: border-box;
@@ -28,6 +27,7 @@ export const PlaylistSection = styled.div`
   position: relative;
   /* delete overflow and add more translate to move our arrow next prev button */
   overflow: hidden;
+  background-color: #242323;
 
   @media ${device.mobileM} {
     width: 90vw;
@@ -273,8 +273,8 @@ export const PlaylistCardDetail = styled.div`
   // border: 1px solid purple;
   height: 45px;
   &:hover {
-    color: #3f3e3e;
-    background-color: #e2dddc;
+    color: #3F3E3E;
+    background-color: #E2DDDC;
   }
 
   @media ${device.tablet} {

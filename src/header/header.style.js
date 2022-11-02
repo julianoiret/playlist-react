@@ -109,7 +109,7 @@ export const Icons = styled.p`
   &:hover {
     color: #f7f7f7 !important;
     background-color: #242526;
-    border: 1px solid #f7f7f7;
+    border: 1px solid #F7F7F7;
   }
 
   @media ${device.mobileL} {
