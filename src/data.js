@@ -284,7 +284,7 @@ const playlistData = [
     description: 'Time to sleep. Empty your mind, bring attention to the present, and introduce calmness and peace',
     totalTime: '',
     photo: require('./asset/good-night-img.png'),
-    youtube: '',
+    youtube: 'https://www.youtube.com/watch?v=4SO0qSfxqyk&list=PLGcMNmVTewK-nt9UzadcrpRBFynRLF0Fc',
     musics: [
       {
         track: 1,
