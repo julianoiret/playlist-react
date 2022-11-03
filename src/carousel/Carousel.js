@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import {
   CarouselContainer,
   PlaylistSection,
-  ImgVector,
+  MainWrapper,
   FlipCard,
   PlaylistCardFront,
+  ImgVector,
   PlaylistCardImg,
   PlaylistCardInfo,
   PlaylistTitle,
@@ -24,7 +25,6 @@ import {
 } from './carousel.style';
 import { TbArrowBack } from 'react-icons/tb';
 import { Badges } from './Badges';
-// import { PlaylistDescriptionCarou, PlaylistGenreCarou, PlaylistTitleCarou } from '../playlist-cards/playlistCards.style';
 import { RiTimerLine } from 'react-icons/ri';
 import { BiCaretRightCircle } from 'react-icons/bi';
 import { ImYoutube2 } from 'react-icons/im';
@@ -61,7 +61,7 @@ const Carousel = ({ data, index, setIndex }) => {
           }
 
           return (
-            <article className={position} key={id}>
+            <MainWrapper className={position} key={id}>
               <FlipCard className={flip ? 'hidden' : ''}>
                 <PlaylistCardFront>
                   <ImgVector
@@ -118,7 +118,7 @@ const Carousel = ({ data, index, setIndex }) => {
                   })}
                 </PlaylistCardBack>
               </FlipCard>
-            </article>
+            </MainWrapper>
           );
         })}
       </PlaylistSection>

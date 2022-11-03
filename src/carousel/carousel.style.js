@@ -5,13 +5,11 @@ export const CarouselContainer = styled.div`
   height: 115vh;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   @media ${device.mobileL} {
     height: 110vh;
   }
   @media ${device.tablet} {
     height: 90vh;
-    /* align-items: center; */
   }
 `;
 export const PlaylistSection = styled.div`
@@ -21,11 +19,9 @@ export const PlaylistSection = styled.div`
   /* must have to have a height for the container */
   height: 800px;
   border-radius: 20px;
-  // box-shadow: 0 0 20px 8px #5E5C5C;
   box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   position: relative;
-  /* delete overflow and add more translate to move our arrow next prev button */
   overflow: hidden;
   background-color: #242323;
 
@@ -53,6 +49,28 @@ export const PlaylistSection = styled.div`
   }
 `;
 
+export const MainWrapper = styled.article`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* to hide the slide rolling behind the scene */
+  opacity: 0;
+  /* TODO set a correct transition  */
+  transition: all 0.8s linear;
+  &.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  &.lastSlide {
+    transform: translateX(-150%);
+  }
+  &.nextSlide {
+    transform: translateX(150%);
+  }
+`;
+
 export const FlipCard = styled.div``;
 
 export const ImgVector = styled.img`
@@ -74,7 +92,6 @@ export const PlaylistCardFront = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  // border: 1px solid pink;
 
   @media ${device.tablet} {
     flex-direction: row;
@@ -97,7 +114,6 @@ export const PlaylistCardFront = styled.div`
 export const PlaylistCardImg = styled.img`
   width: 290px;
   height: 295px;
-  // border: 1px solid pink;
 
   @media ${device.mobileM} {
     width: 350px;
@@ -120,7 +136,6 @@ export const PlaylistCardImg = styled.img`
 export const PlaylistCardInfo = styled.div`
   width: 280px;
   height: 300px;
-  // border: 1px solid orange;
   // if we want to align this div vertically
   align-self: center;
 
@@ -145,10 +160,7 @@ export const PlaylistCardInfo = styled.div`
 
 export const PlaylistTitle = styled.h1`
   font-family: 'Bungee Shade', cursive;
-  // font-family: 'Libre Barcode 39 Text', cursive;
   font-size: 22px;
-  // if trouble with title set display inline
-  // display: inline;
   @media ${device.mobileL} {
     font-size: 25px;
   }
@@ -184,7 +196,7 @@ export const PlaylistTotalTime = styled.p`
 `;
 
 export const YoutubeLink = styled.a`
-  color: #b1b1b1;
+  color: #B1B1B1;
   padding-left: 5px;
 `;
 
@@ -201,7 +213,7 @@ export const PlaylistButton = styled.button`
     3px 3px 0px 0px #626262, 4px 4px 0px 0px #626262, 5px 5px 0px 0px #626262;
   &:hover {
     font-weight: 500;
-    color: #ffffff;
+    color: #FFFFFF;
     background-color: #000000;
   }
 
@@ -223,10 +235,6 @@ export const PlaylistBackBanner = styled.div`
   display: flex;
   justify-content: space-between;
   padding-left: 15px;
-
-  /* @media ${device.tablet} {
-    justify-content: space-between;
-  } */
 `;
 
 export const BackButton = styled.div`
@@ -246,7 +254,7 @@ export const BackButton = styled.div`
   &:hover {
     font-weight: 600;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
   }
   @media ${device.laptop} {
     position: absolute;
@@ -257,7 +265,6 @@ export const BackButton = styled.div`
 `;
 
 export const PlaylistCardBack = styled.div`
-  // border: solid 1px orange;
   margin-top: 15px;
 `;
 
@@ -270,7 +277,6 @@ export const PlaylistCardDetail = styled.div`
   row-gap: 5px;
   font-size: 13px;
   padding-bottom: 10px;
-  // border: 1px solid purple;
   height: 45px;
   &:hover {
     color: #3F3E3E;
@@ -285,17 +291,14 @@ export const PlaylistCardDetail = styled.div`
     font-size: 16px;
     padding-bottom: 0;
   }
-  /* @media ${device.laptop} {
-  } */
 `;
 
 export const PlaylistLink = styled.a`
-  color: #b1b1b1;
+  color: #B1B1B1;
   font-size: 30px;
   height: 30px;
   padding-right: 20px;
   padding-left: 10px;
-  // border: 1px solid grey;
   align-self: stretch;
   grid-column: 1;
   grid-row-start: 1;
@@ -315,7 +318,6 @@ export const PlaylistLink = styled.a`
 export const TrackNumber = styled.p`
   grid-column: 2;
   grid-row: 1;
-  // border: 1px solid grey;
 
   @media ${device.tablet} {
     min-width: 30px;
@@ -329,8 +331,6 @@ export const TrackNumber = styled.p`
 export const TrackArtist = styled.p`
   grid-column: 3;
   grid-row: 1;
-  /* min-width: 100px; */
-  // border: 1px solid grey;
   @media ${device.tablet} {
     min-width: 250px;
   }
@@ -342,8 +342,6 @@ export const TrackArtist = styled.p`
 export const TrackTitle = styled.p`
   grid-column: 3;
   grid-row: 2;
-  /* min-width: 100px; */
-  // border: 1px solid grey;
 
   @media ${device.tablet} {
     min-width: 300px;
@@ -356,8 +354,6 @@ export const TrackTitle = styled.p`
 export const TrackTime = styled.p`
   grid-column: 2;
   grid-row: 2;
-  /* min-width: 30px; */
-  // border: 1px solid grey;
 
   @media ${device.tablet} {
     min-width: 35px;

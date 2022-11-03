@@ -64,8 +64,6 @@ const Header = ({
           <Tooltip>Stop</Tooltip>
         </TooltipWrapper>
       </IconWrapper>
-      {/* <TooltipWrapper> */}
-      {/* </TooltipWrapper> */}
     </HeaderWrapper>
   );
 };

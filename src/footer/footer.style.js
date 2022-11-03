@@ -4,7 +4,6 @@ export const FooterSection = styled.div`
   background-color: #383838;
   padding-top: 40px;
   padding-bottom: 40px;
-  // border: 1px solid yellow;
   text-align: center;
 `;
 

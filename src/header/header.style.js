@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { device } from '../devices';
 
 export const HeaderWrapper = styled.div`
-  // background-color: red;
   height: 160px;
   display: flex;
   flex-direction: column;
@@ -29,9 +28,8 @@ export const HeaderTitle = styled.div`
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 300;
-  color: #f7f7f7;
+  color: #F7F7F7;
   letter-spacing: 4px;
-  // border: 1px solid black;
   margin-top: 10px;
 
   @media ${device.mobileL} {
@@ -51,7 +49,7 @@ export const HeaderTitle = styled.div`
 export const Tooltip = styled.p`
   font-size: 11px;
   text-transform: uppercase;
-  color: #f7f7f7;
+  color: #F7F7F7;
   margin: 0;
   text-align: center;
 
@@ -100,10 +98,9 @@ export const TooltipWrapper = styled.div`
   }
 `;
 
-// TODO change p for button
+// TODO: change p for button
 export const Icons = styled.p`
-  background-color: #ffffff;
-  /* padding: 4px 15px 0 15px; */
+  background-color: #FFFFFF;
   padding: 5px 12px;
   border-radius: 5px;
   cursor: pointer;
@@ -124,7 +121,6 @@ export const Icons = styled.p`
     width: 35px;
   }
   @media ${device.laptopL} {
-    // margin-right: 20px;
     width: 40px;
   }
 `;

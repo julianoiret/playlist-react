@@ -59,7 +59,7 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <Header
         prevSlide={prevSlide}
         nextSlide={nextSlide}
@@ -70,7 +70,7 @@ function App() {
       />
       <Carousel data={data} index={index} setIndex={setIndex} />
       <Footer />
-    </div>
+    </>
   );
 }
 

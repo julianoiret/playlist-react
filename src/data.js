@@ -3,7 +3,7 @@ const playlistData = [
     id: 1,
     playlistName: 'Ambient Lounge I',
     genre: ['ambient', 'lounge', 'chillout'],
-    description: '',
+    description: 'An atmosphere, a state of mind. Playlist blissfully composed to simply enjoy life',
     totalTime: '',
     photo: require('./asset/lounge-1-img.png'),
     youtube: 'https://www.youtube.com/watch?v=42wQOP1vAFc&list=PLGcMNmVTewK_a0OuuxYEUA9-wmU-rgioR',
@@ -168,6 +168,13 @@ const playlistData = [
       },
       {
         track: 11,
+        artist: 'Röyksopp',
+        title: 'Forsaken Cowboy',
+        time: 5.29,
+        link: 'https://www.youtube.com/watch?v=7uqyCggO_ek',
+      },
+      {
+        track: 12,
         artist: 'Jens Buchert',
         title: 'Dawnrider',
         time: 5.49,
@@ -1595,9 +1602,9 @@ const playlistData = [
   },
   // {
   //   id: 18,
-  //   playlistName: 'Soundtrack',
+  //   playlistName: 'Soundtrack Radio Station',
   //   genre: [],
-  //   description: '',
+  //   description: 'Some of the best soundtracks from the greatest movies',
   //   totalTime: '',
   //   photo: require('./asset/soundtrack-img.png'),
   //   youtube: '',
@@ -1622,9 +1629,10 @@ const playlistData = [
   //     },
   //     {
   //       track: 4,
-  //       artist: '',
-  //       title: '(Kill Bill Soundtrack)',
-  //       time: '',
+  //       artist: 'Gheorghe Zamfir',
+  //       title: 'The Lonely Shepherd (Kill Bill Soundtrack)',
+  //       time: 4.23,
+  //       link: 'https://www.youtube.com/watch?v=nsgHyzwmbnQ',
   //     },
   //     {
   //       track: 5,
