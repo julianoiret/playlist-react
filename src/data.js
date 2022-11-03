@@ -1745,10 +1745,10 @@ const playlistData = [
       },
       {
         track: 10,
-        artist: 'Krusseldorf',
-        title: 'A Place Long Gone',
-        time: 5.24,
-        link: 'https://www.youtube.com/watch?v=9Wco7fRhGR8',
+        artist: 'Nosaj Thing',
+        title: 'Fog',
+        time: 3.43,
+        link: 'https://www.youtube.com/watch?v=SGcHPwQGkYg',
       },
       {
         track: 11,
