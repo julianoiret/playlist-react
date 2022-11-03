@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import styled from 'styled-components';
 import Header from './header/Header';
 import Footer from './footer/Footer';
 import playlistData from './data';
