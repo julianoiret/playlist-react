@@ -3,7 +3,8 @@
 ## 🎶 The Project
 
 Our favourite tracks on a single web page: discover new artists through our inspiring playlists.
-🍐 @beyondthefruit
+
+[🍐 @beyondthefruit](https://github.com/beyondthefruit)
 
 ### 🎥 Overview
 
