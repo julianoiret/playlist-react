@@ -2,13 +2,17 @@
 
 ## 🎶 The Project
 
-➡️ ➡️ [VIEW IN LIVE](https://react-playlist.netlify.app/) ⬅️ ⬅️  
+➡️ ➡️ [GO TO WEBSITE PROJECT](https://react-playlist.netlify.app/) ⬅️ ⬅️  
 
 Our favourite tracks on a single web page: discover new artists through our inspiring playlists.
 
 [🍐 @beyondthefruit](https://github.com/beyondthefruit)
 
 ### 🎥 Overview
+
+![mockup-react-playlist](https://user-images.githubusercontent.com/78125712/199882333-6f60b384-52be-4c7e-9331-a080e19d04cb.png)
+
+**Demo:**
 
 https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-af4c-a33ce267f6bb.mov
 
