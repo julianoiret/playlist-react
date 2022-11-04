@@ -1,6 +1,61 @@
-# Getting Started with Create React App
+# Playlist React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Project
+
+Our favourite tracks on a single web page: discover new artists through our inspiring playlists.
+🍐 @beyondthefruit
+
+🚀 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+🧚🏻 Tech stack: 
+- ReactJS
+- JavaScript
+- Styled-components
+- HTML
+- CSS
+
+### Folder Structure
+
+```
+.
+├── ...
+├── asset                     # Images
+├── carousel                  # Playlists folder
+│   ├── Badges.js             # Displays music genre through `map`
+│   ├── Carousel.js           # Main component with the playlists (front and back)
+│   └── carousel.style.js     # Styling with styled-component
+├── footer                    # Footer folder
+│   ├── Footer.js             # Footer component
+│   ├── footer.style.js       # Styling with styled-component
+├── header                    # Header folder
+│   ├── Header.js             # Header component
+│   ├── header.style.js       # Styling with styled-component
+├── App.js                    # App component
+├── App.test.js               # Unit tests *TODO: create unit test files for `header`, `carousel` and `footer`*
+├── data.js                   # Data (playlist details)
+├── devices.js                # Media queries
+├── index.css                 # CSS for the `body` *TODO: remove this file*
+├── Themes.js                 # Light mode / Dark mode *WORK IN PROGRESS*
+└── ...
+
+```
+
+## Testing
+
+- [] Unit tests with [Testing Library](https://testing-library.com/)
+- [] Tested manually using developer tools - Firefox / Chrome
+- [] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
+
+## Media Queries
+
+- `@media screen and (min-width: 320px)`
+- `@media screen and (min-width: 375px)`
+- `@media screen and (min-width: 425px)`
+- `@media screen and (min-width: 768px)`
+- `@media screen and (min-width: 1024px)`
+- `@media screen and (min-width: 1440px)`
+- `@media screen and (min-width: 2560px)`
+
 
 ## Available Scripts
 
@@ -29,42 +84,11 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Improvement / Next Steps
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [] Cleanup: remove `index.css` file and use `createGlobalStyle` (styled component) - replace some `p` with `button`
+- [] Create test files with [Testing Library](https://testing-library.com/) 
+- [] Implement light mode 
+- [] Improve accessibility
+- [] Spike: use Spotify API instead of Youtube 
+- [] Filter out playlists by category using dynamic `buttons`
