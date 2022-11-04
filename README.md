@@ -5,6 +5,11 @@
 Our favourite tracks on a single web page: discover new artists through our inspiring playlists.
 🍐 @beyondthefruit
 
+### 🎥 Overview
+
+https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-af4c-a33ce267f6bb.mov
+
+
 🚀 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 🧚🏻 Tech stack: 
