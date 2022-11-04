@@ -6,6 +6,8 @@ Our favourite tracks on a single web page: discover new artists through our insp
 
 [🍐 @beyondthefruit](https://github.com/beyondthefruit)
 
+➡️ ➡️ [VIEW IN LIVE](https://react-playlist.netlify.app/) ⬅️ ⬅️  
+
 ### 🎥 Overview
 
 https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-af4c-a33ce267f6bb.mov
