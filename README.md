@@ -31,20 +31,20 @@ Our favourite tracks on a single web page: discover new artists through our insp
 │   ├── Header.js             # Header component
 │   ├── header.style.js       # Styling with styled-component
 ├── App.js                    # App component
-├── App.test.js               # Unit tests _TODO: create unit test files for `header`, `carousel` and `footer`_
+├── App.test.js               # Unit tests TODO: create unit test files for `header`, `carousel` and `footer`
 ├── data.js                   # Data (playlist details)
 ├── devices.js                # Media queries
-├── index.css                 # CSS for the `body` _TODO: remove this file_
-├── Themes.js                 # Light mode / Dark mode _WORK IN PROGRESS_
+├── index.css                 # CSS for the `body` TODO: remove this file
+├── Themes.js                 # Light mode / Dark mode WORK IN PROGRESS
 └── ...
 
 ```
 
 ## Testing
 
-[] Unit tests with [Testing Library](https://testing-library.com/)
-[X] Tested manually using developer tools - Firefox / Chrome
-[X] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
+- [ ] Unit tests with [Testing Library](https://testing-library.com/)
+- [X] Tested manually using developer tools - Firefox / Chrome
+- [X] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
 
 ## Media Queries
 
@@ -86,9 +86,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Improvement / Next Steps
 
-- [] Cleanup: remove `index.css` file and use `createGlobalStyle` (styled component) - replace some `p` with `button`
-- [] Create test files with [Testing Library](https://testing-library.com/) 
-- [] Implement light mode 
-- [] Improve accessibility
-- [] Spike: use Spotify API instead of Youtube 
-- [] Filter out playlists by category using dynamic `buttons`
+- [ ] Cleanup: remove `index.css` file and use `createGlobalStyle` (styled component) - replace some `p` with `button`
+- [ ] Create test files with [Testing Library](https://testing-library.com/) 
+- [ ] Implement light mode 
+- [ ] Improve accessibility
+- [ ] Spike: use Spotify API instead of Youtube 
+- [ ] Filter out playlists by category using dynamic `buttons`
