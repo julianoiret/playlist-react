@@ -31,20 +31,20 @@ Our favourite tracks on a single web page: discover new artists through our insp
 │   ├── Header.js             # Header component
 │   ├── header.style.js       # Styling with styled-component
 ├── App.js                    # App component
-├── App.test.js               # Unit tests *TODO: create unit test files for `header`, `carousel` and `footer`*
+├── App.test.js               # Unit tests _TODO: create unit test files for `header`, `carousel` and `footer`_
 ├── data.js                   # Data (playlist details)
 ├── devices.js                # Media queries
-├── index.css                 # CSS for the `body` *TODO: remove this file*
-├── Themes.js                 # Light mode / Dark mode *WORK IN PROGRESS*
+├── index.css                 # CSS for the `body` _TODO: remove this file_
+├── Themes.js                 # Light mode / Dark mode _WORK IN PROGRESS_
 └── ...
 
 ```
 
 ## Testing
 
-- [] Unit tests with [Testing Library](https://testing-library.com/)
-- [] Tested manually using developer tools - Firefox / Chrome
-- [] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
+[] Unit tests with [Testing Library](https://testing-library.com/)
+[X] Tested manually using developer tools - Firefox / Chrome
+[X] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
 
 ## Media Queries
 
