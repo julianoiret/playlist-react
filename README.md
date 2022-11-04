@@ -1,6 +1,6 @@
 # Playlist React App
 
-## The Project
+## 🎶 The Project
 
 Our favourite tracks on a single web page: discover new artists through our inspiring playlists.
 🍐 @beyondthefruit
@@ -14,7 +14,7 @@ Our favourite tracks on a single web page: discover new artists through our insp
 - HTML
 - CSS
 
-### Folder Structure
+### 📁 Folder Structure
 
 ```
 .
@@ -40,13 +40,13 @@ Our favourite tracks on a single web page: discover new artists through our insp
 
 ```
 
-## Testing
+## 🪄 Testing
 
 - [ ] Unit tests with [Testing Library](https://testing-library.com/)
 - [X] Tested manually using developer tools - Firefox / Chrome
 - [X] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
 
-## Media Queries
+## 📱 Media Queries
 
 - `@media screen and (min-width: 320px)`
 - `@media screen and (min-width: 375px)`
@@ -57,7 +57,7 @@ Our favourite tracks on a single web page: discover new artists through our insp
 - `@media screen and (min-width: 2560px)`
 
 
-## Available Scripts
+## 🖋️ Available Scripts
 
 In the project directory, you can run:
 
@@ -84,7 +84,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Improvement / Next Steps
+## 🛸 Improvement / Next Steps
 
 - [ ] Cleanup: remove `index.css` file and use `createGlobalStyle` (styled component) - replace some `p` with `button`
 - [ ] Create test files with [Testing Library](https://testing-library.com/) 
