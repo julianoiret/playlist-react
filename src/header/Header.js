@@ -53,7 +53,7 @@ const Header = ({
         </TooltipWrapper>
         <TooltipWrapper>
           <Icons>
-            <FiRepeat />
+            <FiRepeat style={{ padding: 0 }} />
           </Icons>
           <Tooltip>Light mode</Tooltip>
         </TooltipWrapper>

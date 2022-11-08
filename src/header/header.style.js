@@ -28,7 +28,7 @@ export const HeaderTitle = styled.div`
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 300;
-  color: #F7F7F7;
+  color: #f7f7f7;
   letter-spacing: 4px;
   margin-top: 10px;
 
@@ -49,7 +49,7 @@ export const HeaderTitle = styled.div`
 export const Tooltip = styled.p`
   font-size: 11px;
   text-transform: uppercase;
-  color: #F7F7F7;
+  color: #f7f7f7;
   margin: 0;
   text-align: center;
 
@@ -70,7 +70,7 @@ export const IconWrapper = styled.div`
     font-size: 18px;
   }
   @media ${device.mobileL} {
-    font-size: 22px;
+    font-size: 20px;
   }
   @media ${device.tablet} {
     font-size: 35px;
@@ -88,8 +88,18 @@ export const TooltipWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 5px;
+  width: 40px;
+
+  @media ${device.mobileM} {
+    width: 45px;
+  }
+  @media ${device.mobileL} {
+    width: 50px;
+  }
 
   @media ${device.tablet} {
+    min-width: 55px;
+    width: auto;
     &:hover {
       ${Tooltip} {
         visibility: visible;
@@ -100,14 +110,15 @@ export const TooltipWrapper = styled.div`
 
 // TODO: change p for button
 export const Icons = styled.p`
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 5px 12px;
+
   border-radius: 5px;
   cursor: pointer;
   &:hover {
-    color: #F7F7F7 !important;
+    color: #f7f7f7 !important;
     background-color: #242526;
-    border: 1px solid #F7F7F7;
+    border: 1px solid #f7f7f7;
   }
 
   @media ${device.mobileL} {

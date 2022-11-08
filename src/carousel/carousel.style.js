@@ -2,14 +2,18 @@ import styled from 'styled-components';
 import { device } from '../devices';
 
 export const CarouselContainer = styled.div`
-  height: 115vh;
+  height: 125vh;
   display: flex;
   justify-content: center;
-  @media ${device.mobileL} {
-    height: 110vh;
+  @media ${device.mobileM} {
+    height: 105vh;
   }
+  @media ${device.mobileL} {
+    height: 115vh;
+  }
+
   @media ${device.tablet} {
-    height: 90vh;
+    height: 60vh;
   }
 `;
 export const PlaylistSection = styled.div`
@@ -141,7 +145,7 @@ export const PlaylistCardInfo = styled.div`
   align-self: center;
 
   @media ${device.mobileM} {
-    width: 340px;
+    width: 320px;
     height: 350px;
   }
   @media ${device.mobileL} {
@@ -197,7 +201,7 @@ export const PlaylistTotalTime = styled.p`
 `;
 
 export const YoutubeLink = styled.a`
-  color: #B1B1B1;
+  color: #b1b1b1;
   padding-left: 5px;
 `;
 
@@ -214,7 +218,7 @@ export const PlaylistButton = styled.button`
     3px 3px 0px 0px #626262, 4px 4px 0px 0px #626262, 5px 5px 0px 0px #626262;
   &:hover {
     font-weight: 500;
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: #000000;
   }
 
@@ -255,7 +259,7 @@ export const BackButton = styled.div`
   &:hover {
     font-weight: 600;
     color: #000000;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
   @media ${device.laptop} {
     position: absolute;
@@ -272,16 +276,18 @@ export const PlaylistCardBack = styled.div`
 export const PlaylistCardDetail = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns: 40px 25px 250px;
+  align-content: center;
+  grid-template-columns: 40px 25px 230px;
   grid-template-rows: 15px 15px;
   column-gap: 10px;
   row-gap: 5px;
   font-size: 13px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   height: 45px;
   &:hover {
-    color: #3F3E3E;
-    background-color: #E2DDDC;
+    color: #3f3e3e;
+    background-color: #e2dddc;
   }
 
   @media ${device.tablet} {
@@ -295,7 +301,7 @@ export const PlaylistCardDetail = styled.div`
 `;
 
 export const PlaylistLink = styled.a`
-  color: #B1B1B1;
+  color: #b1b1b1;
   font-size: 30px;
   height: 30px;
   padding-right: 20px;

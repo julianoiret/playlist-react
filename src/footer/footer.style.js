@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { device } from '../devices';
 
 export const FooterSection = styled.div`
   background-color: #383838;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 `;
 
@@ -21,4 +22,3 @@ export const FooterText = styled.p`
     padding-bottom: 3px;
   }
 `;
-

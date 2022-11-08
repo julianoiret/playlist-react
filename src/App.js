@@ -47,7 +47,7 @@ function App() {
           }
           return index;
         });
-      }, 10000);
+      }, 6000);
       return () => clearInterval(sliderRef.current);
     } else {
       clearInterval(sliderRef.current);

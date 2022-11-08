@@ -3,10 +3,12 @@ const playlistData = [
     id: 1,
     playlistName: 'Ambient Lounge I',
     genre: ['ambient', 'lounge', 'chillout'],
-    description: 'An atmosphere, a state of mind. Playlist blissfully composed to simply enjoy life',
+    description:
+      'An atmosphere, a state of mind. Playlist blissfully composed to simply enjoy life',
     totalTime: '',
     photo: require('./asset/lounge-1-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=42wQOP1vAFc&list=PLGcMNmVTewK_a0OuuxYEUA9-wmU-rgioR',
+    youtube:
+      'https://www.youtube.com/watch?v=42wQOP1vAFc&list=PLGcMNmVTewK_a0OuuxYEUA9-wmU-rgioR',
     musics: [
       {
         track: 1,
@@ -94,7 +96,8 @@ const playlistData = [
     description: 'Just lean back and enjoy relaxed beats - II',
     totalTime: '',
     photo: require('./asset/lounge-2-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=ADjh-VPJtFc&list=PLGcMNmVTewK9vUqoe4fTMjI9xyXPzeGlK',
+    youtube:
+      'https://www.youtube.com/watch?v=ADjh-VPJtFc&list=PLGcMNmVTewK9vUqoe4fTMjI9xyXPzeGlK',
     musics: [
       {
         track: 1,
@@ -128,7 +131,7 @@ const playlistData = [
         track: 5,
         artist: 'Lemongrass',
         title: 'Bonne Nuit',
-        time: 4.10,
+        time: 4.1,
         link: 'https://www.youtube.com/watch?v=QEZ6_3pPhzw',
       },
       {
@@ -186,10 +189,12 @@ const playlistData = [
     id: 3,
     playlistName: 'Best Of Boards Of Canada',
     genre: ['IDM', 'downtempo', 'ambient', 'psychedelica', 'electro'],
-    description: 'Scottish electronic music duo consisting of brothers Michael Sandison and Marcus Eoin - influenced by psychedelic music and electronic music',
+    description:
+      'Scottish electronic music duo consisting of brothers Michael Sandison and Marcus Eoin - influenced by psychedelic music and electronic music',
     totalTime: '',
     photo: require('./asset/boards-of-canada-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=lhPWJHrwgR4&list=PLGcMNmVTewK8m4EhNoFSxRkOrjdUYicI4',
+    youtube:
+      'https://www.youtube.com/watch?v=lhPWJHrwgR4&list=PLGcMNmVTewK8m4EhNoFSxRkOrjdUYicI4',
     musics: [
       {
         track: 1,
@@ -272,7 +277,7 @@ const playlistData = [
         track: 12,
         artist: 'Boards Of Canada',
         title: 'In A Beautiful Place Out In The Country',
-        time: 5.30,
+        time: 5.3,
         link: 'https://www.youtube.com/watch?v=zVWcptE6UAI',
       },
     ],
@@ -281,10 +286,12 @@ const playlistData = [
     id: 4,
     playlistName: 'Good Night',
     genre: ['ambient'],
-    description: 'Time to sleep. Empty your mind, bring attention to the present, and introduce calmness and peace',
+    description:
+      'Time to sleep. Empty your mind, bring attention to the present, and introduce calmness and peace',
     totalTime: '',
     photo: require('./asset/good-night-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=4SO0qSfxqyk&list=PLGcMNmVTewK-nt9UzadcrpRBFynRLF0Fc',
+    youtube:
+      'https://www.youtube.com/watch?v=4SO0qSfxqyk&list=PLGcMNmVTewK-nt9UzadcrpRBFynRLF0Fc',
     musics: [
       {
         track: 1,
@@ -360,7 +367,7 @@ const playlistData = [
         track: 11,
         artist: 'Headphone Activist',
         title: 'Endocannabinoid',
-        time: 3.20,
+        time: 3.2,
         link: 'https://www.youtube.com/watch?v=kHy5D8GFe_Y',
       },
       {
@@ -376,10 +383,12 @@ const playlistData = [
     id: 5,
     playlistName: 'Best Of Moby',
     genre: ['electro', 'downtempo', 'ambient', 'techno'],
-    description: 'One of the most important electronic dance music figures of the 90s. With more than 20 albums released, it wasn t easy to choose. This playlist deserves much more tracks!',
+    description:
+      'One of the most important electronic dance music figures of the 90s. With more than 20 albums released, it wasn t easy to choose. This playlist deserves much more tracks!',
     totalTime: '',
     photo: require('./asset/moby-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=QhZnEagfjTQ&list=PLGcMNmVTewK-SxM3q1HtZFyJm29In7Xjq',
+    youtube:
+      'https://www.youtube.com/watch?v=QhZnEagfjTQ&list=PLGcMNmVTewK-SxM3q1HtZFyJm29In7Xjq',
     musics: [
       {
         track: 1,
@@ -441,7 +450,7 @@ const playlistData = [
         track: 9,
         artist: 'Moby',
         title: 'Sunday (The Day Before My Birthday)',
-        time: 5.10,
+        time: 5.1,
         link: 'https://www.youtube.com/watch?v=AAB_YncprvI',
       },
       {
@@ -471,10 +480,12 @@ const playlistData = [
     id: 6,
     playlistName: 'IDM',
     genre: ['IDM', 'electro', 'ambient techno', 'breakbeat'],
-    description: 'A palette of electronic and rave music styles. Regarded as better suited to home listening than dancing',
+    description:
+      'A palette of electronic and rave music styles. Regarded as better suited to home listening than dancing',
     totalTime: '',
     photo: require('./asset/idm-1-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=3BF_zuOYFn0&list=PLGcMNmVTewK81myPTTkJiPhWLd0bvksL-',
+    youtube:
+      'https://www.youtube.com/watch?v=3BF_zuOYFn0&list=PLGcMNmVTewK81myPTTkJiPhWLd0bvksL-',
     musics: [
       {
         track: 1,
@@ -515,14 +526,14 @@ const playlistData = [
         track: 6,
         artist: 'Rykard',
         title: 'Out Of The Orchid Way',
-        time: 5.40,
+        time: 5.4,
         link: 'https://www.youtube.com/watch?v=dFb5F6Vj7M0',
       },
       {
         track: 7,
         artist: 'Solar Fields',
         title: 'Inherit Velocity',
-        time: 2.40,
+        time: 2.4,
         link: 'https://www.youtube.com/watch?v=FOOoU5MTdBM',
       },
       {
@@ -566,10 +577,12 @@ const playlistData = [
     id: 7,
     playlistName: 'Best of Aphex Twin',
     genre: ['IDM', 'experimental', 'electro', 'acid techno'],
-    description: 'A significant musician, composer and DJ, and one of the most influential artists in contemporary electronic music',
+    description:
+      'A significant musician, composer and DJ, and one of the most influential artists in contemporary electronic music',
     totalTime: '',
     photo: require('./asset/aphex-twin-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=0Z4cLmbw6q0&list=PLGcMNmVTewK-woK5gmRhl3N_XUoreqN27',
+    youtube:
+      'https://www.youtube.com/watch?v=0Z4cLmbw6q0&list=PLGcMNmVTewK-woK5gmRhl3N_XUoreqN27',
     musics: [
       {
         track: 1,
@@ -610,7 +623,7 @@ const playlistData = [
         track: 6,
         artist: 'Aphex twin',
         title: 'Crying In Your Face',
-        time: 4.30,
+        time: 4.3,
         link: 'https://www.youtube.com/watch?v=AhMukHbUYJ0',
       },
       {
@@ -661,10 +674,12 @@ const playlistData = [
     id: 8,
     playlistName: 'Best Of Massive Attack',
     genre: ['trip hop', 'downtempo', 'electro'],
-    description: 'One of the greatest, "trip-hop" group. Because Massive Attack music is so unique, they deserve their own playlist',
+    description:
+      'One of the greatest, "trip-hop" group. Because Massive Attack music is so unique, they deserve their own playlist',
     totalTime: '',
     photo: require('./asset/massive-attack-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=Tb0MC0jFv6M&list=PLGcMNmVTewK8__Tpkceq8NOngUJNx1_lT',
+    youtube:
+      'https://www.youtube.com/watch?v=Tb0MC0jFv6M&list=PLGcMNmVTewK8__Tpkceq8NOngUJNx1_lT',
     musics: [
       {
         track: 1,
@@ -749,10 +764,12 @@ const playlistData = [
     id: 9,
     playlistName: 'Ambient Chillout',
     genre: ['ambient', 'psybient', 'etchno-chillout', 'psychill'],
-    description: 'The sun of psychedelic downtempo music which brings light in multiple colours and shapes',
+    description:
+      'The sun of psychedelic downtempo music which brings light in multiple colours and shapes',
     totalTime: '',
     photo: require('./asset/chillout-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=p1oGMZKEzZs&list=PLGcMNmVTewK-SMJNgIrpERUBMBHoLMam9',
+    youtube:
+      'https://www.youtube.com/watch?v=p1oGMZKEzZs&list=PLGcMNmVTewK-SMJNgIrpERUBMBHoLMam9',
     musics: [
       {
         track: 1,
@@ -844,10 +861,12 @@ const playlistData = [
     id: 10,
     playlistName: 'Lounge Cafe',
     genre: ['lounge', 'ambient', 'chillout'],
-    description: 'Musics that emphasizing a chilled-out atmosphere with light instrumentation and sometimes vocals indebted to vocal jazz',
+    description:
+      'Musics that emphasizing a chilled-out atmosphere with light instrumentation and sometimes vocals indebted to vocal jazz',
     totalTime: '',
     photo: require('./asset/lounge-cafe-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=t11W2nnYj7A&list=PLGcMNmVTewK9lmfLmmqAeegoYBIwQPx3n',
+    youtube:
+      'https://www.youtube.com/watch?v=t11W2nnYj7A&list=PLGcMNmVTewK9lmfLmmqAeegoYBIwQPx3n',
     musics: [
       {
         track: 1,
@@ -938,14 +957,9 @@ const playlistData = [
   {
     id: 11,
     playlistName: 'Best Of Eitan Reiter',
-    genre: [
-      'electro',
-      'psybient',
-      'progressive house',
-      'deep house',
-      'techno',
-    ],
-    description: 'Israeli musician and producer, he performed in many electronic and psytrance fesivals around the globe',
+    genre: ['electro', 'psybient', 'progressive house', 'deep house', 'techno'],
+    description:
+      'Israeli musician and producer, he performed in many electronic and psytrance fesivals around the globe',
     totalTime: '',
     photo: require('./asset/eitan-reiter-img.png'),
     youtube: '',
@@ -961,7 +975,7 @@ const playlistData = [
         track: 2,
         artist: 'Eitan Reiter',
         title: 'Pyramid',
-        time: 8.20,
+        time: 8.2,
         link: 'https://www.youtube.com/watch?v=qI6wEhtsqio',
       },
       {
@@ -1016,23 +1030,23 @@ const playlistData = [
       {
         track: 10,
         artist: 'A Batler',
-        title: 'You re A Fish - Boom Festival 2016 (Eitan Reiter Remix)',
+        title: 'You re A Fish - Boom Festival (Eitan Reiter Remix)',
         time: 10.01,
         link: 'https://www.youtube.com/watch?v=VWOoRzI1tjc',
       },
       {
         track: 11,
-        artist: 'Eitan Reiter',
-        title: 'Midnight Glide',
-        time: 7.37,
-        link: 'https://www.youtube.com/watch?v=kKbEMvk4TVI',
-      },
-      {
-        track: 12,
         artist: 'Eitan Reiter & Audio Junkies',
         title: 'How Low - Boom Festival Edition',
         time: 6.01,
         link: 'https://www.youtube.com/watch?v=eavBYjGucOg',
+      },
+      {
+        track: 12,
+        artist: 'Eitan Reiter',
+        title: 'Midnight Glide',
+        time: 7.37,
+        link: 'https://www.youtube.com/watch?v=kKbEMvk4TVI',
       },
     ],
   },
@@ -1040,7 +1054,8 @@ const playlistData = [
     id: 12,
     playlistName: 'Relax',
     genre: ['ambient', 'atmospheric', 'space ambient'],
-    description: 'Take a deep breath - This playlist can work well for sleep, meditation, focus, relaxation, work, reading, spa, studying and more',
+    description:
+      'Take a deep breath - This playlist can work well for sleep, meditation, focus, relaxation, work, reading, spa, studying and more',
     totalTime: '',
     photo: require('./asset/relax-img.png'),
     youtube: '',
@@ -1084,7 +1099,7 @@ const playlistData = [
         track: 6,
         artist: 'Global Communication',
         title: 'Epsilon Phase',
-        time: 11.00,
+        time: 11.0,
         link: 'https://www.youtube.com/watch?v=M5tm3Oe4pYg',
       },
       {
@@ -1135,7 +1150,8 @@ const playlistData = [
     id: 13,
     playlistName: 'Best Of Solar Fields',
     genre: ['electro', 'ambient', 'psybient', 'progressive trance'],
-    description: 'In the late 90s, Swedish composer Magnus Birgersson created Solar Fields, a project considered like one of the most productive and creative in the Scandinavian electronic music scene',
+    description:
+      'In the late 90s, Swedish composer Magnus Birgersson created Solar Fields, a project considered like one of the most productive and creative in the Scandinavian electronic music scene',
     totalTime: '',
     photo: require('./asset/solar-fields-img.png'),
     youtube: '',
@@ -1151,7 +1167,7 @@ const playlistData = [
         track: 2,
         artist: 'Solar Fields',
         title: 'Times Are Good (Sometimes Remix)',
-        time: 8.10,
+        time: 8.1,
         link: 'https://www.youtube.com/watch?v=ptgQqC8m4xE',
       },
       {
@@ -1207,7 +1223,7 @@ const playlistData = [
         track: 10,
         artist: 'Solar Fields',
         title: 'Confusion Illusion (Remix)',
-        time: 7.20,
+        time: 7.2,
         link: 'https://www.youtube.com/watch?v=mPb3OKHfCdI',
       },
       {
@@ -1223,10 +1239,12 @@ const playlistData = [
     id: 14,
     playlistName: 'Best Of Ott',
     genre: ['dub', 'electro', 'trip hop', 'ethnic electro', 'ambient'],
-    description: 'Ott is a British record producer and musician who has worked with Sinéad O Connor, Embrace, the Orb, and Brian Eno, and has achieved recognition since 2002 for his own psychedelic dub tracks and his collaborations',
+    description:
+      'Ott is a British record producer and musician who has worked with Sinéad O Connor, Embrace, the Orb, and Brian Eno, and has achieved recognition since 2002 for his own psychedelic dub tracks and his collaborations',
     totalTime: '',
     photo: require('./asset/ott-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=xUtlrbOkxN0&list=PLGcMNmVTewK9RhzMtBeEkj3tZqL0__cP3',
+    youtube:
+      'https://www.youtube.com/watch?v=xUtlrbOkxN0&list=PLGcMNmVTewK9RhzMtBeEkj3tZqL0__cP3',
     musics: [
       {
         track: 1,
@@ -1253,7 +1271,7 @@ const playlistData = [
         track: 4,
         artist: 'OTT',
         title: 'A Happening In Your Head',
-        time: 7.10,
+        time: 7.1,
         link: 'https://www.youtube.com/watch?v=fMwS9Ip8c-E',
       },
       {
@@ -1302,7 +1320,7 @@ const playlistData = [
         track: 11,
         artist: 'OTT',
         title: 'Rogue Bagel',
-        time: 8.30,
+        time: 8.3,
         link: 'https://www.youtube.com/watch?v=OnLhzs7d0E8',
       },
     ],
@@ -1315,7 +1333,8 @@ const playlistData = [
       'Rone (born Erwan Castex) is a French electro music producer and artist',
     totalTime: '',
     photo: require('./asset/rone-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=GZc8kB6OfXs&list=PLGcMNmVTewK9QyZDOBMwom8ds4ueINS3_',
+    youtube:
+      'https://www.youtube.com/watch?v=GZc8kB6OfXs&list=PLGcMNmVTewK9QyZDOBMwom8ds4ueINS3_',
     musics: [
       {
         track: 1,
@@ -1370,7 +1389,7 @@ const playlistData = [
         track: 8,
         artist: 'Rone',
         title: 'Sing Song',
-        time: 4.00,
+        time: 4.0,
         link: 'https://www.youtube.com/watch?v=ZiHaMnlkGx8',
       },
       {
@@ -1417,7 +1436,8 @@ const playlistData = [
     description: 'A Russian duo consisting of Danial Roeth and William Grey',
     totalTime: '',
     photo: require('./asset/koan-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=jo4m-FYxBpA&list=PLGcMNmVTewK_nYPovV30BnZyrvTleEhkC',
+    youtube:
+      'https://www.youtube.com/watch?v=jo4m-FYxBpA&list=PLGcMNmVTewK_nYPovV30BnZyrvTleEhkC',
     musics: [
       {
         track: 1,
@@ -1509,7 +1529,8 @@ const playlistData = [
     id: 17,
     playlistName: 'Best Of Eric Hilton',
     genre: ['lounge', 'chillout', 'downtempo', 'electro', 'trip hop'],
-    description: 'Eric Hilton is an artist/producer who uses old-school skills to craft new school chill',
+    description:
+      'Eric Hilton is an artist/producer who uses old-school skills to craft new school chill',
     totalTime: '',
     photo: require('./asset/eric-hilton-img.png'),
     youtube: '',
@@ -1686,7 +1707,8 @@ const playlistData = [
     description: 'Some of the best Intelligent Dance Music tracks - II',
     totalTime: '',
     photo: require('./asset/idm-2-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=X_k2lih0T6U&list=PLGcMNmVTewK-9SdRTd4osgRp8LpTHDuLn',
+    youtube:
+      'https://www.youtube.com/watch?v=X_k2lih0T6U&list=PLGcMNmVTewK-9SdRTd4osgRp8LpTHDuLn',
     musics: [
       {
         track: 1,
@@ -1741,14 +1763,14 @@ const playlistData = [
         track: 8,
         artist: 'Ed Chamberlain',
         title: 'Landmine',
-        time: 7.20,
+        time: 7.2,
         link: 'https://www.youtube.com/watch?v=Gd3QYfTV4IE',
       },
       {
         track: 9,
         artist: 'Mindseye',
         title: 'Hang Ten (The Ocean)',
-        time: 3.20,
+        time: 3.2,
         link: 'https://www.youtube.com/watch?v=IYfUX0pA45k',
       },
       {
@@ -1762,7 +1784,7 @@ const playlistData = [
         track: 11,
         artist: 'Lone',
         title: 'Sea Of Tranquility',
-        time: 5.00,
+        time: 5.0,
         link: 'https://www.youtube.com/watch?v=zd4mlmqvKzE',
       },
       {
@@ -1778,10 +1800,12 @@ const playlistData = [
     id: 20,
     playlistName: 'Best Of Carbon Based Lifeforms',
     genre: ['ambient', 'psybient', 'chillout'],
-    description: 'Swedish electronic music duo formed by Johannes Hedberg and Daniel Vadestrid',
+    description:
+      'Swedish electronic music duo formed by Johannes Hedberg and Daniel Vadestrid',
     totalTime: '',
     photo: require('./asset/carbon-based-lifeforms-img.png'),
-    youtube: 'https://www.youtube.com/watch?v=ORro19RHIt0&list=PLGcMNmVTewK9JPG3lmqSKT4Y7Xv_6kMzn',
+    youtube:
+      'https://www.youtube.com/watch?v=ORro19RHIt0&list=PLGcMNmVTewK9JPG3lmqSKT4Y7Xv_6kMzn',
     musics: [
       {
         track: 1,
@@ -1815,7 +1839,7 @@ const playlistData = [
         track: 5,
         artist: 'Carbon Based Lifeforms',
         title: 'T-Rex Echoes (Live)',
-        time: 7.10,
+        time: 7.1,
         link: 'https://www.youtube.com/watch?v=w6O5LmdYtSg',
       },
       {
