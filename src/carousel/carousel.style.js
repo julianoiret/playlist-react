@@ -15,6 +15,12 @@ export const CarouselContainer = styled.div`
   @media ${device.tablet} {
     height: 60vh;
   }
+  @media ${device.laptop} {
+    height: 90vh;
+  }
+  @media ${device.laptopL} {
+    height: 75vh;
+  }
 `;
 export const PlaylistSection = styled.div`
   // TODO: reset width for responsive design
