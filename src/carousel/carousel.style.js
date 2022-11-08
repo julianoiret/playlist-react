@@ -114,6 +114,7 @@ export const PlaylistCardFront = styled.div`
 export const PlaylistCardImg = styled.img`
   width: 290px;
   height: 295px;
+  margin: 0 auto;
 
   @media ${device.mobileM} {
     width: 350px;
