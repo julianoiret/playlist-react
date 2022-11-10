@@ -56,7 +56,7 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 
 ## 🪄 Testing
 
-- [ ] Unit tests with [Testing Library](https://testing-library.com/)
+- [ ] Unit tests with [Testing Library](https://testing-library.com/) **IN PROGRESS**
 - [X] Tested manually using developer tools - Firefox / Chrome
 - [X] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
 
