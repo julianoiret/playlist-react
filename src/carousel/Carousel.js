@@ -22,7 +22,7 @@ import {
   TrackArtist,
   TrackTitle,
   TrackTime,
-} from './Carousell.style';
+} from './Carousel.style';
 import { TbArrowBack } from 'react-icons/tb';
 import { Badges } from './Badges';
 import { RiTimerLine } from 'react-icons/ri';
