@@ -33,7 +33,7 @@ export const PlaylistSection = styled.div`
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
-  background-color: #242323;
+  background-color: #2B2B2B;
 
   @media ${device.mobileM} {
     width: 90vw;

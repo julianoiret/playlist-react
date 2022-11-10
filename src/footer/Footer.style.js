@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { device } from '../devices';
 
 export const FooterSection = styled.div`
-  background-color: #383838;
+  background-color: #2B2B2B;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
