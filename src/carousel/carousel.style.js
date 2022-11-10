@@ -46,12 +46,12 @@ export const PlaylistSection = styled.div`
   @media ${device.tablet} {
     width: 90vw;
     max-width: 750px;
-    height: 520px;
+    height: 560px;
   }
   @media ${device.laptop} {
     width: 80vw;
     max-width: 1000px;
-    height: 550px;
+    height: 580px;
   }
   @media ${device.laptopL} {
     width: 80vw;
@@ -161,11 +161,13 @@ export const PlaylistCardInfo = styled.div`
   @media ${device.tablet} {
     width: 340px;
     height: 350px;
+    padding-right: 5px;
   }
   @media ${device.laptop} {
     width: 400px;
     height: 370px;
     padding-bottom: 50px;
+    padding-right: 25px;
   }
 `;
 
@@ -180,7 +182,8 @@ export const PlaylistTitle = styled.h1`
   }
 `;
 
-export const PlaylistDescription = styled.p``;
+export const PlaylistDescription = styled.p`
+`;
 
 export const PlaylistGenre = styled.div``;
 
@@ -267,7 +270,7 @@ export const BackButton = styled.div`
     color: #000000;
     background-color: #ffffff;
   }
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     position: absolute;
     top: 20px;
     bottom: inherit;
@@ -276,7 +279,7 @@ export const BackButton = styled.div`
 `;
 
 export const PlaylistCardBack = styled.div`
-  margin-top: 15px;
+  margin-top: 0px;
 `;
 
 export const PlaylistCardDetail = styled.div`
@@ -319,12 +322,13 @@ export const PlaylistLink = styled.a`
 
   @media ${device.tablet} {
     font-size: 30px;
-    padding-right: 30px;
+    padding-right: 20px;
     min-width: 10px;
   }
   @media ${device.laptop} {
     min-width: 10px;
     padding-left: 15px;
+    padding-right: 30px;
   }
 `;
 
@@ -345,7 +349,7 @@ export const TrackArtist = styled.p`
   grid-column: 3;
   grid-row: 1;
   @media ${device.tablet} {
-    min-width: 250px;
+    min-width: 210px;
   }
   @media ${device.laptop} {
     min-width: 300px;
