@@ -1,4 +1,4 @@
-import { FooterSection, IconsHanard, FooterText } from "./footer.style";
+import { FooterSection, IconsHanard, FooterText } from "./Footerr.style";
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 
 const Footer = () => {

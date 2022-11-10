@@ -5,7 +5,7 @@ import {
   Icons,
   Tooltip,
   TooltipWrapper,
-} from './header.style';
+} from './Headerr.style';
 import {
   FaPlay,
   FaPause,
