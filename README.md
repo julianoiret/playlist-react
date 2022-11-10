@@ -36,18 +36,20 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 │   ├── Badges.js             # Displays music genre through `map`
 │   ├── Carousel.js           # Main component with the playlists (front and back)
 │   └── carousel.style.js     # Styling with styled-component
+│   ├── carousel.test.js      # Unit test **WORK IN PROGRESS**
 ├── footer                    # Footer folder
 │   ├── Footer.js             # Footer component
 │   ├── footer.style.js       # Styling with styled-component
+│   ├── Footer.test.js        # Unit test **WORK IN PROGRESS**
 ├── header                    # Header folder
 │   ├── Header.js             # Header component
 │   ├── header.style.js       # Styling with styled-component
+│   ├── Header.test.js        # Unit test **WORK IN PROGRESS**
 ├── App.js                    # App component
-├── App.test.js               # Unit tests TODO: create unit test files for `header`, `carousel` and `footer`
 ├── data.js                   # Data (playlist details)
 ├── devices.js                # Media queries
 ├── index.css                 # CSS for the `body` TODO: remove this file
-├── Themes.js                 # Light mode / Dark mode WORK IN PROGRESS
+├── Themes.js                 # Light mode / Dark mode **WORK IN PROGRESS**
 └── ...
 
 ```
