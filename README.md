@@ -35,15 +35,15 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 ├── carousel                  # Playlists folder
 │   ├── Badges.js             # Displays music genre through `map`
 │   ├── Carousel.js           # Main component with the playlists (front and back)
-│   └── carousel.style.js     # Styling with styled-component
-│   ├── carousel.test.js      # Unit test **WORK IN PROGRESS**
+│   └── Carousel.style.js     # Styling with styled-component
+│   ├── Carousel.test.js      # Unit test **WORK IN PROGRESS**
 ├── footer                    # Footer folder
 │   ├── Footer.js             # Footer component
-│   ├── footer.style.js       # Styling with styled-component
+│   ├── Footer.style.js       # Styling with styled-component
 │   ├── Footer.test.js        # Unit test **WORK IN PROGRESS**
 ├── header                    # Header folder
 │   ├── Header.js             # Header component
-│   ├── header.style.js       # Styling with styled-component
+│   ├── Header.style.js       # Styling with styled-component
 │   ├── Header.test.js        # Unit test **WORK IN PROGRESS**
 ├── App.js                    # App component
 ├── data.js                   # Data (playlist details)
