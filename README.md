@@ -100,8 +100,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## 🛸 Improvement / Next Steps
 
-- [ ] Cleanup: remove `index.css` file and use `createGlobalStyle` (styled component) - replace some `p` with `button`
+- [ ] Cleanup: remove `index.css` file and use `createGlobalStyle` (styled component)
 - [ ] Create test files with [Testing Library](https://testing-library.com/) 
+- [ ] Add Spotify logo (next to Youtube logo) to open playlist on Spotify
 - [ ] Implement light mode 
 - [ ] Improve accessibility
 - [ ] Spike: use Spotify API instead of Youtube 
