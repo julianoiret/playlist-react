@@ -92,7 +92,6 @@ export const TooltipWrapper = styled.div`
   }
 `;
 
-// TODO: change p for button
 export const Icons = styled.button`
   background-color: #ffffff;
   padding: 6px 12px;
