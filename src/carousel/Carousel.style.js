@@ -16,10 +16,10 @@ export const CarouselContainer = styled.div`
     height: 60vh;
   }
   @media ${device.laptop} {
-    height: 90vh;
+    height: 95vh;
   }
   @media ${device.laptopL} {
-    height: 75vh;
+    height: 80vh;
   }
 `;
 export const PlaylistSection = styled.div`
@@ -33,7 +33,7 @@ export const PlaylistSection = styled.div`
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
-  background-color: #2B2B2B;
+  background-color: #2b2b2b;
 
   @media ${device.mobileM} {
     width: 90vw;
@@ -182,8 +182,7 @@ export const PlaylistTitle = styled.h1`
   }
 `;
 
-export const PlaylistDescription = styled.p`
-`;
+export const PlaylistDescription = styled.p``;
 
 export const PlaylistGenre = styled.div``;
 
@@ -219,6 +218,7 @@ export const PlaylistButton = styled.button`
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
+  color: #2b2b2b;
   cursor: pointer;
   border: 3px solid #626262;
   margin: 20px 0 20px 20px;
