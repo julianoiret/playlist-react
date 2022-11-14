@@ -30,7 +30,6 @@ export const HeaderTitle = styled.div`
   font-weight: 300;
   color: #f7f7f7;
   letter-spacing: 4px;
-  margin-top: 10px;
 
   @media ${device.mobileL} {
     font-size: 35px;
@@ -40,7 +39,7 @@ export const HeaderTitle = styled.div`
     margin-top: 20px;
   }
   @media ${device.laptopL} {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: 400;
     margin-top: 30px;
   }
@@ -60,26 +59,11 @@ export const Tooltip = styled.p`
 
 export const IconWrapper = styled.div`
   color: #000000;
-  font-size: 14px;
+  /* font-size: 14px; */
+  margin-top: 16px;
   display: flex;
   ${Tooltip} {
     visibility: hidden;
-  }
-
-  @media ${device.mobileM} {
-    font-size: 18px;
-  }
-  @media ${device.mobileL} {
-    font-size: 20px;
-  }
-  @media ${device.tablet} {
-    font-size: 35px;
-  }
-  @media ${device.laptop} {
-    /* height: 110px; */
-  }
-  @media ${device.laptopL} {
-    font-size: 40px;
   }
 `;
 
@@ -109,29 +93,36 @@ export const TooltipWrapper = styled.div`
 `;
 
 // TODO: change p for button
-export const Icons = styled.p`
+export const Icons = styled.button`
   background-color: #ffffff;
-  padding: 5px 12px;
-
-  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
   cursor: pointer;
+  /* box-shadow: 0px 1px 0px 0px; */
   &:hover {
     color: #f7f7f7 !important;
     background-color: #242526;
     border: 1px solid #f7f7f7;
   }
 
+  @media ${device.mobileM} {
+    font-size: 18px;
+  }
+
   @media ${device.mobileL} {
     padding: 5px 17px 0 17px;
   }
   @media ${device.tablet} {
-    margin: 15px 0 5px 0;
+    font-size: 34px;
+    margin: 10px 0 5px 0;
   }
   @media ${device.laptop} {
     margin: 15px 0 5px 0;
-    width: 35px;
   }
   @media ${device.laptopL} {
-    width: 40px;
+    font-size: 40px;
   }
 `;
