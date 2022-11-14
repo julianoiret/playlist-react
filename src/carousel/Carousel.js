@@ -47,7 +47,15 @@ const Carousel = ({ data, index, setIndex }) => {
     <CarouselContainer>
       <PlaylistSection>
         {data.map((ind, playIndex) => {
-          const { id, playlistName, description, genre, photo, youtube, musics } = ind;
+          const {
+            id,
+            playlistName,
+            description,
+            genre,
+            photo,
+            youtube,
+            musics,
+          } = ind;
 
           let position = 'nextSlide';
           if (playIndex === index) {
@@ -80,8 +88,12 @@ const Carousel = ({ data, index, setIndex }) => {
                       />
                       {sumTime(musics)} minutes
                     </PlaylistTotalTime>
-                    <YoutubeLink href={youtube} target='_blank' rel='noreferrer'>
-                    <ImYoutube2 style={{ fontSize: '50px' }} />
+                    <YoutubeLink
+                      href={youtube}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      <ImYoutube2 style={{ fontSize: '50px' }} />
                     </YoutubeLink>
                     <Badges genre={genre}></Badges>
                     <PlaylistButton onClick={() => setFlip(true)}>

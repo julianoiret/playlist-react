@@ -188,9 +188,9 @@ const playlistData = [
   {
     id: 3,
     playlistName: 'Best Of Boards Of Canada',
-    genre: ['IDM', 'downtempo', 'ambient', 'psychedelica', 'electro'],
+    genre: ['IDM', 'downtempo', 'ambient', 'psychedelic', 'electro'],
     description:
-      'Scottish electronic music duo consisting of brothers Michael Sandison and Marcus Eoin - influenced by psychedelic music and electronic music',
+      'Scottish electronic music duo, brothers Michael Sandison & Marcus Eoin - influenced by psychedelic & electronic music',
     totalTime: '',
     photo: require('./asset/boards-of-canada-img.png'),
     youtube:
