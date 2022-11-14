@@ -100,6 +100,7 @@ export const Icons = styled.button`
   border-radius: 7px;
   border: none;
   outline: none;
+  color: #242526;
   cursor: pointer;
   /* box-shadow: 0px 1px 0px 0px; */
   &:hover {
