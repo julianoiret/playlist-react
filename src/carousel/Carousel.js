@@ -11,7 +11,9 @@ import {
   PlaylistTitle,
   PlaylistDescription,
   PlaylistTotalTime,
+  PlaylistLogos,
   YoutubeLink,
+  SpotifyLink,
   PlaylistButton,
   PlaylistBackBanner,
   BackButton,
@@ -25,7 +27,7 @@ import {
 } from './Carousel.style';
 import { TbArrowBack } from 'react-icons/tb';
 import { Badges } from './Badges';
-import { RiTimerLine } from 'react-icons/ri';
+import { RiTimerLine, RiSpotifyFill } from 'react-icons/ri';
 import { BiCaretRightCircle } from 'react-icons/bi';
 import { ImYoutube2 } from 'react-icons/im';
 
@@ -53,6 +55,7 @@ const Carousel = ({ data, index }) => {
             genre,
             photo,
             youtube,
+            spotify,
             musics,
           } = ind;
 
@@ -87,6 +90,7 @@ const Carousel = ({ data, index }) => {
                       />
                       {sumTime(musics)} minutes
                     </PlaylistTotalTime>
+                    <PlaylistLogos>
                     <YoutubeLink
                       href={youtube}
                       target='_blank'
@@ -94,6 +98,14 @@ const Carousel = ({ data, index }) => {
                     >
                       <ImYoutube2 style={{ fontSize: '50px' }} />
                     </YoutubeLink>
+                    <SpotifyLink
+                      href={spotify}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      <RiSpotifyFill style={{ fontSize: '25px' }} />
+                    </SpotifyLink>
+                    </PlaylistLogos>
                     <Badges genre={genre}></Badges>
                     <PlaylistButton onClick={() => setFlip(true)}>
                       Detail

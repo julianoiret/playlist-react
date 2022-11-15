@@ -9,6 +9,8 @@ const playlistData = [
     photo: require('./asset/lounge-1-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=42wQOP1vAFc&list=PLGcMNmVTewK_a0OuuxYEUA9-wmU-rgioR',
+    spotify:
+      'https://open.spotify.com/playlist/2TbrBRFpCHArZekPNnreMK',
     musics: [
       {
         track: 1,

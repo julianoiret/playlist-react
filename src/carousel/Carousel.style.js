@@ -208,9 +208,19 @@ export const PlaylistTotalTime = styled.p`
   align-items: center;
 `;
 
+export const PlaylistLogos = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const YoutubeLink = styled.a`
   color: #b1b1b1;
   padding-left: 5px;
+`;
+
+export const SpotifyLink = styled.a`
+  color: #b1b1b1;
+  padding-left: 15px;
 `;
 
 export const PlaylistButton = styled.button`

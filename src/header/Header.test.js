@@ -50,6 +50,7 @@ describe('Header', () => {
 
   it('should display the light/dark mode button', () => {
     const { getByRole } = render(<Header />);
+    // eslint-disable-next-line testing-library/prefer-screen-queries
     expect(getByRole('button', { name: /mode/i })).toBeInTheDocument();
   });
   it('should display the stop button and call setIndex when stop button is clicked', () => {
