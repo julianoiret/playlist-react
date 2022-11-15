@@ -2,7 +2,7 @@
 
 ## 🎶 The Project
 
-➡️ ➡️ [GO TO WEBSITE PROJECT](https://react-playlist.netlify.app/) ⬅️ ⬅️  
+➡️ ➡️ [GO TO WEBSITE PROJECT](https://react-playlist.netlify.app/) ⬅️ ⬅️
 
 Our favourite tracks on a single web page: discover new artists through our inspiring playlists.
 
@@ -16,10 +16,10 @@ Our favourite tracks on a single web page: discover new artists through our insp
 
 https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-af4c-a33ce267f6bb.mov
 
-
 🚀 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-🧚🏻 Tech stack: 
+🧚🏻 Tech stack:
+
 - ReactJS
 - JavaScript
 - Styled-components
@@ -56,9 +56,9 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 
 ## 🪄 Testing
 
-- [ ] Unit tests with [Testing Library](https://testing-library.com/) **IN PROGRESS**
-- [X] Tested manually using developer tools - Firefox / Chrome
-- [X] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
+- [x] Unit tests with [Testing Library](https://testing-library.com/) **IN PROGRESS**
+- [x] Tested manually using developer tools - Firefox / Chrome
+- [x] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
 
 ## 📱 Media Queries
 
@@ -69,7 +69,6 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 - `@media screen and (min-width: 1024px)`
 - `@media screen and (min-width: 1440px)`
 - `@media screen and (min-width: 2560px)`
-
 
 ## 🖋️ Available Scripts
 
@@ -101,9 +100,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## 🛸 Improvement / Next Steps
 
 - [ ] Cleanup: remove `index.css` file and use `createGlobalStyle` (styled component)
-- [ ] Create test files with [Testing Library](https://testing-library.com/) 
+- [ ] Create test files with [Testing Library](https://testing-library.com/)
 - [ ] Add Spotify logo (next to Youtube logo) to open playlist on Spotify
-- [ ] Implement light mode 
+- [ ] Implement light mode
 - [ ] Improve accessibility
-- [ ] Spike: use Spotify API instead of Youtube 
+- [ ] Spike: use Spotify API instead of Youtube
 - [ ] Filter out playlists by category using dynamic `buttons`

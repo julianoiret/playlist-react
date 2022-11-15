@@ -34,6 +34,8 @@ function App() {
     });
   };
 
+  //autoslide/caroussel function
+  // we check startSlider is true, if yes we change the index every 6s
   useEffect(() => {
     if (startSlider) {
       if (index === 0) {
@@ -54,6 +56,7 @@ function App() {
     }
   }, [startSlider]);
 
+  //fuction to stop the autoslide/caroussel
   function handleCancelClick() {
     clearInterval(sliderRef.current);
   }
