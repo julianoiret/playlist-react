@@ -16,7 +16,7 @@ export const CarouselContainer = styled.div`
     height: 60vh;
   }
   @media ${device.laptop} {
-    height: 95vh;
+    height: 100vh;
   }
   @media ${device.laptopL} {
     height: 80vh;

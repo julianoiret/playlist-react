@@ -29,8 +29,7 @@ import { RiTimerLine } from 'react-icons/ri';
 import { BiCaretRightCircle } from 'react-icons/bi';
 import { ImYoutube2 } from 'react-icons/im';
 
-const Carousel = ({ data, index, setIndex }) => {
-  // const [index, setIndex] = useState(0);
+const Carousel = ({ data, index }) => {
   const [flip, setFlip] = useState(false);
 
   // function to sum the total time for each playlist

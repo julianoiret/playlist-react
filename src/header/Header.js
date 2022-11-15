@@ -28,38 +28,38 @@ const Header = ({
       <HeaderTitle>Music is life</HeaderTitle>
       <IconWrapper>
         <TooltipWrapper>
-          <Icons>
-            <FaPlay onClick={() => setStartSlider(!startSlider)} />
+          <Icons aria-label='play' onClick={() => setStartSlider(!startSlider)}>
+            <FaPlay />
           </Icons>
           <Tooltip>Play</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
-          <Icons>
-            <FaPause onClick={() => handleCancelClick()} />
+          <Icons aria-label='pause' onClick={() => handleCancelClick()}>
+            <FaPause />
           </Icons>
           <Tooltip>Pause</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
-          <Icons>
-            <FaFastBackward onClick={() => prevSlide()} />
+          <Icons aria-label='previous' onClick={() => prevSlide()}>
+            <FaFastBackward />
           </Icons>
           <Tooltip>Previous</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
-          <Icons>
-            <FaFastForward onClick={() => nextSlide()} />
+          <Icons aria-label='next' onClick={() => nextSlide()}>
+            <FaFastForward />
           </Icons>
           <Tooltip>Next</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
-          <Icons>
+          <Icons aria-label='mode'>
             <FiRepeat style={{ padding: 0 }} />
           </Icons>
           <Tooltip>Light mode</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
-          <Icons>
-            <FaStop onClick={() => setIndex(0)} />
+          <Icons aria-label='stop' onClick={() => setIndex(0)}>
+            <FaStop />
           </Icons>
           <Tooltip>Stop</Tooltip>
         </TooltipWrapper>
