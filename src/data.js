@@ -100,6 +100,8 @@ const playlistData = [
     photo: require('./asset/lounge-2-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=ADjh-VPJtFc&list=PLGcMNmVTewK9vUqoe4fTMjI9xyXPzeGlK',
+    spotify:
+      'https://open.spotify.com/playlist/0Md1JHRhDNGpQLpVZQWJuu',
     musics: [
       {
         track: 1,
@@ -197,6 +199,8 @@ const playlistData = [
     photo: require('./asset/boards-of-canada-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=lhPWJHrwgR4&list=PLGcMNmVTewK8m4EhNoFSxRkOrjdUYicI4',
+    spotify:
+      'https://open.spotify.com/playlist/3527UDDfzqyB2ZkQ2Xx0dF',
     musics: [
       {
         track: 1,
@@ -294,6 +298,8 @@ const playlistData = [
     photo: require('./asset/good-night-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=4SO0qSfxqyk&list=PLGcMNmVTewK-nt9UzadcrpRBFynRLF0Fc',
+    spotify:
+      'https://open.spotify.com/playlist/0HPweuCnEMF3I1c9zHMFnX',
     musics: [
       {
         track: 1,
@@ -391,6 +397,8 @@ const playlistData = [
     photo: require('./asset/moby-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=QhZnEagfjTQ&list=PLGcMNmVTewK-SxM3q1HtZFyJm29In7Xjq',
+    spotify:
+      'https://open.spotify.com/playlist/1lrJ3H8VCsl7hWkAzluLvj',
     musics: [
       {
         track: 1,
@@ -488,6 +496,8 @@ const playlistData = [
     photo: require('./asset/idm-1-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=3BF_zuOYFn0&list=PLGcMNmVTewK81myPTTkJiPhWLd0bvksL-',
+    spotify:
+      'https://open.spotify.com/playlist/7h7jBAcbt2GjSTxfUEYjCH',
     musics: [
       {
         track: 1,
@@ -577,7 +587,7 @@ const playlistData = [
   },
   {
     id: 7,
-    playlistName: 'Best of Aphex Twin',
+    playlistName: 'Best Of Aphex Twin',
     genre: ['IDM', 'experimental', 'electro', 'acid techno'],
     description:
       'A significant musician, composer and DJ, and one of the most influential artists in contemporary electronic music',
@@ -585,6 +595,8 @@ const playlistData = [
     photo: require('./asset/aphex-twin-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=0Z4cLmbw6q0&list=PLGcMNmVTewK-woK5gmRhl3N_XUoreqN27',
+    spotify:
+      'https://open.spotify.com/playlist/05uQzVbAE4zLBbh4Dqf4ow',
     musics: [
       {
         track: 1,
@@ -682,6 +694,8 @@ const playlistData = [
     photo: require('./asset/massive-attack-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=Tb0MC0jFv6M&list=PLGcMNmVTewK8__Tpkceq8NOngUJNx1_lT',
+    spotify:
+      'https://open.spotify.com/playlist/4eEuwF5nA1Y0meL4RZSCMw',
     musics: [
       {
         track: 1,
@@ -756,6 +770,13 @@ const playlistData = [
       {
         track: 11,
         artist: 'Massive Attack',
+        title: 'Group Four',
+        time: 8.13,
+        link: 'https://www.youtube.com/watch?v=B1BkecC0tSg',
+      },
+      {
+        track: 12,
+        artist: 'Massive Attack',
         title: 'Unfinished Sympathy',
         time: 5.16,
         link: 'https://www.youtube.com/watch?v=oWohPJHicFE',
@@ -771,7 +792,9 @@ const playlistData = [
     totalTime: '',
     photo: require('./asset/chillout-img.png'),
     youtube:
-      'https://www.youtube.com/watch?v=p1oGMZKEzZs&list=PLGcMNmVTewK-SMJNgIrpERUBMBHoLMam9',
+      'https://www.youtube.com/watch?v=EgzMKjBY-nM&list=PLGcMNmVTewK-SMJNgIrpERUBMBHoLMam9',
+    spotify:
+      'https://open.spotify.com/playlist/7CNzWXkrPDzB7ectrVywog',
     musics: [
       {
         track: 1,
@@ -796,10 +819,10 @@ const playlistData = [
       },
       {
         track: 4,
-        artist: 'Solar Fields',
-        title: 'A New Window',
-        time: 9.36,
-        link: 'https://www.youtube.com/watch?v=C-k-hTXlAWA',
+        artist: 'Asura',
+        title: 'La Chanson De Carla',
+        time: 4.56,
+        link: 'https://www.youtube.com/watch?v=GzLKpGqWfF8',
       },
       {
         track: 5,
@@ -869,6 +892,8 @@ const playlistData = [
     photo: require('./asset/lounge-cafe-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=t11W2nnYj7A&list=PLGcMNmVTewK9lmfLmmqAeegoYBIwQPx3n',
+    spotify:
+      'https://open.spotify.com/playlist/0Yg1tspSNXjTTY6BVdPBNR',
     musics: [
       {
         track: 1,
@@ -961,10 +986,12 @@ const playlistData = [
     playlistName: 'Best Of Eitan Reiter',
     genre: ['electro', 'psybient', 'progressive house', 'deep house', 'techno'],
     description:
-      'Israeli musician and producer, he performed in many electronic and psytrance fesivals around the globe',
+      'Israeli musician and producer, he performed in many electronic and psytrance festivals around the globe',
     totalTime: '',
     photo: require('./asset/eitan-reiter-img.png'),
-    youtube: '',
+    youtube: 'https://www.youtube.com/watch?v=HVRaB9oI58E&list=PLGcMNmVTewK8FCaiXKIyaGITCmvnJwG5A',
+    spotify:
+      'https://open.spotify.com/playlist/3k4g4ayAjybe9Aqhf7ra8x',
     musics: [
       {
         track: 1,
@@ -977,7 +1004,7 @@ const playlistData = [
         track: 2,
         artist: 'Eitan Reiter',
         title: 'Pyramid',
-        time: 8.2,
+        time: 8.20,
         link: 'https://www.youtube.com/watch?v=qI6wEhtsqio',
       },
       {
@@ -1060,7 +1087,8 @@ const playlistData = [
       'Take a deep breath - This playlist can work well for sleep, meditation, focus, relaxation, work, reading, spa, studying and more',
     totalTime: '',
     photo: require('./asset/relax-img.png'),
-    youtube: '',
+    youtube: 'https://www.youtube.com/watch?v=nhph3dNNGgU&list=PLGcMNmVTewK9gLYDfZn0rcQE7NBc2L6tY',
+    spotify: '',
     musics: [
       {
         track: 1,
@@ -1101,7 +1129,7 @@ const playlistData = [
         track: 6,
         artist: 'Global Communication',
         title: 'Epsilon Phase',
-        time: 11.0,
+        time: 10.59,
         link: 'https://www.youtube.com/watch?v=M5tm3Oe4pYg',
       },
       {
@@ -1156,7 +1184,9 @@ const playlistData = [
       'In the late 90s, Swedish composer Magnus Birgersson created Solar Fields, a project considered like one of the most productive and creative in the Scandinavian electronic music scene',
     totalTime: '',
     photo: require('./asset/solar-fields-img.png'),
-    youtube: '',
+    youtube: 'https://www.youtube.com/watch?v=C-k-hTXlAWA&list=PLGcMNmVTewK8BV-Ug7cWQczHkv67qRkyL',
+    spotify:
+      'https://open.spotify.com/playlist/51Dqvs5y4Q773TZdbdj82o',
     musics: [
       {
         track: 1,
@@ -1235,6 +1265,13 @@ const playlistData = [
         time: 10.37,
         link: 'https://www.youtube.com/watch?v=BndzTjviflE',
       },
+      {
+        track: 12,
+        artist: 'Solar Fields',
+        title: 'A New Window',
+        time: 9.36,
+        link: 'https://www.youtube.com/watch?v=C-k-hTXlAWA',
+      },
     ],
   },
   {
@@ -1247,6 +1284,8 @@ const playlistData = [
     photo: require('./asset/ott-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=xUtlrbOkxN0&list=PLGcMNmVTewK9RhzMtBeEkj3tZqL0__cP3',
+    spotify:
+      'https://open.spotify.com/playlist/3YDz60a8iVXHKNGufkb4oW',
     musics: [
       {
         track: 1,
@@ -1325,11 +1364,18 @@ const playlistData = [
         time: 8.3,
         link: 'https://www.youtube.com/watch?v=OnLhzs7d0E8',
       },
+      {
+        track: 12,
+        artist: 'OTT',
+        title: 'Billy The Kid Strikes Back',
+        time: 7.14,
+        link: 'https://www.youtube.com/watch?v=ShD9Uu8M9o4',
+      },
     ],
   },
   {
     id: 15,
-    playlistName: 'Best of Rone',
+    playlistName: 'Best Of Rone',
     genre: ['electro', 'EDM', 'IDM', 'minimal techno'],
     description:
       'Rone (born Erwan Castex) is a French electro music producer and artist',
@@ -1337,6 +1383,8 @@ const playlistData = [
     photo: require('./asset/rone-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=GZc8kB6OfXs&list=PLGcMNmVTewK9QyZDOBMwom8ds4ueINS3_',
+    spotify:
+      '',
     musics: [
       {
         track: 1,
@@ -1440,6 +1488,8 @@ const playlistData = [
     photo: require('./asset/koan-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=jo4m-FYxBpA&list=PLGcMNmVTewK_nYPovV30BnZyrvTleEhkC',
+    spotify:
+      '',
     musics: [
       {
         track: 1,
@@ -1535,7 +1585,9 @@ const playlistData = [
       'Eric Hilton is an artist/producer who uses old-school skills to craft new school chill',
     totalTime: '',
     photo: require('./asset/eric-hilton-img.png'),
-    youtube: '',
+    youtube: 'https://www.youtube.com/watch?v=3dcfdKsYXu4&list=PLGcMNmVTewK8gXzzPZVdpvLMTBuumY4dC',
+    spotify:
+      '',
     musics: [
       {
         track: 1,
@@ -1631,6 +1683,7 @@ const playlistData = [
   //   totalTime: '',
   //   photo: require('./asset/soundtrack-img.png'),
   //   youtube: '',
+  //   spotify: '',
   //   musics: [
   //     {
   //       track: 1,
@@ -1711,6 +1764,7 @@ const playlistData = [
     photo: require('./asset/idm-2-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=X_k2lih0T6U&list=PLGcMNmVTewK-9SdRTd4osgRp8LpTHDuLn',
+    spotify: '',
     musics: [
       {
         track: 1,
@@ -1808,6 +1862,7 @@ const playlistData = [
     photo: require('./asset/carbon-based-lifeforms-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=ORro19RHIt0&list=PLGcMNmVTewK9JPG3lmqSKT4Y7Xv_6kMzn',
+    spotify: '',
     musics: [
       {
         track: 1,

@@ -65,6 +65,7 @@ const Carousel = ({ data, index }) => {
           }
           if (
             playIndex === index - 1 ||
+            // to go back to the last playlist of the array
             (index === 0 && playIndex === data.length - 1)
           ) {
             position = 'lastSlide';

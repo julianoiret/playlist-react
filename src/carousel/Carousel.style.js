@@ -73,9 +73,11 @@ export const MainWrapper = styled.article`
     opacity: 1;
     transform: translateX(0);
   }
+  // hide to the left
   &.lastSlide {
     transform: translateX(-150%);
   }
+  // hide to the right
   &.nextSlide {
     transform: translateX(150%);
   }

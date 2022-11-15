@@ -12,6 +12,7 @@ describe("Playlist card", () => {
         description: 'playlist description',
         totalTime: '49.77 minutes',
         youtube: 'https://www.youtube.com/watch?v=QhZnEagfjTQ&list=PLGcMNmVTewK-SxM3q1HtZFyJm29In7Xjq',
+        spotify: 'https://open.spotify.com/playlist/7CNzWXkrPDzB7ectrVywog',
         musics: [
             {
                 track: 1,

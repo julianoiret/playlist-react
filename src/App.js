@@ -14,7 +14,7 @@ function App() {
 
   const prevSlide = () => {
     setIndex((oldIndex) => {
-      //we use a fct to set the index, oldIndex = parameter
+      // we use a fct to set the index, oldIndex = parameter
       let index = oldIndex - 1;
       if (index < 0) {
         index = data.length - 1;
@@ -25,7 +25,7 @@ function App() {
 
   const nextSlide = () => {
     setIndex((oldIndex) => {
-      //we use a fct to set the index, oldIndex = parameter
+      // we use a fct to set the index, oldIndex = parameter
       let index = oldIndex + 1;
       if (index > data.length - 1) {
         index = 0;
@@ -34,7 +34,7 @@ function App() {
     });
   };
 
-  //autoslide/caroussel function
+  // autoslide/caroussel function
   // we check startSlider is true, if yes we change the index every 6s
   useEffect(() => {
     if (startSlider) {
@@ -56,7 +56,7 @@ function App() {
     }
   }, [startSlider]);
 
-  //fuction to stop the autoslide/caroussel
+  // function to stop the autoslide/caroussel
   function handleCancelClick() {
     clearInterval(sliderRef.current);
   }
