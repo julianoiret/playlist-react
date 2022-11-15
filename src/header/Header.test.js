@@ -15,7 +15,6 @@ describe('Header', () => {
     render(
       <Header
         setStartSlider={mockSetStartSlider}
-        // mockSetStartSlider={mockSetStartSlider}
       />
     );
     const playButton = screen.getByRole('button', { name: /play/i });

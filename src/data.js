@@ -877,10 +877,10 @@ const playlistData = [
       },
       {
         track: 2,
-        artist: 'Eric Hilton',
-        title: 'Continuum',
-        time: 3.41,
-        link: 'https://www.youtube.com/watch?v=S9sqyCpBJ_k',
+        artist: 'Dousk',
+        title: 'Anagram',
+        time: 4.45,
+        link: 'https://www.youtube.com/watch?v=gB14MliUtFM',
       },
       {
         track: 3,
