@@ -1,11 +1,12 @@
+import GlobalStyle from './globalStyles';
 import { useState, useEffect, useRef } from 'react';
 import Header from './header/Header';
 import Footer from './footer/Footer';
 import playlistData from './data';
 import Carousel from './carousel/Carousel';
-import './index.css';
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [data, setData] = useState(playlistData);
   const [index, setIndex] = useState(0);
   const [startSlider, setStartSlider] = useState(false);
@@ -54,6 +55,7 @@ function App() {
     } else {
       clearInterval(sliderRef.current);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [startSlider]);
 
   // function to pause/stop the autoslide/caroussel
@@ -63,6 +65,7 @@ function App() {
 
   return (
     <>
+      <GlobalStyle />
       <Header
         prevSlide={prevSlide}
         nextSlide={nextSlide}

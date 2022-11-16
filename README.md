@@ -36,27 +36,27 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 │   ├── Badges.js             # Displays music genre through `map`
 │   ├── Carousel.js           # Main component with the playlists (front and back)
 │   └── Carousel.style.js     # Styling with styled-component
-│   ├── Carousel.test.js      # Unit test **WORK IN PROGRESS**
+│   ├── Carousel.test.js      # Unit test **WIP**
 ├── footer                    # Footer folder
 │   ├── Footer.js             # Footer component
 │   ├── Footer.style.js       # Styling with styled-component
-│   ├── Footer.test.js        # Unit test **WORK IN PROGRESS**
+│   ├── Footer.test.js        # Unit test **WIP**
 ├── header                    # Header folder
 │   ├── Header.js             # Header component
 │   ├── Header.style.js       # Styling with styled-component
-│   ├── Header.test.js        # Unit test **WORK IN PROGRESS**
+│   ├── Header.test.js        # Unit test **WIP**
 ├── App.js                    # App component
 ├── data.js                   # Data (playlist details)
 ├── devices.js                # Media queries
-├── index.css                 # CSS for the `body` TODO: remove this file
-├── Themes.js                 # Light mode / Dark mode **WORK IN PROGRESS**
+├── globalStyles.js           # Apply style globally
+├── Themes.js                 # Light mode / Dark mode **WIP**
 └── ...
 
 ```
 
 ## 🪄 Testing
 
-- [x] Unit tests with [Testing Library](https://testing-library.com/) **IN PROGRESS**
+- [x] Unit tests with [Testing Library](https://testing-library.com/)
 - [x] Tested manually using developer tools - Firefox / Chrome
 - [x] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
 
@@ -99,8 +99,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## 🛸 Improvement / Next Steps
 
-- [ ] Cleanup: remove `index.css` file and use `createGlobalStyle` (styled component)
-- [ ] Create test files with [Testing Library](https://testing-library.com/)
+- [x] Create test files with [Testing Library](https://testing-library.com/)
 - [ ] Add Spotify logo (next to Youtube logo) to open playlist on Spotify
 - [ ] Implement light mode
 - [ ] Improve accessibility

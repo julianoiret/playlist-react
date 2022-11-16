@@ -83,7 +83,11 @@ export const MainWrapper = styled.article`
   }
 `;
 
-export const FlipCard = styled.div``;
+export const FlipCard = styled.div`
+ &.hidden {
+  display: none;
+}
+`;
 
 export const ImgVector = styled.img`
   position: absolute;
