@@ -157,7 +157,7 @@ export const PlaylistCardInfo = styled.div`
     height: 350px;
   }
   @media ${device.mobileL} {
-    width: 360px;
+    width: 350px;
     height: 350px;
   }
   @media ${device.tablet} {
