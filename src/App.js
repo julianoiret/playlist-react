@@ -56,7 +56,7 @@ function App() {
     }
   }, [startSlider]);
 
-  // function to stop the autoslide/caroussel
+  // function to pause/stop the autoslide/caroussel
   function handleCancelClick() {
     clearInterval(sliderRef.current);
   }
