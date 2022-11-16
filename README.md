@@ -31,7 +31,7 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 ```
 .
 ├── ...
-├── asset                     # Images
+├── asset                     # Images folder
 ├── carousel                  # Playlists folder
 │   ├── Badges.js             # Displays music genre through `map`
 │   ├── Carousel.js           # Main component with the playlists (front and back)
