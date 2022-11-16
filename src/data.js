@@ -7,10 +7,8 @@ const playlistData = [
       'An atmosphere, a state of mind. Playlist blissfully composed to simply enjoy life',
     totalTime: '',
     photo: require('./asset/lounge-1-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=42wQOP1vAFc&list=PLGcMNmVTewK_a0OuuxYEUA9-wmU-rgioR',
-    spotify:
-      'https://open.spotify.com/playlist/2TbrBRFpCHArZekPNnreMK',
+    youtube: 'https://www.youtube.com/watch?v=42wQOP1vAFc&list=PLGcMNmVTewK_a0OuuxYEUA9-wmU-rgioR',
+    spotify: 'https://open.spotify.com/playlist/2TbrBRFpCHArZekPNnreMK',
     musics: [
       {
         track: 1,
@@ -98,10 +96,8 @@ const playlistData = [
     description: 'Just lean back and enjoy relaxed beats - II',
     totalTime: '',
     photo: require('./asset/lounge-2-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=ADjh-VPJtFc&list=PLGcMNmVTewK9vUqoe4fTMjI9xyXPzeGlK',
-    spotify:
-      'https://open.spotify.com/playlist/0Md1JHRhDNGpQLpVZQWJuu',
+    youtube: 'https://www.youtube.com/watch?v=ADjh-VPJtFc&list=PLGcMNmVTewK9vUqoe4fTMjI9xyXPzeGlK',
+    spotify: 'https://open.spotify.com/playlist/0Md1JHRhDNGpQLpVZQWJuu',
     musics: [
       {
         track: 1,
@@ -197,10 +193,8 @@ const playlistData = [
       'Scottish electronic music duo, brothers Michael Sandison & Marcus Eoin - influenced by psychedelic & electronic music',
     totalTime: '',
     photo: require('./asset/boards-of-canada-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=lhPWJHrwgR4&list=PLGcMNmVTewK8m4EhNoFSxRkOrjdUYicI4',
-    spotify:
-      'https://open.spotify.com/playlist/3527UDDfzqyB2ZkQ2Xx0dF',
+    youtube: 'https://www.youtube.com/watch?v=lhPWJHrwgR4&list=PLGcMNmVTewK8m4EhNoFSxRkOrjdUYicI4',
+    spotify: 'https://open.spotify.com/playlist/3527UDDfzqyB2ZkQ2Xx0dF',
     musics: [
       {
         track: 1,
@@ -296,10 +290,8 @@ const playlistData = [
       'Time to sleep. Empty your mind, bring attention to the present, and introduce calmness and peace',
     totalTime: '',
     photo: require('./asset/good-night-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=4SO0qSfxqyk&list=PLGcMNmVTewK-nt9UzadcrpRBFynRLF0Fc',
-    spotify:
-      'https://open.spotify.com/playlist/0HPweuCnEMF3I1c9zHMFnX',
+    youtube: 'https://www.youtube.com/watch?v=4SO0qSfxqyk&list=PLGcMNmVTewK-nt9UzadcrpRBFynRLF0Fc',
+    spotify: 'https://open.spotify.com/playlist/0HPweuCnEMF3I1c9zHMFnX',
     musics: [
       {
         track: 1,
@@ -395,10 +387,8 @@ const playlistData = [
       'One of the most important electronic dance music figures of the 90s. With more than 20 albums released, it wasn t easy to choose. This playlist deserves much more tracks!',
     totalTime: '',
     photo: require('./asset/moby-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=QhZnEagfjTQ&list=PLGcMNmVTewK-SxM3q1HtZFyJm29In7Xjq',
-    spotify:
-      'https://open.spotify.com/playlist/1lrJ3H8VCsl7hWkAzluLvj',
+    youtube: 'https://www.youtube.com/watch?v=QhZnEagfjTQ&list=PLGcMNmVTewK-SxM3q1HtZFyJm29In7Xjq',
+    spotify: 'https://open.spotify.com/playlist/1lrJ3H8VCsl7hWkAzluLvj',
     musics: [
       {
         track: 1,
@@ -494,10 +484,8 @@ const playlistData = [
       'A palette of electronic and rave music styles. Regarded as better suited to home listening than dancing',
     totalTime: '',
     photo: require('./asset/idm-1-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=3BF_zuOYFn0&list=PLGcMNmVTewK81myPTTkJiPhWLd0bvksL-',
-    spotify:
-      'https://open.spotify.com/playlist/7h7jBAcbt2GjSTxfUEYjCH',
+    youtube: 'https://www.youtube.com/watch?v=3BF_zuOYFn0&list=PLGcMNmVTewK81myPTTkJiPhWLd0bvksL-',
+    spotify: 'https://open.spotify.com/playlist/7h7jBAcbt2GjSTxfUEYjCH',
     musics: [
       {
         track: 1,
@@ -593,10 +581,8 @@ const playlistData = [
       'A significant musician, composer and DJ, and one of the most influential artists in contemporary electronic music',
     totalTime: '',
     photo: require('./asset/aphex-twin-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=0Z4cLmbw6q0&list=PLGcMNmVTewK-woK5gmRhl3N_XUoreqN27',
-    spotify:
-      'https://open.spotify.com/playlist/05uQzVbAE4zLBbh4Dqf4ow',
+    youtube: 'https://www.youtube.com/watch?v=0Z4cLmbw6q0&list=PLGcMNmVTewK-woK5gmRhl3N_XUoreqN27',
+    spotify: 'https://open.spotify.com/playlist/05uQzVbAE4zLBbh4Dqf4ow',
     musics: [
       {
         track: 1,
@@ -692,10 +678,8 @@ const playlistData = [
       'One of the greatest, "trip-hop" group. Because Massive Attack music is so unique, they deserve their own playlist',
     totalTime: '',
     photo: require('./asset/massive-attack-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=Tb0MC0jFv6M&list=PLGcMNmVTewK8__Tpkceq8NOngUJNx1_lT',
-    spotify:
-      'https://open.spotify.com/playlist/4eEuwF5nA1Y0meL4RZSCMw',
+    youtube: 'https://www.youtube.com/watch?v=Tb0MC0jFv6M&list=PLGcMNmVTewK8__Tpkceq8NOngUJNx1_lT',
+    spotify: 'https://open.spotify.com/playlist/4eEuwF5nA1Y0meL4RZSCMw',
     musics: [
       {
         track: 1,
@@ -791,10 +775,8 @@ const playlistData = [
       'The sun of psychedelic downtempo music which brings light in multiple colours and shapes',
     totalTime: '',
     photo: require('./asset/chillout-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=EgzMKjBY-nM&list=PLGcMNmVTewK-SMJNgIrpERUBMBHoLMam9',
-    spotify:
-      'https://open.spotify.com/playlist/7CNzWXkrPDzB7ectrVywog',
+    youtube: 'https://www.youtube.com/watch?v=EgzMKjBY-nM&list=PLGcMNmVTewK-SMJNgIrpERUBMBHoLMam9',
+    spotify: 'https://open.spotify.com/playlist/7CNzWXkrPDzB7ectrVywog',
     musics: [
       {
         track: 1,
@@ -890,10 +872,8 @@ const playlistData = [
       'Musics that emphasizing a chilled-out atmosphere with light instrumentation and sometimes vocals indebted to vocal jazz',
     totalTime: '',
     photo: require('./asset/lounge-cafe-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=t11W2nnYj7A&list=PLGcMNmVTewK9lmfLmmqAeegoYBIwQPx3n',
-    spotify:
-      'https://open.spotify.com/playlist/0Yg1tspSNXjTTY6BVdPBNR',
+    youtube: 'https://www.youtube.com/watch?v=t11W2nnYj7A&list=PLGcMNmVTewK9lmfLmmqAeegoYBIwQPx3n',
+    spotify: 'https://open.spotify.com/playlist/0Yg1tspSNXjTTY6BVdPBNR',
     musics: [
       {
         track: 1,
@@ -990,8 +970,7 @@ const playlistData = [
     totalTime: '',
     photo: require('./asset/eitan-reiter-img.png'),
     youtube: 'https://www.youtube.com/watch?v=HVRaB9oI58E&list=PLGcMNmVTewK8FCaiXKIyaGITCmvnJwG5A',
-    spotify:
-      'https://open.spotify.com/playlist/3k4g4ayAjybe9Aqhf7ra8x',
+    spotify: 'https://open.spotify.com/playlist/3k4g4ayAjybe9Aqhf7ra8x',
     musics: [
       {
         track: 1,
@@ -1088,7 +1067,7 @@ const playlistData = [
     totalTime: '',
     photo: require('./asset/relax-img.png'),
     youtube: 'https://www.youtube.com/watch?v=nhph3dNNGgU&list=PLGcMNmVTewK9gLYDfZn0rcQE7NBc2L6tY',
-    spotify: '',
+    spotify: 'https://open.spotify.com/playlist/3NFa37pIDplQANQRBVVcOW',
     musics: [
       {
         track: 1,
@@ -1185,8 +1164,7 @@ const playlistData = [
     totalTime: '',
     photo: require('./asset/solar-fields-img.png'),
     youtube: 'https://www.youtube.com/watch?v=C-k-hTXlAWA&list=PLGcMNmVTewK8BV-Ug7cWQczHkv67qRkyL',
-    spotify:
-      'https://open.spotify.com/playlist/51Dqvs5y4Q773TZdbdj82o',
+    spotify: 'https://open.spotify.com/playlist/51Dqvs5y4Q773TZdbdj82o',
     musics: [
       {
         track: 1,
@@ -1282,10 +1260,8 @@ const playlistData = [
       'Ott is a British record producer and musician who has worked with Sinéad O Connor, Embrace, the Orb, and Brian Eno, and has achieved recognition since 2002 for his own psychedelic dub tracks and his collaborations',
     totalTime: '',
     photo: require('./asset/ott-img.png'),
-    youtube:
-      'https://www.youtube.com/watch?v=xUtlrbOkxN0&list=PLGcMNmVTewK9RhzMtBeEkj3tZqL0__cP3',
-    spotify:
-      'https://open.spotify.com/playlist/3YDz60a8iVXHKNGufkb4oW',
+    youtube: 'https://www.youtube.com/watch?v=xUtlrbOkxN0&list=PLGcMNmVTewK9RhzMtBeEkj3tZqL0__cP3',
+    spotify: 'https://open.spotify.com/playlist/3YDz60a8iVXHKNGufkb4oW',
     musics: [
       {
         track: 1,
@@ -1383,8 +1359,7 @@ const playlistData = [
     photo: require('./asset/rone-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=GZc8kB6OfXs&list=PLGcMNmVTewK9QyZDOBMwom8ds4ueINS3_',
-    spotify:
-      '',
+    spotify: 'https://open.spotify.com/playlist/1QPQrdSueibE8vQQhyiGbT',
     musics: [
       {
         track: 1,
@@ -1488,8 +1463,7 @@ const playlistData = [
     photo: require('./asset/koan-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=jo4m-FYxBpA&list=PLGcMNmVTewK_nYPovV30BnZyrvTleEhkC',
-    spotify:
-      '',
+    spotify: 'https://open.spotify.com/playlist/60jM0ls3IyMWCqeTaN4yVF',
     musics: [
       {
         track: 1,
@@ -1586,8 +1560,7 @@ const playlistData = [
     totalTime: '',
     photo: require('./asset/eric-hilton-img.png'),
     youtube: 'https://www.youtube.com/watch?v=3dcfdKsYXu4&list=PLGcMNmVTewK8gXzzPZVdpvLMTBuumY4dC',
-    spotify:
-      '',
+    spotify: 'https://open.spotify.com/playlist/0Ps7VpMQjsw8n6z7CuhSzp',
     musics: [
       {
         track: 1,
@@ -1764,7 +1737,7 @@ const playlistData = [
     photo: require('./asset/idm-2-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=X_k2lih0T6U&list=PLGcMNmVTewK-9SdRTd4osgRp8LpTHDuLn',
-    spotify: '',
+    spotify: 'https://open.spotify.com/playlist/7MARAEq8Xx6clIJFFlikUy',
     musics: [
       {
         track: 1,
@@ -1862,7 +1835,7 @@ const playlistData = [
     photo: require('./asset/carbon-based-lifeforms-img.png'),
     youtube:
       'https://www.youtube.com/watch?v=ORro19RHIt0&list=PLGcMNmVTewK9JPG3lmqSKT4Y7Xv_6kMzn',
-    spotify: '',
+    spotify: 'https://open.spotify.com/playlist/0QWJRvm1bsOJczSE6LYVUH',
     musics: [
       {
         track: 1,
