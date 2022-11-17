@@ -40,11 +40,11 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 ├── footer                    # Footer folder
 │   ├── Footer.js             # Footer component
 │   ├── Footer.style.js       # Styling with styled-component
-│   ├── Footer.test.js        # Unit test **WIP**
+│   ├── Footer.test.js        # Unit test 
 ├── header                    # Header folder
 │   ├── Header.js             # Header component
 │   ├── Header.style.js       # Styling with styled-component
-│   ├── Header.test.js        # Unit test **WIP**
+│   ├── Header.test.js        # Unit test 
 ├── App.js                    # App component
 ├── data.js                   # Data (playlist details)
 ├── devices.js                # Media queries
@@ -100,7 +100,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## 🛸 Improvement / Next Steps
 
 - [x] Create test files with [Testing Library](https://testing-library.com/)
-- [ ] Add Spotify logo (next to Youtube logo) to open playlist on Spotify
+- [x] Add Spotify logo (next to Youtube logo) to open playlist on Spotify
 - [ ] Implement light mode
 - [ ] Improve accessibility
 - [ ] Spike: use Spotify API instead of Youtube

@@ -10,7 +10,6 @@ const Footer = () => {
           <FooterText>
             <a
               href='https://www.linkedin.com/in/kevin-hanard-275165a5/'
-              alt=''
               target='_blank'
               rel='noreferrer'
             >
@@ -32,7 +31,6 @@ const Footer = () => {
           <FooterText>
             <a
               href='https://www.linkedin.com/in/julia-hanard-332395ab/'
-              alt=''
               target='_blank'
               rel='noreferrer'
             >
