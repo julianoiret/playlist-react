@@ -1,6 +1,26 @@
-export const lightMode = {
-  // background: '#363537',
+export const lightTheme = {
+  bodyBg: '#FAF9F6',
+  headings: '#1B1212',
+  text: '#606060',
+  carouselAndFooter: '#e8e7e3',
+  colorButtons: '#e8e7e3',
+  bgButtons: '#989898',
+  detailButton: '#e8e7e3',
+  bgDetailButton: '#1B1212',
+  hoverDetailButton: '#000000',
+  bgHoverDetailButton: '#FFFFFF',
+  transitionTime: '.25s',
 };
-export const darkMode = {
-  // background: '#242526',
+export const darkTheme = {
+  bodyBg: '#242526',
+  headings: '#F7F7F7',
+  text: '#B1B1B1',
+  carouselAndFooter: '#2B2B2B',
+  colorButtons: '#242526',
+  bgButtons: '#FFFFFF',
+  detailButton: '#2B2B2B',
+  bgDetailButton: '#F7F7F7',
+  hoverDetailButton: '#FFFFFF',
+  bgHoverDetailButton: '#000000',
+  transitionTime: '.25s',
 };

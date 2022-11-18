@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterSection = styled.div`
-  background-color: #2B2B2B;
+  background-color: ${prop => prop.theme.carouselAndFooter};
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 20px;

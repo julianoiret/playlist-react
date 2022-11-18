@@ -33,7 +33,7 @@ export const PlaylistSection = styled.div`
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
-  background-color: #2b2b2b;
+  background-color: ${prop => prop.theme.carouselAndFooter};
 
   @media ${device.mobileM} {
     width: 90vw;
@@ -234,7 +234,8 @@ export const PlaylistButton = styled.button`
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
-  color: #2b2b2b;
+  color: ${prop => prop.theme.detailButton};
+  background-color: ${prop => prop.theme.bgDetailButton};
   cursor: pointer;
   border: 3px solid #626262;
   margin: 20px 0 20px 20px;
@@ -243,8 +244,8 @@ export const PlaylistButton = styled.button`
     3px 3px 0px 0px #626262, 4px 4px 0px 0px #626262, 5px 5px 0px 0px #626262;
   &:hover {
     font-weight: 500;
-    color: #ffffff;
-    background-color: #000000;
+    color: ${prop => prop.theme.hoverDetailButton};
+    background-color: ${prop => prop.theme.bgHoverDetailButton};
   }
 
   @media ${device.mobileL} {

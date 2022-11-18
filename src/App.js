@@ -1,4 +1,6 @@
 import GlobalStyle from './globalStyles';
+import { ThemeProvider } from 'styled-components';
+import { darkTheme, lightTheme } from './Themes';
 import { useState, useEffect, useRef } from 'react';
 import Header from './header/Header';
 import Footer from './footer/Footer';
@@ -10,8 +12,9 @@ function App() {
   const [data, setData] = useState(playlistData);
   const [index, setIndex] = useState(0);
   const [startSlider, setStartSlider] = useState(false);
-  // const [mode, setMode] = useState('dark');
   const sliderRef = useRef(null);
+  const [theme, setTheme] = useState(true);
+  const toggleTheme = () => { theme === "light" ? setTheme("dark") : setTheme("light") };
 
   const prevSlide = () => {
     setIndex((oldIndex) => {
@@ -64,6 +67,7 @@ function App() {
   }
 
   return (
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
     <>
       <GlobalStyle />
       <Header
@@ -73,10 +77,12 @@ function App() {
         startSlider={startSlider}
         setStartSlider={setStartSlider}
         handleCancelClick={handleCancelClick}
+        toggleTheme={toggleTheme}
       />
       <Carousel data={data} index={index} setIndex={setIndex} />
       <Footer />
     </>
+    </ThemeProvider>
   );
 }
 

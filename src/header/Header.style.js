@@ -28,7 +28,7 @@ export const HeaderTitle = styled.div`
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 300;
-  color: #f7f7f7;
+  color: ${prop => prop.theme.headings};
   letter-spacing: 4px;
 
   @media ${device.mobileL} {
@@ -87,19 +87,20 @@ export const TooltipWrapper = styled.div`
     &:hover {
       ${Tooltip} {
         visibility: visible;
+        color: ${prop => prop.theme.bgButtons};
       }
     }
   }
 `;
 
 export const Icons = styled.button`
-  background-color: #ffffff;
+  background-color: ${prop => prop.theme.bgButtons};
   padding: 6px 12px;
   font-size: 14px;
   border-radius: 7px;
   border: none;
   outline: none;
-  color: #242526;
+  color: ${prop => prop.theme.colorButtons};
   cursor: pointer;
   /* box-shadow: 0px 1px 0px 0px; */
   &:hover {

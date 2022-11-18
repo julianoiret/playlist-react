@@ -13,7 +13,7 @@ const Footer = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <FaLinkedin style={{ color: '#FFFFFF' }} />
+              <FaLinkedin style={{ color: '#B1B1B1' }} />
             </a>
           </FooterText>
           <FooterText>Kevin Hanard</FooterText>
@@ -23,7 +23,7 @@ const Footer = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <FaGithubSquare style={{ color: '#FFFFFF' }} />
+              <FaGithubSquare style={{ color: '#B1B1B1' }} />
             </a>
           </FooterText>
         </IconsHanard>
@@ -34,7 +34,7 @@ const Footer = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <FaLinkedin style={{ color: '#FFFFFF' }} />
+              <FaLinkedin style={{ color: '#B1B1B1' }} />
             </a>
           </FooterText>
           <FooterText>Julia Hanard</FooterText>
@@ -44,7 +44,7 @@ const Footer = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <FaGithubSquare style={{ color: '#FFFFFF' }} />
+              <FaGithubSquare style={{ color: '#B1B1B1' }} />
             </a>
           </FooterText>
         </IconsHanard>
