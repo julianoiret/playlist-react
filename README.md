@@ -6,7 +6,7 @@
 
 Our favourite tracks on a single web page: discover new artists through our inspiring playlists.
 
-[🍐 @beyondthefruit](https://github.com/beyondthefruit)
+🍐 [@beyondthefruit (Kevin Hanard)](https://github.com/beyondthefruit) && [@julianoiret (Julia Hanard)](https://github.com/julianoiret)
 
 ### 🎥 Overview
 
