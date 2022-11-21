@@ -16,6 +16,7 @@ function App() {
   const [theme, setTheme] = useState(true);
   const toggleTheme = () => { theme === "light" ? setTheme("dark") : setTheme("light") };
   const hoverTextTheme = theme === "light" ? "Dark mode" : "Light mode";
+  const imgVectorTheme = theme === "light" ? "black" : "white";
 
   const prevSlide = () => {
     setIndex((oldIndex) => {
@@ -81,7 +82,7 @@ function App() {
         toggleTheme={toggleTheme}
         hoverTextTheme={hoverTextTheme}
       />
-      <Carousel data={data} index={index} setIndex={setIndex} />
+      <Carousel data={data} index={index} setIndex={setIndex} imgVectorTheme={imgVectorTheme} />
       <Footer />
     </>
     </ThemeProvider>

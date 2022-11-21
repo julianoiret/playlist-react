@@ -101,7 +101,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 - [x] Create test files with [Testing Library](https://testing-library.com/)
 - [x] Add Spotify logo (next to Youtube logo) to open playlist on Spotify
-- [ ] Implement light mode
+- [x] Implement light mode
 - [ ] Improve accessibility
 - [ ] Spike: use Spotify API instead of Youtube
 - [ ] Filter out playlists by category using dynamic `buttons`

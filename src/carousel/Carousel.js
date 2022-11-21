@@ -31,7 +31,7 @@ import { RiTimerLine, RiSpotifyFill } from 'react-icons/ri';
 import { BiCaretRightCircle } from 'react-icons/bi';
 import { ImYoutube2 } from 'react-icons/im';
 
-const Carousel = ({ data, index }) => {
+const Carousel = ({ data, index, imgVectorTheme }) => {
   const [flip, setFlip] = useState(false);
 
   // function to sum the total time for each playlist
@@ -76,7 +76,7 @@ const Carousel = ({ data, index }) => {
               <FlipCard className={flip ? 'hidden' : ''}>
                 <PlaylistCardFront>
                   <ImgVector
-                    src={require('../asset/white-design.png')}
+                    src={require(`../asset/${imgVectorTheme}-design.png`)}
                   ></ImgVector>
                   <PlaylistCardImg
                     src={photo}
