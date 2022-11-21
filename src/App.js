@@ -15,6 +15,7 @@ function App() {
   const sliderRef = useRef(null);
   const [theme, setTheme] = useState(true);
   const toggleTheme = () => { theme === "light" ? setTheme("dark") : setTheme("light") };
+  const hoverTextTheme = theme === "light" ? "Dark mode" : "Light mode";
 
   const prevSlide = () => {
     setIndex((oldIndex) => {
@@ -78,6 +79,7 @@ function App() {
         setStartSlider={setStartSlider}
         handleCancelClick={handleCancelClick}
         toggleTheme={toggleTheme}
+        hoverTextTheme={hoverTextTheme}
       />
       <Carousel data={data} index={index} setIndex={setIndex} />
       <Footer />

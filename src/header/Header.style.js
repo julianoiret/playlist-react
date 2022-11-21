@@ -87,26 +87,26 @@ export const TooltipWrapper = styled.div`
     &:hover {
       ${Tooltip} {
         visibility: visible;
-        color: ${prop => prop.theme.bgButtons};
+        color: ${prop => prop.theme.bgMenuButtons};
       }
     }
   }
 `;
 
 export const Icons = styled.button`
-  background-color: ${prop => prop.theme.bgButtons};
+  background-color: ${prop => prop.theme.bgMenuButtons};
   padding: 6px 12px;
   font-size: 14px;
   border-radius: 7px;
   border: none;
   outline: none;
-  color: ${prop => prop.theme.colorButtons};
+  color: ${prop => prop.theme.colorMenuButtons};
   cursor: pointer;
   /* box-shadow: 0px 1px 0px 0px; */
   &:hover {
-    color: #f7f7f7 !important;
-    background-color: #242526;
-    border: 1px solid #f7f7f7;
+    color: ${prop => prop.theme.hoverColorMenuButtons};
+    background-color: ${prop => prop.theme.hoverBgButtons};
+    border: ${prop => prop.theme.hoverBorderMenuButtons};
   }
 
   @media ${device.mobileM} {

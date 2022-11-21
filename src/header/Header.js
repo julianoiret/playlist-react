@@ -23,6 +23,7 @@ const Header = ({
   setStartSlider,
   handleCancelClick,
   toggleTheme,
+  hoverTextTheme,
 }) => {
   return (
     <HeaderWrapper>
@@ -56,7 +57,7 @@ const Header = ({
           <Icons aria-label='mode' onClick={toggleTheme}>
             <FiRepeat style={{ padding: 0 }} />
           </Icons>
-          <Tooltip>Light mode</Tooltip>
+          <Tooltip>{hoverTextTheme}</Tooltip>
         </TooltipWrapper>
         <TooltipWrapper>
           <Icons aria-label='stop' onClick={() => setIndex(0)}>
