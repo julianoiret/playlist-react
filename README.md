@@ -49,7 +49,7 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 ├── data.js                   # Data (playlist details)
 ├── devices.js                # Media queries
 ├── globalStyles.js           # Apply style globally
-├── Themes.js                 # Light mode / Dark mode **WIP**
+├── Themes.js                 # Light mode / Dark mode
 └── ...
 
 ```
