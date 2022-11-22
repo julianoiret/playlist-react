@@ -19,7 +19,7 @@ export const darkTheme = {
   headings: '#F7F7F7',
   text: '#B1B1B1',
   carouselAndFooter: '#2B2B2B',
-  colorButtons: '#242526',
+  colorMenuButtons: '#242526',
   bgButtons: '#FFFFFF',
   hoverColorMenuButtons: '#f7f7f7',
   hoverBgButtons: '#242526',
