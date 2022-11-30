@@ -60,6 +60,17 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 - [x] Tested manually using developer tools - Firefox / Chrome
 - [x] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
 
+## 🪄 Performance
+
+- For a full performance report https://www.webpagetest.org/result/221130_BiDcEV_301/
+- First Byte: 0.242s
+- Start Render: 0.900s
+- Speed Index: 0.948s
+- LCP: 1.332s
+- CLS: 0.008
+- TBT: 0.000s
+- Total Bytes: 3.807kb
+
 ## 📱 Media Queries
 
 - `@media screen and (min-width: 320px)`
