@@ -10,7 +10,7 @@ Our favourite tracks on a single web page: discover new artists through our insp
 
 ### 🎥 Overview
 
-![mockup-react-playlist](https://user-images.githubusercontent.com/78125712/199882333-6f60b384-52be-4c7e-9331-a080e19d04cb.png)
+![mockup-react-playlist](https://user-images.githubusercontent.com/78125712/199882333-6f60b384-52be-4c7e-9331-a080e19d04cb.jpg)
 
 **Demo:**
 
@@ -40,11 +40,11 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 ├── footer                    # Footer folder
 │   ├── Footer.js             # Footer component
 │   ├── Footer.style.js       # Styling with styled-component
-│   ├── Footer.test.js        # Unit test 
+│   ├── Footer.test.js        # Unit test
 ├── header                    # Header folder
 │   ├── Header.js             # Header component
 │   ├── Header.style.js       # Styling with styled-component
-│   ├── Header.test.js        # Unit test 
+│   ├── Header.test.js        # Unit test
 ├── App.js                    # App component
 ├── data.js                   # Data (playlist details)
 ├── devices.js                # Media queries
