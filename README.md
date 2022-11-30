@@ -60,7 +60,7 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 - [x] Tested manually using developer tools - Firefox / Chrome
 - [x] Media query tests: Ipad - IphoneSE/Pro/PRO MAX/MINI - Galaxy Note 20/520
 
-## 🪄 Performance
+## 📈 Performance
 
 - For a full performance report https://www.webpagetest.org/result/221130_BiDcEV_301/
 - First Byte: 0.242s
