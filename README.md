@@ -10,7 +10,7 @@ Our favourite tracks on a single web page: discover new artists through our insp
 
 ### 🎥 Overview
 
-![mockup-react-playlist](https://user-images.githubusercontent.com/78125712/199882333-6f60b384-52be-4c7e-9331-a080e19d04cb.jpg)
+![mockup-react-playlist](https://user-images.githubusercontent.com/78125712/199882333-6f60b384-52be-4c7e-9331-a080e19d04cb.png)
 
 **Demo:**
 
