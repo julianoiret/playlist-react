@@ -40,7 +40,7 @@ function App() {
     });
   };
 
-  // autoslide/caroussel function
+  // auto slideshow/carousel function
   // we check startSlider is true, if yes we change the index every 6s
   useEffect(() => {
     if (startSlider) {
@@ -63,7 +63,7 @@ function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [startSlider]);
 
-  // function to pause/stop the autoslide/caroussel
+  // function to pause/stop the auto slideshow/carousel
   function handleCancelClick() {
     clearInterval(sliderRef.current);
   }
