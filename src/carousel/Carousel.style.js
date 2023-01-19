@@ -311,6 +311,7 @@ export const PlaylistCardDetail = styled.div`
   padding-top: 5px;
   padding-bottom: 5px;
   height: 45px;
+  cursor: pointer;
   &:hover {
     color: #3f3e3e;
     background-color: #e2dddc;
@@ -349,6 +350,11 @@ export const PlaylistLink = styled.a`
   }
 `;
 
+export const LinkWrapper = styled.a`
+color: #b1b1b1;
+text-decoration: none;
+`;
+
 export const TrackNumber = styled.p`
   grid-column: 2;
   grid-row: 1;
@@ -365,6 +371,7 @@ export const TrackNumber = styled.p`
 export const TrackArtist = styled.p`
   grid-column: 3;
   grid-row: 1;
+
   @media ${device.tablet} {
     min-width: 210px;
   }

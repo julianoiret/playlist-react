@@ -22,6 +22,7 @@ import {
   TrackArtist,
   TrackTitle,
   TrackTime,
+  LinkWrapper,
 } from './Carousel.style';
 import { TbArrowBack } from 'react-icons/tb';
 import { Badges } from './Badges';
@@ -104,8 +105,10 @@ const Playlist = ({
                 <PlaylistLink href={link} target='_blank' rel='noreferrer'>
                   <BiCaretRightCircle />
                 </PlaylistLink>
-                <TrackNumber>{track}</TrackNumber>
-                <TrackArtist>{artist}</TrackArtist>
+                  <TrackNumber>{track}</TrackNumber>
+                <LinkWrapper href={link} target='_blank' rel='noreferrer'>
+                  <TrackArtist>{artist}</TrackArtist>
+                </LinkWrapper>
                 <TrackTitle>{title}</TrackTitle>
                 <TrackTime>{time}</TrackTime>
               </PlaylistCardDetail>

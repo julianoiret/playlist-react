@@ -83,6 +83,13 @@ const playlistData = [
       },
       {
         track: 11,
+        artist: 'Jens Buchert',
+        title: 'The Vortex (Whispered Mix)',
+        time: 5.06,
+        link: 'https://www.youtube.com/watch?v=o1kuFJUEenc',
+      },
+      {
+        track: 12,
         artist: 'Nox Vahn feat. Mimi Page',
         title: 'Dream Of Love (Anjunadeep 11 Mix)',
         time: 6.05,
@@ -1763,10 +1770,10 @@ const playlistData = [
       },
       {
         track: 2,
-        artist: 'Am-Boy',
-        title: 'A Place Of No Eyes',
-        time: 3.36,
-        link: 'https://www.youtube.com/watch?v=VWEDuQqn-Cg',
+        artist: 'Jon Hopkins',
+        title: 'We Disappear',
+        time: 4.50,
+        link: 'https://www.youtube.com/watch?v=PYUF74K93IY',
       },
       {
         track: 3,
@@ -1777,10 +1784,10 @@ const playlistData = [
       },
       {
         track: 4,
-        artist: 'Luke Abbot',
-        title: 'Trans Forest Alignment',
-        time: 5.01,
-        link: 'https://www.youtube.com/watch?v=8cYhHQFjvZk',
+        artist: 'The Weathermonger',
+        title: 'Oregon Weather',
+        time: 7.16,
+        link: 'https://www.youtube.com/watch?v=C9F3oKNlMeg',
       },
       {
         track: 5,
@@ -1791,10 +1798,10 @@ const playlistData = [
       },
       {
         track: 6,
-        artist: 'Tor',
-        title: 'Cymbol',
-        time: 5.38,
-        link: 'https://www.youtube.com/watch?v=Wysv6_IKw10',
+        artist: 'Baba Gnohm',
+        title: 'Inside My Left Eye',
+        time: 5.29,
+        link: 'https://www.youtube.com/watch?v=-36RmMM5EiY',
       },
       {
         track: 7,
