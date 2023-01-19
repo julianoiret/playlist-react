@@ -866,10 +866,10 @@ const playlistData = [
       },
       {
         track: 11,
-        artist: 'Aes Dana',
-        title: 'Opalin',
-        time: 7.15,
-        link: 'https://www.youtube.com/watch?v=p1oGMZKEzZs',
+        artist: 'Zen Baboon',
+        title: 'Best Days (Tribal Mix)',
+        time: 8.20,
+        link: 'https://www.youtube.com/watch?v=GKSh5_Olq4E',
       },
       {
         track: 12,
