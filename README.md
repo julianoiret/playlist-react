@@ -34,9 +34,10 @@ https://user-images.githubusercontent.com/78125712/199859863-1a62792a-370a-4d47-
 ├── asset                     # Images folder
 ├── carousel                  # Playlists folder
 │   ├── Badges.js             # Displays music genre through `map`
-│   ├── Carousel.js           # Main component with the playlists (front and back)
+│   ├── Carousel.js           # Carousel section
 │   └── Carousel.style.js     # Styling with styled-component
 │   ├── Carousel.test.js      # Unit test **WIP**
+│   ├── Playlist.js           # Main component with the playlists (front and back)
 ├── footer                    # Footer folder
 │   ├── Footer.js             # Footer component
 │   ├── Footer.style.js       # Styling with styled-component
